@@ -26,14 +26,26 @@ body {
     padding-left: 15px;
 }
 
+.value  {
+    width: 200px;
+    color: green;
+    
+}
+
 .first {
-    display: flex;
-    align-content: left;
+    padding-left: 10px;
     width: 400px;
 }
 
 .primer {
+    padding-left: 10px;
     width: auto;
     color: yellow;
     color: red !important;
+}
+
+.second {
+    padding-left: 10px;
+    text-indent: 20px;
+    width: 1000px;
 }
