@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Справочник по CSS</title>
+    <link rel="stylesheet" href="../css/!important.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">!important</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Играет роль в том случае, когда пользователи подключают свою собственную таблицу стилей, также применяется для повышения специфичности стилевого правила. Если возникает противоречие, когда стиль автора страницы и пользователя для одного и того же элемента не совпадает, то !important позволяет повысить приоритет стиля.</p>
+        <p>При использовании пользовательской таблицы стилей или одновременном применении разного стиля автора и пользователя к одному и тому же селектору, браузер руководствуется следующим алгоритмом.</p>
+        <ul>
+            <li>!important добавлен в авторский стиль — будет применяться стиль автора.</li>
+            <li>!important добавлен в пользовательский стиль — будет применяться стиль пользователя.</li>
+            <li>!important нет как в авторском стиле, так и стиле пользователя — будет применяться стиль автора.</li>
+            <li>!important содержится в авторском стиле и стиле пользователя — будет применяться стиль пользователя.</li>
+        </ul>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Свойство: значение !important
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .primer {
+                    color: yellow;
+                    color: red !important;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam itaque sapiente autem corrupti perferendis ratione quisquam quod ipsam adipisci iste ab, tempore harum suscipit neque in tenetur labore. Facere, quam!</p>
+        </div>
+    </div>
+
+        <p class="back_to_main">
+            <a href="../../Index.html">Вернуться к справочнику CSS</a>
+        </p>
+</body>
+</html>

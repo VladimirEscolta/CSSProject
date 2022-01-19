@@ -1,0 +1,135 @@
+body {
+    background-color: blanchedalmond;
+    color: chartreuse;
+}
+
+h1 {
+    color: chocolate;
+    text-align: center;
+    font-size: 30px;
+}
+
+#first {
+    text-align: justify;
+    margin-left: 20px;
+    width: 300px;
+    text-indent: 30px;
+    border: cyan solid 2px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#second {
+    text-align: justify;
+    color: darkgreen;
+    margin-left: 400px;
+    margin-top: -170px;
+    width: 300px;
+    text-indent: 30px;
+    border: cyan solid 2px;
+    border-radius: 30px;
+    padding: 20px;
+}
+/*
+a:active{
+    color: darkslategrey;
+    border: deeppink double;
+}
+a:visited{
+    color: black;
+    text-transform: ;
+}
+
+a {
+    color: darkorchid;
+    animation-iteration-count: infinite;
+}
+*/
+
+.underline-one {
+	color: #00bfff; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 1s;  /* Время эффекта */
+}
+
+#inputform {
+    border: aqua 2px solid;
+    border-radius: 20px;
+}
+
+.menu, .menu ul { 
+    /* Обнуляем отступы и убираем маркеры у списков */
+    list-style: none; margin: 0; padding: 0;
+   }
+.menu {
+    background: linear-gradient(to bottom, #fff, #49bdbd); /* Градиент */
+    border: 1px solid #999; /* Параметры рамки */
+    padding: 0 5px; /* Поля */
+    font: 14px Arial, sans-serif; /* Параметры шрифта */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.8); /* Тень под меню */
+   }
+.menu > li {
+    display: inline-block; /* Выстраиваем по горизонтали */
+    border-right: 1px solid #fff; /* Белая линия справа */
+    position: relative; /* Относительное позиционирование */
+   }
+.menu a {
+    text-decoration: none; /* Убираем подчёркивание */
+    color: #4c4c4c; /* Цвет ссылок */
+    display: block; /* Блочные ссылки */
+   }
+.menu > li > a {
+    padding: 10px 15px; /* Поля */
+    border-right: 1px solid #d8d8d8; /* Серая линия справа */
+    position: relative; z-index: 3; /* Выводим поверх остальных элементов */
+   }
+.menu ul {
+    position: absolute; /* Абсолютное позиционирование */
+    display: none; /* Прячем подменю */
+    width: 200px; /* Ширина подменю */
+    background: #fff; /* Цвет фона */
+    box-shadow: 0 0 10px #666; /* Параметры тени */
+   }
+.menu ul a {
+    padding: 5px 10px; /* Поля */
+   }
+.menu ul a:hover {
+    background: #008df2; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+   }
+.menu li:hover ul {
+    display: block; /* Показываем подменю */
+   }
+.menu > li:hover::before {
+    content: ''; /* Создаём пустой псевдоэлемент */
+    top: 0; left: 0; right: 0; bottom: 0; /* Размер совпадает с пунктом меню */
+    box-shadow: 0 5px 10px #666; /* Параметры тени */
+    position: absolute; /* Абсолютное позиционирование */
+   }
+.menu > li:hover > a {
+    background: #fff; /* Цвет фона */
+   }
