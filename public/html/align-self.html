@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>align-self</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/align-self.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">align-self</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Свойство align-self выравнивает флекс-элементы текущей строки, переписывая значение align-items.</p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            align-self: auto | flex-start | flex-end | center | baseline | stretch
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                auto
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .primer {
+                    display: flex;
+                  }
+
+                .block2 {
+                    align-self: auto;
+                  }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer1">
+                <div class="block1">Текст в блоке 1. Еще</div>
+                <div class="block2">Блок 2</div>
+                <div class="block3">Текст в блоке 3. Произвольный текст</div>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Берёт родительское значение align-items или stretch, если нет родителя.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                flex-start
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .primer {
+                    display: flex;
+                  }
+                  
+                .block2 {
+                    align-self: flex-start;
+                  }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer2">
+                <div class="block1">Текст в блоке 1. Еще</div>
+                <div class="block2">Блок 2</div>
+                <div class="block3">Текст в блоке 3. Произвольный текст</div>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Элемент выравнивается в начале поперечной оси контейнера.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                center
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .primer {
+                    display: flex;
+                  }
+                  
+                .block2 {
+                    align-self: center;
+                  }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer3">
+                <div class="block1">Текст в блоке 1. Еще</div>
+                <div class="block2">Блок 2</div>
+                <div class="block3">Текст в блоке 3. Произвольный текст</div>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Элемент выравнивается по центральной линии на поперечной оси.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                flex-end
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .primer {
+                    display: flex;
+                  }
+                  
+                .block2 {
+                    align-self: flex-end;
+                  }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer4">
+                <div class="block1">Текст в блоке 1. Еще</div>
+                <div class="block2">Блок 2</div>
+                <div class="block3">Текст в блоке 3. Произвольный текст</div>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Элемент выравнивается в конце поперечной оси контейнера.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                stretch
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .primer {
+                    display: flex;
+                  }
+                  
+                .block2 {
+                    align-self: stretch;
+                  }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer5">
+                <div class="block1">Текст в блоке 1. Еще</div>
+                <div class="block2">Блок 2</div>
+                <div class="block3">Текст в блоке 3. Произвольный текст</div>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Элемент растягивается таким образом, чтобы занять всё свободное пространство контейнера по поперечной оси.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                baseline
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .primer {
+                    display: flex;
+                  }
+                  
+                .block2 {
+                    align-self: baseline;
+                  }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer6">
+                <div class="block1">Текст в блоке 1. Еще</div>
+                <div class="block2">Блок 2</div>
+                <div class="block3">Текст в блоке 3. Произвольный текст</div>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Элемент выравнивается по базовой линии текста.
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
