@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>all</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">all</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Универсальное свойство, которое сбрасывает все значения свойств в исходные или наследуемые, за исключением свойств direction и unicode-bidi.</p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            all: initial | inherit | unset
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                initial
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                p {
+                    color: green;
+                    font: 10px;
+                  }
+
+                h1 {
+                    color: red;
+                    font: 20px;
+                  }
+
+                p, h1 {
+                    all: initial;
+                  }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer1">
+                <h1>Заголовок</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quas repudiandae. Soluta sequi ullam nemo in.
+                </p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Изменить все свойства, применяемые к элементу, на исходные значения.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                inherit
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                p {
+                    color: green;
+                    font: 10px;
+                  }
+
+                h1 {
+                    color: red;
+                    font: 20px;
+                  }
+
+                p, h1 {
+                    all: inherit;
+                  }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer2">
+                <h1>Заголовок</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quas repudiandae. Soluta sequi ullam nemo in.
+                </p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Изменить все свойства, применяемые к элементу, на значения, наследуемые у родителя.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                unset
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                p {
+                    color: green;
+                    font: 10px;
+                  }
+
+                h1 {
+                    color: red;
+                    font: 20px;
+                  }
+
+                p, h1 {
+                    all: initial;
+                  }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer3">
+                <h1>Заголовок</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quas repudiandae. Soluta sequi ullam nemo in.
+                </p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Если свойство наследуется, то его значение принимается как inherit, в противном случае оно принимается как initial.
+            </p>
+        </div>
+    </div>
+    
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>

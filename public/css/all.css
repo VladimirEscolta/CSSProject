@@ -1,0 +1,88 @@
+pre {
+    white-space: pre-line;
+}
+
+.primer_block {
+    display: flex;
+    padding-left: 15px;
+}
+
+.value  {
+    padding-left: 10px;
+    width: 10%;
+    color: green;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.first {
+    padding-left: 10px;
+    width: 15%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer {
+    padding-left: 10px;
+    width: 25%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.second {
+    padding-left: 10px;
+    text-indent: 20px;
+    width: 50%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer1 h1 {
+    color: red;
+    font: 20px;
+}
+
+.primer1 p {
+    color: green;
+    font: 10px;
+}
+
+.primer1 h1 {
+    all: initial;
+}
+
+.primer1 p {
+    all: initial;
+}
+
+.primer2 h1 {
+    color: red;
+    font: 20px;
+}
+
+.primer2 p {
+    color: green;
+    font: 10px;
+}
+
+.primer2 h1 {
+    all: inherit;
+}
+
+.primer2 p {
+    all: inherit;
+}
+
+.primer3 h1 {
+    color: red;
+    font: 20px;
+}
+
+.primer3 p {
+    color: green;
+    font: 10px;
+}
+
+.primer3 h1 {
+    all: unset;
+}
+
+.primer3 p {
+    all: unset;
+}
