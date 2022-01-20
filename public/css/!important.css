@@ -1,24 +1,5 @@
-body {
-    background: beige;
-}
-
-.header_text {
-    text-align: center;
-}
-
-.main_text {
-    background: linear-gradient(to top right, white, rgb(84, 135, 231) );
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.description > p {
-    text-indent: 20px;
-    margin: 0;
-}
-
-.back_to_main {
-    margin-top: 100px;
-    font-size: 20px;
+pre {
+    white-space: pre-line;
 }
 
 .primer_block {
@@ -27,12 +8,18 @@ body {
 }
 
 .first {
-    display: flex;
-    align-content: left;
-    width: 400px;
+    padding-left: 10px;
+    width: 15%;
+    border: 2px solid rgb(127, 197, 255);
 }
 
 .primer {
+    padding-left: 10px;
+    width: 85%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer1 {
     width: auto;
     color: yellow;
     color: red !important;
