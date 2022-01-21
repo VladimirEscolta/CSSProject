@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>animation-delay</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/animation-delay.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">animation-delay</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Свойство animation-delay устанавливает время ожидания перед запуском цикла анимации. Значение 0s или 0ms запускает анимацию сразу же. Отрицательное значение также включает анимацию без задержек, но может привести к изменению вида начала анимации. Допустимо указывать несколько значений, перечисляя их через запятую.</p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            animation-delay: <время> [,<время>]*
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .primer1 {
+                    background: #fc0;
+                    margin: 10px;
+                    width: 300px;
+                    height: 150px;
+                    position: relative;
+                    animation-name: text;
+                    animation-direction: normal;
+                    animation-duration: 5s;
+                    animation-delay: 1s;
+                    animation-timing-function: linear;
+                }
+                
+                @keyframes text {
+                    50% { transform: translateX(200px);}
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum suscipit commodi in enim, impedit veritatis id maiores earum nemo, quibusdam rem perspiciatis doloribus voluptatum nam minus aspernatur excepturi saepe dolor.
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
