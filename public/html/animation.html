@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">animation</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Универсальное свойство, которое задаёт сразу несколько параметров анимации.</p>
+        <p>Значение по умолчанию:</p>
+        <ul>
+            <li>animation-name: none</li>
+            <li>animation-duration: 0s</li>
+            <li>animation-timing-function: ease</li>
+            <li>animation-delay: 0s</li>
+            <li>animation-iteration-count: 1</li>
+            <li>animation-direction: normal</li>
+            <li>animation-fill-mode: none</li>
+            <li>animation-play-state: running</li>
+        </ul>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            animation: animation-duration || animation-timing-function || animation-delay || animation-iteration-count || animation-direction || animation-fill-mode || animation-play-state || [none | animation-name]
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .primer1 {
+                    margin: 20px;
+                    width: 100px;
+                    height: 100px;
+                    background: green;
+                    position: relative;
+                    animation: primer1 3s ease-in-out infinite;
+                }
+                
+                @keyframes primer1 {
+                    50% { transform: translateX(200px);}
+                   }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer1">
+                
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+pre {
+    white-space: pre-line;
+}
+
+.primer_block {
+    display: flex;
+    padding-left: 15px;
+}
+
+.first {
+    padding-left: 10px;
+    width: 15%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer {
+    padding-left: 10px;
+    width: 85%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer1 {
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: relative;
+    animation: primer1 3s ease-in-out infinite;
+}
+
+@keyframes primer1 {
+    50% { transform: translateX(200px);}
+   }
