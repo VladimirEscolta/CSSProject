@@ -30,28 +30,268 @@
             animation: animation-duration || animation-timing-function || animation-delay || animation-iteration-count || animation-direction || animation-fill-mode || animation-play-state || [none | animation-name]
         </p>
     </div>
-    <h3 class="main_text">Пример</h3>    
+    <h3 class="main_text">Пример</h3>
     <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                animation
+            </p>
+        </div>
         <div class="first">
             <pre>
-                .primer1 {
-                    margin: 20px;
+                
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="animation">
+                
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Любые комбинации значений, разделяемых между собой пробелом, определяющих параметры анимации.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                animation-delay
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="delay">
+                
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Свойство animation-delay устанавливает время ожидания перед запуском цикла анимации. Значение 0s или 0ms запускает анимацию сразу же. Отрицательное значение также включает анимацию без задержек, но может привести к изменению вида начала анимации. Допустимо указывать несколько значений, перечисляя их через запятую.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                animation-direction
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="direction1">normal</div>
+            <div class="direction2">alternate</div>
+            <div class="direction3">reverse</div>
+            <div class="direction4">alternate-reverse</div>
+        </div>
+        <div class="second">
+            <p>
+                Устанавливает направление движения анимации.
+                <dt>normal</dt> <dd>Анимация идёт с самого начала, после завершения цикла возвращается к исходному состоянию.</dd>
+                <dt>alternate</dt> <dd>Анимация идёт с начала до конца, затем плавно возвращается в исходное положение.</dd>
+                <dt>reverse</dt> <dd>Анимация идёт с конца цикла, после его завершения возвращается к исходному состоянию.</dd>
+                <dt>alternate-reverse</dt> <dd>Анимация идёт с конца до начала, затем плавно возвращается в исходное положение.</dd>
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                animation-duration
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+               
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="duration">
+                
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Задаёт время в секундах или миллисекундах, сколько должен длиться один цикл анимации. По умолчанию значение равно 0s, это означает, что никакой анимации нет. Можно указать несколько значений, перечисляя их через запятую. Отрицательные значения и значения без указания единиц времени (s или ms) недопустимы и будут игнорироваться.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                animation-iteration-count
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="iteration_count"></div>
+        </div>
+        <div class="second">
+            <p>
+                Свойство определяет, сколько раз проигрывать цикл анимации до её остановки.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                animation-fill-mode
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+               
+            </pre>
+        </div>
+        <div class="primer">
+                <img src="../../images/git.jpg" alt="Image Git" class="fill_mode">
+        </div>
+        <div class="second">
+            <p>
+                Определяет, какие стили должны применяться к элементу, когда анимация не проигрывается. Например, после её завершения или при остановке. По умолчанию, в момент окончания анимации стиль элемента возвращается к исходному, свойство animation-fill-mode позволяет изменить это поведение и сделать так, чтобы стиль элемента оставался как у последнего ключевого кадра. К примеру, если вы делаете выезжающее из-за края окна браузера сообщение, то после окончания анимации сообщение вернётся обратно за край экрана. Значение forwards свойства animation-fill-mode изменяет это поведение и оставляет стили на момент завершения движения. Таким образом, сообщение плавно выдвинется из-за края окна и останется на месте.
+                <dt>none</dt> <dd>К элементу не применяются какие-либо стили.</dd>
+                <dt>forwards</dt> <dd>К элементу по окончанию анимации применяется стиль последнего ключевого кадра. Каким будет этот кадр в последовательности анимации зависит от комбинации значений свойств animation-direction и animation-iteration-count</dd>
+                <dt>backwards</dt> <dd>К элементу применяется стиль первого ключевого кадра и он остаётся на протяжении периода заданного animation-delay. Первый ключевой кадр определяется на основании значения animation-direction</dd>
+                <dt>both</dt> <dd>К элементу применяются оба правила, как для forwards, так и для backwards.</dd>
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                animation-name
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .name {
+                    background: #fc0;
+                    margin: 10px;
                     width: 100px;
-                    height: 100px;
-                    background: green;
+                    height: 50px;
+                    text-align: center;
                     position: relative;
-                    animation: primer1 3s ease-in-out infinite;
+                    animation: text 5s infinite;
                 }
                 
-                @keyframes primer1 {
-                    50% { transform: translateX(200px);}
+                @keyframes text {
+                    from { left: 0; }
+                    to { left: 100%; transform: translateX(-120px); }
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="name">
+                <p>Hello!!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Устанавливает одну или несколько анимаций, которые применяются к элементу. Представляет собой имя, связанное с правилом @keyframes, оно в свою очередь задаёт последовательность движения.
+                <dt>none</dt> <dd>Отключает анимацию.</dd>
+                <dt><идентификатор></dt> <dd>Текстовая строка, которая связана с анимацией. Идентификатор должен начинаться с латинской буквы или подчёркивания (_), также может содержать цифры от 0 до 9 и дефис (-). Запрещено использовать зарезервированные ключевые слова none, unset, inherit, initial.</dd>
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                animation-play-state
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .play_state {
+                    background: #fc0;
+                    margin: 10px;
+                    width: 100px;
+                    height: 50px;
+                    text-align: center;
+                    position: relative;
+                    animation: text 5s infinite;
+                }
+                
+                .play_state:hover {animation-play-state: paused;}
+                
+                @keyframes text {
+                    from { left: 0; }
+                    to { left: 100%; transform: translateX(-120px); }
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="play_state">
+                Наведите на блок
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Свойство определяет, проигрывать анимацию или поставить её на паузу. При продолжении установленной на паузе анимации она начинается с того момента где была остановлена.
+                <dt>running</dt> <dd>Проигрывать анимацию.</dd>
+                <dt>paused</dt> <dd>Поставить анимацию на паузу.</dd>
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                animation-timing-function
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .timing_function {
+                    background: rgb(0, 255, 128);
+                    margin: 10px;
+                    width: 120px;
+                    height: 50px;
+                    position: relative;
+                    animation: progress 5s ;
+                    animation-timing-function: ...;}
+                }
+                
+                @keyframes progress {
+                    from { width: 0; }
+                    to { width: 95%; }
                    }
             </pre>
         </div>
         <div class="primer">
-            <div class="primer1">
-                
-            </div>
+            <div class="timing_function1">easy</div>
+            <div class="timing_function2">easy-in</div>
+            <div class="timing_function3">easy-out</div>
+            <div class="timing_function4">easy-in-out</div>
+            <div class="timing_function5">linear</div>
+            <div class="timing_function6">step-start</div>
+            <div class="timing_function7">step-end</div>
+            <div class="timing_function8">steps</div>
+            <div class="timing_function9">cubic-bezier</div>
+        </div>
+        <div class="second">
+            <p>
+                Устанавливает, согласно какой функции времени должна происходить анимация каждого цикла между ключевыми кадрами. Она представляет собой математическую функцию, показывающую, как быстро по времени меняется значение свойства. Начальная точка имеет координаты 0.0, 0.0, конечная — 1.0, 1.0, при этом функция по оси ординат может превышать эти значения в большую или меньшую сторону
+                <dt>ease</dt> <dd>Анимация начинается медленно, затем ускоряется и к концу движения опять замедляется. Аналогично cubic-bezier(0.25,0.1,0.25,1).</dd>
+                <dt>ease-in</dt> <dd>Анимация медленно начинается, к концу ускоряется. Аналогично cubic-bezier(0.42,0,1,1).</dd>
+                <dt>ease-out</dt> <dd>Анимация начинается быстро, к концу замедляется. Аналогично cubic-bezier(0,0,0.58,1).</dd>
+                <dt>ease-in-out</dt> <dd>Анимация начинается и заканчивается медленно. Аналогично cubic-bezier(0.42,0,0.58,1).</dd>
+                <dt>linear</dt> <dd>Одинаковая скорость от начала и до конца.</dd>
+                <dt>step-start</dt> <dd>Как таковой анимации нет. Стилевые свойства сразу же принимают конечное значение.</dd>
+                <dt>step-end</dt> <dd>Как таковой анимации нет. Стилевые свойства находятся в начальном значении заданное время, затем сразу же принимают конечное значение.</dd>
+                <dt>steps</dt> <dd>Ступенчатая функция, имеющая заданное число шагов.animation-timing-function: steps(<число>, start | end) Здесь: <число> — целое число больше нуля; start — задаёт полунепрерывную снизу функцию; end — задаёт полунепрерывную сверху функцию.</dd>
+                <dt>cubic-bezier</dt> <dd>Задаёт функцию движения в виде кривой Безье.</dd>
+            </p>
         </div>
     </div>
 
