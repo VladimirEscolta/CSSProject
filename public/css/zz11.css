@@ -1,0 +1,142 @@
+body { 
+    display: grid;
+    grid-template-areas: 
+      "header_text header_text"
+      "main_text1 main_text2"
+      "main_text3 main_text3";
+    grid-template-rows: 10% auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+}
+
+header_text, main_text1, main_text2, main_text3 {
+    padding: 20px;
+    background: whitesmoke;
+}
+
+#header_text {
+  grid-area: header_text;
+  text-align: center;
+  font-size: 40px;
+  font-weight:bold
+}
+#main_text1 {
+  grid-area: main_text1;
+}
+#main_text2 { 
+  grid-area: main_text2;      
+}
+#main_text3 { 
+  grid-area: main_text3; 
+}
+
+#header_in_block_grid {
+    text-align: center;
+    font-size: 20px;
+    font-weight:bold
+}
+
+pre {
+    white-space: pre-line;
+}
+
+.primer_block {
+    display: flex;
+    padding-left: 15px;
+}
+
+.value  {
+    padding-left: 10px;
+    width: 10%;
+    color: green;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.first {
+    padding-left: 10px;
+    width: 15%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer {
+    padding-left: 10px;
+    width: 25%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.second {
+    padding-left: 10px;
+    text-indent: 20px;
+    width: 50%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.animation, .delay, .direction1, .direction2, .direction3, .direction4, 
+.duration, .iteration_count, .name, .play_state {
+    background: #fc0;
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    animation: text 5s infinite;
+}
+
+.delay {animation-delay: 2s;}
+
+.direction1 {animation-direction: normal;}
+.direction2 {animation-direction: alternate;}
+.direction3 {animation-direction: reverse;}
+.direction4 {animation-direction: alternate-reverse;}
+
+.duration {animation-duration: 2s;}
+
+.iteration_count {animation-iteration-count: 2;}
+
+.fill_mode {
+    margin-top: 30px;
+    width: 100px;
+    position: relative;
+    border: 2px solid rgb(156, 37, 37);
+    animation: fill_mode 3s 1s;	
+    animation-fill-mode: both;
+}
+
+.play_state:hover {animation-play-state: paused;}
+
+.timing_function1, .timing_function2, .timing_function3, .timing_function4, .timing_function5,
+.timing_function6, .timing_function7, .timing_function8, .timing_function9 {
+    background: rgb(0, 255, 128);
+    margin: 10px;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    animation: progress 5s infinite;
+}
+
+.timing_function1 {animation-timing-function: ease;}
+.timing_function2 {animation-timing-function: ease-in;}
+.timing_function3 {animation-timing-function: ease-out;}
+.timing_function4 {animation-timing-function: ease-in-out;}
+.timing_function5 {animation-timing-function: linear;}
+.timing_function6 {animation-timing-function: step-start;}
+.timing_function7 {animation-timing-function: step-end;}
+.timing_function8 {animation-timing-function: steps(5, end);}
+.timing_function9 {animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);}
+
+@keyframes text {
+    from { left: 0; }
+    to { left: 100%; transform: translateX(-120px); }
+}
+
+@keyframes fill_mode {
+    from { transform: translateX(0) rotate(0);}				
+    to { transform: translateX(350px) rotate(2turn); }
+   }
+
+@keyframes progress {
+    from { width: 0; }
+    to { width: 95%; }
+}

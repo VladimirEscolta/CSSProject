@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    
+    <link rel="stylesheet" href="../css/zz11.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <header_text id="header_text">GRID</header_text>
+    <main_text1 id="main_text1">
+        <p id="header_in_block_grid">Описание</>
+        <div class="description">
+            <p>Универсальное свойство, которое задаёт сразу несколько параметров анимации.</p>
+            <p>Значение по умолчанию:</p>
+            <ul>
+                <li>animation-name: none</li>
+                <li>animation-duration: 0s</li>
+                <li>animation-timing-function: ease</li>
+                <li>animation-delay: 0s</li>
+                <li>animation-iteration-count: 1</li>
+                <li>animation-direction: normal</li>
+                <li>animation-fill-mode: none</li>
+                <li>animation-play-state: running</li>
+            </ul>
+        </div>
+    </main_text1>
+    <main_text2 id="main_text2">
+        <p id="header_in_block_grid">Синтаксис</p>
+        <div class="description">
+            <p>
+                animation: animation-duration || animation-timing-function || animation-delay || animation-iteration-count || animation-direction || animation-fill-mode || animation-play-state || [none | animation-name]
+            </p>
+        </div>
+    </main_text2>
+    <main_text3 id="main_text3">
+        <p id="header_in_block_grid">Пример</>
+        <div class="primer_block">
+            <div class="value">
+                <p class="valuetext">
+                    animation
+                </p>
+            </div>
+            <div class="first">
+                <pre>
+                    .animation {
+                        background: #fc0;
+                        margin: 10px;
+                        width: 100px;
+                        height: 50px;
+                        text-align: center;
+                        position: relative;
+                        animation: text 5s infinite;
+                    }
+                </pre>
+            </div>
+            <div class="primer">
+                <div class="animation">Hello!!</div>
+            </div>
+            <div class="second">
+                <p>
+                    Любые комбинации значений, разделяемых между собой пробелом, определяющих параметры анимации.
+                </p>
+            </div>
+        </div>
+    </main_text3>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
