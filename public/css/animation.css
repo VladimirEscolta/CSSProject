@@ -44,10 +44,16 @@ pre {
     animation: text 5s infinite;
 }
 
+.delay {animation-delay: 2s;}
+
 .direction1 {animation-direction: normal;}
 .direction2 {animation-direction: alternate;}
 .direction3 {animation-direction: reverse;}
 .direction4 {animation-direction: alternate-reverse;}
+
+.duration {animation-duration: 2s;}
+
+.iteration_count {animation-iteration-count: 2;}
 
 .fill_mode {
     margin-top: 30px;
@@ -57,8 +63,6 @@ pre {
     animation: fill_mode 3s 1s;	
     animation-fill-mode: both;
 }
-
-
 
 .play_state:hover {animation-play-state: paused;}
 

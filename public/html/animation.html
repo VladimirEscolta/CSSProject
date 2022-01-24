@@ -39,13 +39,19 @@
         </div>
         <div class="first">
             <pre>
-                
+                .animation {
+                    background: #fc0;
+                    margin: 10px;
+                    width: 100px;
+                    height: 50px;
+                    text-align: center;
+                    position: relative;
+                    animation: text 5s infinite;
+                }
             </pre>
         </div>
         <div class="primer">
-            <div class="animation">
-                
-            </div>
+            <div class="animation">Hello!!</div>
         </div>
         <div class="second">
             <p>
@@ -61,13 +67,21 @@
         </div>
         <div class="first">
             <pre>
-                
+                .delay {
+                    background: #fc0;
+                    margin: 10px;
+                    width: 100px;
+                    height: 50px;
+                    text-align: center;
+                    position: relative;
+                    animation: text 5s infinite;
+                }
+
+                .delay {animation-delay: 2s;}
             </pre>
         </div>
         <div class="primer">
-            <div class="delay">
-                
-            </div>
+            <div class="delay">Задержка 2 сек</div>
         </div>
         <div class="second">
             <p>
@@ -83,7 +97,20 @@
         </div>
         <div class="first">
             <pre>
-                
+                .direction1, .direction2, .direction3, .direction4, {
+                    background: #fc0;
+                    margin: 10px;
+                    width: 100px;
+                    height: 50px;
+                    text-align: center;
+                    position: relative;
+                    animation: text 5s infinite;
+                }
+
+                .direction1 {animation-direction: normal;}
+                .direction2 {animation-direction: alternate;}
+                .direction3 {animation-direction: reverse;}
+                .direction4 {animation-direction: alternate-reverse;}
             </pre>
         </div>
         <div class="primer">
@@ -110,13 +137,21 @@
         </div>
         <div class="first">
             <pre>
-               
+                .duration {
+                    background: #fc0;
+                    margin: 10px;
+                    width: 100px;
+                    height: 50px;
+                    text-align: center;
+                    position: relative;
+                    animation: text 5s infinite;
+                }
+
+                .duration {animation-duration: 2s;}
             </pre>
         </div>
         <div class="primer">
-            <div class="duration">
-                
-            </div>
+            <div class="duration">2 секунды</div>
         </div>
         <div class="second">
             <p>
@@ -132,11 +167,21 @@
         </div>
         <div class="first">
             <pre>
-                
+                .iteration_count {
+                    background: #fc0;
+                    margin: 10px;
+                    width: 100px;
+                    height: 50px;
+                    text-align: center;
+                    position: relative;
+                    animation: text 5s infinite;
+                }
+
+                .iteration_count {animation-iteration-count: 2;}
             </pre>
         </div>
         <div class="primer">
-            <div class="iteration_count"></div>
+            <div class="iteration_count">2 повторения</div>
         </div>
         <div class="second">
             <p>
@@ -152,7 +197,19 @@
         </div>
         <div class="first">
             <pre>
-               
+                .fill_mode {
+                    margin-top: 30px;
+                    width: 100px;
+                    position: relative;
+                    border: 2px solid rgb(156, 37, 37);
+                    animation: fill_mode 3s 1s;	
+                    animation-fill-mode: both;
+                }
+
+                @keyframes fill_mode {
+                    from { transform: translateX(0) rotate(0);}				
+                    to { transform: translateX(350px) rotate(2turn); }
+                }
             </pre>
         </div>
         <div class="primer">
