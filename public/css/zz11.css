@@ -11,7 +11,7 @@ body {
     margin: 0;
 }
 
-header_text, main_text1, main_text2, main_text3 {
+#header_text, #main_text1, #main_text2, #main_text3 {
     padding: 20px;
     background: whitesmoke;
 }
@@ -20,7 +20,7 @@ header_text, main_text1, main_text2, main_text3 {
   grid-area: header_text;
   text-align: center;
   font-size: 40px;
-  font-weight:bold
+  font-weight:bold;
 }
 #main_text1 {
   grid-area: main_text1;
