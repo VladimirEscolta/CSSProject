@@ -1,0 +1,29 @@
+pre {
+    white-space: pre-line;
+}
+
+.primer_block {
+    display: flex;
+    padding-left: 15px;
+}
+
+.first {
+    padding-left: 10px;
+    width: 15%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer {
+    padding-left: 10px;
+    width: 85%;
+    border: 2px solid rgb(127, 197, 255);
+    height: 200px;
+}
+
+.primer1 {
+    text-align: center;
+    width: auto;
+    border: 5px double red;
+    background-color: sandybrown;
+    block-size: 65%;
+}

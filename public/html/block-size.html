@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>block-size</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/block-size.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">block-size</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Определяет размер элемента по блочной оси, направление которой зависит от значения свойства writing-mode. Для горизонтального письма (writing-mode: horizontal-tb) блочная ось будет вертикальной и block-size устанавливает высоту элемента. Для вертикального направления письма (writing-mode: vertical-lr и writing-mode: vertical-rl) блочная ось будет горизонтальной и block-size устанавливает ширину элемента.</p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            block-size: <размер> | <проценты> | auto
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .primer1 {
+                    text-align: center;
+                    width: auto;
+                    border: 5px double red;
+                    background-color: sandybrown;
+                    block-size: 65%;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam itaque sapiente autem corrupti perferendis ratione quisquam quod ipsam adipisci iste. Facere, quam!</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
