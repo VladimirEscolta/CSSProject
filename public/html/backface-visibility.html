@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>backface-visibility</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/backface-visibility.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">backface-visibility</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Определяет, показывать обратную сторону элемента или нет. Как правило, обратная сторона становится видна при трансформации элемента, например, при его вращении относительно горизонтальной или вертикальной оси в трёхмерном пространстве. В обычной ситуации свойство backface-visibility не оказывает влияния на отображение элемента.</p>
+        <dl>
+            <dt>visible</dt> <dd>Обратная сторона элемента видна и отображается через переднюю поверхность элемента зеркально.</dd>
+            <dt>hidden</dt> <dd>Обратная сторона не видна, скрываясь за передней поверхностью элемента.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            backface-visibility: visible | hidden
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .primer1 {
+                    position: relative;
+                    transition: transform 2s;
+                    transform-style: preserve-3d;
+                }
+                
+                .primer1:hover {
+                    transform: rotateX(180deg);
+                }
+                
+                .front, .back {
+                    height: 300px;
+                    width: 300px;
+                    position: relative;
+                    top: 0; bottom: 0;
+                    backface-visibility: hidden; 
+                }
+                
+                .back {
+                    text-align: center;
+                    padding-top: 50px;
+                    font: 18px/1.6 Arial;
+                    transform: rotateX(180deg);
+                    background: whitesmoke;
+                    color: blue;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer1">
+                <img class="front" src="../../images/01.jpg" alt="Picture">
+                <p class="back">Опааа!! Нежданчик!! Обратная сторона картинки</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+pre {
+    white-space: pre-line;
+}
+
+.primer_block {
+    display: flex;
+    padding-left: 15px;
+}
+
+.first {
+    padding-left: 10px;
+    width: 15%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer1 {
+    position: relative;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+}
+
+.primer1:hover {
+    transform: rotateX(180deg);
+}
+
+.front, .back {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 0; bottom: 0;
+    backface-visibility: hidden; 
+}
+
+.back {
+    text-align: center;
+    padding-top: 50px;
+    font: 18px/1.6 Arial;
+    transform: rotateX(180deg);
+    background: whitesmoke;
+    color: blue;
+}
