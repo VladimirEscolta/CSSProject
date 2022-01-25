@@ -23,7 +23,6 @@
 #header_text {
     grid-area: header_text;
     text-align: center;
-    padding-top: 15px;
     font-size: 40px;
     font-weight: bold;
     background-image: url(../../images/43471.jpg);
@@ -38,6 +37,39 @@
     border: 3px solid rgb(37, 152, 180);
 }
 
+/*
+#pic01 {
+    max-width: 100%;
+}
+#pic02 {
+    max-width: 100%;
+    margin-top: 200px;
+}
+#pic03 {
+    max-width: 100%;
+}
+#pic04 {
+    max-width: 100%;
+    margin-top: 100px;
+}
+#pic05 {
+    max-width: 100%;
+    margin-top: -85px;
+}
+#pic06 {
+    max-width: 100%;
+    
+}
+#pic07 {
+    max-width: 100%;
+    margin-top: -27px;
+}
+#pic08 {
+    max-width: 100%;
+    margin-top: -288px;
+}
+
+*/
 #pic01, #pic02, #pic03, #pic04 {
     max-width: 100%;
     align-self: flex-end;
