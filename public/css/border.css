@@ -1,0 +1,56 @@
+pre {
+    white-space: pre-line;
+}
+
+.primer_block {
+    display: flex;
+    padding-left: 15px;
+}
+
+.value  {
+    padding-left: 10px;
+    width: 10%;
+    color: green;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.first {
+    padding-left: 10px;
+    width: 15%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.second {
+    padding-left: 10px;
+    text-indent: 20px;
+    width: 50%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.border, .bottom-color, .bottom-left-radius, .bottom-right-radius {
+    border: 5px double blue;
+}
+
+.bottom {
+    border-bottom: 3px groove red;
+}
+
+.bottom-color {
+    border-bottom-color: rgb(97, 226, 65);
+}
+
+.bottom-left-radius {
+    border-bottom-left-radius: 20px;
+}
+
+.bottom-right-radius {
+    border-bottom-right-radius: 20px;
+}

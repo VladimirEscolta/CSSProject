@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>border</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/border.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">border</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Универсальное свойство border позволяет одновременно установить толщину, стиль и цвет границы вокруг элемента. Значения могут идти в любом порядке, разделяясь пробелом, браузер сам определит, какое из них соответствует нужному свойству. Для установки границы только на определённых сторонах элемента, воспользуйтесь свойствами border-top, border-bottom, border-left, border-right.</p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            border: border-width || border-style || border-color
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                border
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .border {
+                    border: 5px double blue;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="border">Произвольный текст</div>
+        </div>
+        <div class="second">
+            <p>
+                <dt>border-width</dt> <dd>определяет толщину границы.</dd>
+                <dt>border-style</dt> <dd>определяет вид границы.</dd>
+                <dt>border-color</dt> <dd>устанавливает цвет границы, значение может быть в любом допустимом для CSS формате.</dd>
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                border-bottom
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .bottom {
+                    border-bottom: 3px groove red;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="bottom">Произвольный текст</div>
+        </div>
+        <div class="second">
+            <p>
+                Свойство позволяет одновременно установить толщину, стиль и цвет границы внизу элемента. Значения могут идти в любом порядке, разделяясь пробелом, браузер сам определит, какое из них соответствует нужному свойству.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                border-bottom-color
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .bottom-color {
+                    border: 5px double blue;
+                    border-bottom-color: rgb(97, 226, 65);
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="bottom-color">Произвольный текст</div>
+        </div>
+        <div class="second">
+            <p>
+                Устанавливает цвет границы внизу элемента.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                border-bottom-left-radius
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .bottom-left-radius {
+                    border: 5px double blue;
+                    border-bottom-left-radius: 20px;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="bottom-left-radius">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Устанавливает радиус скругления левого нижнего уголка рамки. Если рамка не задана, то скругление также происходит и с фоном.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                border-bottom-right-radius
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .bottom-right-radius {
+                    border: 5px double blue;
+                    border-bottom-right-radius: 20px;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="bottom-right-radius">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Устанавливает радиус скругления левого нижнего уголка рамки. Если рамка не задана, то скругление также происходит и с фоном.
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
