@@ -21,7 +21,6 @@ pre {
 }
 
 .primer {
-    padding-left: 10px;
     width: 25%;
     border: 2px solid rgb(127, 197, 255);
 }
@@ -33,11 +32,66 @@ pre {
     border: 2px solid rgb(127, 197, 255);
 }
 
-.background, .attachment {
+.scroll_text {
+    height: 200px;
+    overflow: auto;
+}
+
+.background, .attachment, .clip, .blend-mode, .image, .origin, 
+.position, .position-x, .position-y {
     height: 200px;
     background: url(../../images/03.jpg) no-repeat;
 }
 
 .attachment {
     background-attachment: fixed;
+}
+
+.blend-mode {
+    background: 
+        url(../../images/03.jpg) no-repeat,
+        url(../../images/02.jpg) 100px no-repeat;
+    background-blend-mode: multiply;
+}
+
+.clip {
+    border: 10px dotted chartreuse;
+    background-clip: content-box;
+}
+
+.color {
+    text-align: center;
+    background-color: cyan;
+}
+
+.image {
+    background-image: url(../../images/07.jpg);
+}
+
+.origin {
+    border: 10px dotted royalblue;
+    background-origin: border-box;
+}
+
+.position {
+    background-position: left center;
+}
+
+.position-x {
+    background-position-x: right;
+}
+
+.position-y {
+    background-position-y: bottom;
+}
+
+.repeat, .size {
+    height: 300px;
+    background-image: url(../../images/git.jpg);
+    background-repeat: repeat-x;
+}
+
+.size {
+    background-size: contain;
+    background-repeat: no-repeat;
 }
