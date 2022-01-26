@@ -120,3 +120,10 @@ td {
 .color4 {
     border-color: red blue green rgb(255, 166, 0);
 }
+
+.image {
+    margin: 10px;
+    padding: 10px;
+    border: 40px solid;
+    border-image: url(../../images/border.png) 14 round round;
+}

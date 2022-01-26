@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>bottom</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bottom.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">bottom</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Устанавливает положение нижнего края содержимого элемента без учёта толщины рамок и отступов. Отсчёт координат зависит от свойства position, оно обычно принимает значение relative (относительное положение) или absolute (абсолютное положение).</p>
+        <p>При относительном позиционировании элемента, отсчёт ведётся от нижнего края исходного положения элемента, а при абсолютном — относительно нижнего края окна браузера. Если для родительского элемента задано position: relative, то абсолютное позиционирование дочерних элементов определяет их положение от нижнего края родителя.</p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            bottom: <размер> | <проценты> | auto
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .primer {
+                    display: flex;
+                    align-items: flex-end;
+                    padding-left: 10px;
+                    width: 85%;
+                    border: 2px solid rgb(127, 197, 255);
+                }
+                
+                .primer1 {
+                    border: 5px double red;
+                    background-color: sandybrown;
+                    position: relative;
+                    bottom: 30px;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam itaque sapiente autem corrupti perferendis ratione quisquam quod ipsam adipisci iste. Facere, quam!</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
