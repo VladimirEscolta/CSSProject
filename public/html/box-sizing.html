@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>box-sizing</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/box-sizing.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">box-sizing</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Применяется для изменения алгоритма расчёта ширины и высоты элемента. Согласно спецификации CSS ширина блока складывается из ширины содержимого (width), значений margin, padding и border. Аналогично обстоит и с высотой блока. Свойство box-sizing позволяет изменить этот алгоритм, чтобы свойства width и height задавали размеры не содержимого, а размеры блока.</p>
+        <dl>
+            <dt>content-box</dt> <dd>Основывается на стандартах CSS, при этом свойства width и height задают ширину и высоту содержимого и не включают в себя значения margin, padding и border.</dd>
+            <dt>border-box</dt> <dd>Свойства width и height включают в себя значения padding и border, но не margin.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            box-sizing: content-box | border-box
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .primer1 {
+                    margin: 20px;
+                    width: 400px;
+                    padding: 10px;
+                    border: 2px double red;
+                    background-color: whitesmoke;
+                    box-sizing: content-box;
+                }
+                
+                .primer2 {
+                    margin: 20px;
+                    width: 400px;
+                    padding: 10px;
+                    border: 2px double red;
+                    background-color: sandybrown;
+                    box-sizing: border-box;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+         <div>
+                <div class="primer1">
+                    Ширина с учетом значения свойства width, полей и границ. Значение content-box
+                </div>
+                <div class="primer2">
+                    Ширина равна значению свойства width. Значение border-box
+                </div>
+         </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>

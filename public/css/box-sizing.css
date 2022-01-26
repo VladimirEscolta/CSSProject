@@ -1,0 +1,38 @@
+pre {
+    white-space: pre-line;
+}
+
+.primer_block {
+    display: flex;
+    padding-left: 15px;
+}
+
+.first {
+    padding-left: 10px;
+    width: 15%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer {
+    padding-left: 10px;
+    width: 85%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer1 {
+    margin: 20px;
+    width: 400px;
+    padding: 10px;
+    border: 2px double red;
+    background-color: whitesmoke;
+    box-sizing: content-box;
+}
+
+.primer2 {
+    margin: 20px;
+    width: 400px;
+    padding: 10px;
+    border: 2px double red;
+    background-color: sandybrown;
+    box-sizing: border-box;
+}
