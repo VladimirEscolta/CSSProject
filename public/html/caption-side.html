@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>caption-side</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/caption-side.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">caption-side</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Определяет положение заголовка таблицы, который задается с помощью элемента <caption>, относительно самой таблицы. Свойство caption-side выводит заголовок до или после таблицы, а выравнивание текста по правому или левому краю устанавливается через свойство text-align.</p>
+        <dl>
+            <dt>top</dt> <dd>Располагает заголовок по верхнему краю таблицы.</dd>
+            <dt>bottom</dt> <dd>Заголовок располагается под таблицей.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            caption-side: top | bottom
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .primer1, .primer2 {
+                    margin: 20px;
+                    width: 400px;
+                    padding: 10px;
+                    border: 4px double red;
+                    background-color: whitesmoke;
+                    border-collapse: collapse;
+                }
+                
+                .primer1 {
+                    caption-side: top;
+                }
+                .primer2 {
+                    caption-side: bottom;
+                }
+                
+                td {
+                    width: 60px;
+                    padding: 5px;
+                    text-align: center;
+                    border: 3px solid gold;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+         <div>
+            <table class="primer1">
+                <caption>Заголовок1</caption>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>top</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </table>
+            <table class="primer2">
+                <caption>Заголовок2</caption>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>bottom</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </table>
+         </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
