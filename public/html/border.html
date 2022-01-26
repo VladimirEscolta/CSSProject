@@ -135,7 +135,213 @@
         </div>
         <div class="second">
             <p>
-                Устанавливает радиус скругления левого нижнего уголка рамки. Если рамка не задана, то скругление также происходит и с фоном.
+                Устанавливает радиус скругления правого нижнего уголка рамки. Если рамка не задана, то скругление также происходит и с фоном.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                border-bottom-style
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .bottom-style1, .bottom-style2, .bottom-style3, .bottom-style4, 
+                .bottom-style5, .bottom-style6, .bottom-style7, .bottom-style8 {
+                   margin: 5px;
+                   border-bottom: 4px red;  
+                }
+
+                .bottom-style1 {
+                    border-bottom-style: dotted;
+                }
+                .bottom-style2 {
+                    border-bottom-style: dashed;
+                }
+                .bottom-style3 {
+                    border-bottom-style: solid;
+                }
+                .bottom-style4 {
+                    border-bottom-style: double;
+                }
+                .bottom-style5 {
+                    border-bottom-style: groove;
+                }
+                .bottom-style6 {
+                    border-bottom-style: ridge;
+                }
+                .bottom-style7 {
+                    border-bottom-style: inset;
+                }
+                .bottom-style8 {
+                    border-bottom-style: outset;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+           <div>
+                <div class="bottom-style1">Dotted</div>
+                <div class="bottom-style2">Dashed</div>
+                <div class="bottom-style3">Solid</div>
+                <div class="bottom-style4">Double</div>
+                <div class="bottom-style5">Groove</div>
+                <div class="bottom-style6">Ridge</div>
+                <div class="bottom-style7">Inset</div>
+                <div class="bottom-style8">Outset</div>
+           </div>
+        </div>
+        <div class="second">
+            <p>
+                Устанавливает стиль границы внизу элемента.
+            </p>
+            <dl>
+                <dt>none</dt> <dd>Линия не отображается и значение её толщины обнуляется.</dd>
+                <dt>hidden</dt> <dd>Имеет тот же эффект, что и none за исключением применения border-bottom-style к ячейкам таблицы, у которой значение свойства border-collapse установлено как collapse. В этом случае нижняя граница в ячейке не будет отображаться вообще.</dd>
+                <dt>dotted</dt> <dd>Линия состоящая из набора точек.</dd>
+                <dt>dashed</dt> <dd>Пунктирная линия, состоящая из серии коротких отрезков.</dd>
+                <dt>solid</dt> <dd>Сплошная линия.</dd>
+                <dt>double</dt> <dd>Двойная линия.</dd>
+                <dt>groove</dt> <dd>Создает эффект вдавленной линии.</dd>
+                <dt>ridge</dt> <dd>Создает эффект рельефной линии.</dd>
+                <dt>inset</dt> <dd>Псевдотрехмерная линия.</dd>
+                <dt>outset</dt> <dd>Псевдотрехмерная линия.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                border-bottom-width
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .bottom-width {
+                    border: 5px double blue;
+                    border-bottom-width: 20px;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="bottom-width">Lorem, ipsum dolor sit amet consectetur adipisicing elit!</div>
+        </div>
+        <div class="second">
+            <p>
+                Устанавливает толщину границы внизу элемента.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                border-collapse
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                td {
+                    width: 60px;
+                    padding: 5px;
+                    text-align: center;
+                    border: 3px solid gold;
+                }
+                
+                .collapse, .separate {
+                    margin: 10px;
+                    border: 5px double red;
+                }
+                
+                .separate {border-collapse: separate;}
+                .collapse {border-collapse: collapse;}
+            </pre>
+        </div>
+        <div class="primer">
+            <div>
+                <table class="separate">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>separate</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+                <table class="collapse">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>collapse</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Устанавливает, как отображать границы вокруг ячеек таблицы. Это свойство играет роль, когда для ячеек установлена рамка, тогда в месте стыка ячеек получится линия двойной толщины. Значение collapse заставляет браузер анализировать подобные места в таблице и убирать в ней двойные линии. При этом между ячейками остаётся только одна граница, одновременно принадлежащая обеим ячейкам. То же правило соблюдается и для внешних границ, когда вокруг самой таблицы добавляется рамка.
+            </p>
+           <dl>
+                <dt>collapse</dt> <dd>Линия между ячейками отображается только одна, также игнорируется значение атрибута cellspacing.</dd>
+                <dt>separate</dt> <dd>Вокруг каждой ячейки отображается своя собственная рамка, в местах соприкосновения ячеек показываются сразу две линии.</dd>
+           </dl>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                border-color
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .color1, .color2, .color3, .color4 {
+                    margin: 10px;
+                    border: 5px double blue;
+                }
+                
+                .color1 {
+                    border-color: red;
+                }
+                .color2 {
+                    border-color: red blue;
+                }
+                .color3 {
+                    border-color: red blue green;
+                }
+                .color4 {
+                    border-color: red blue green rgb(255, 166, 0);
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div style="text-align: center;">
+                <div class="color1">Первый вариант</div>
+                <div class="color2">Второй вариант</div>
+                <div class="color3">Третий вариант</div>
+                <div class="color4">Четвертый вариант</div>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Устанавливает цвет границы на разных сторонах элемента. Свойство позволяет задать цвет границы сразу для всех сторон элемента или только для указанных.
             </p>
         </div>
     </div>

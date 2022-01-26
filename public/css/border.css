@@ -24,6 +24,7 @@ pre {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     width: 25%;
     border: 2px solid rgb(127, 197, 255);
 }
@@ -35,7 +36,9 @@ pre {
     border: 2px solid rgb(127, 197, 255);
 }
 
-.border, .bottom-color, .bottom-left-radius, .bottom-right-radius {
+.border, .bottom-color, .bottom-left-radius, .bottom-right-radius, .bottom-width,
+.color1, .color2, .color3, .color4 {
+    margin: 10px;
     border: 5px double blue;
 }
 
@@ -53,4 +56,67 @@ pre {
 
 .bottom-right-radius {
     border-bottom-right-radius: 20px;
+}
+
+.bottom-style1, .bottom-style2, .bottom-style3, .bottom-style4, 
+.bottom-style5, .bottom-style6, .bottom-style7, .bottom-style8 {
+    margin: 5px;
+    border-bottom: 4px red;  
+}
+
+.bottom-style1 {
+    border-bottom-style: dotted;
+}
+.bottom-style2 {
+    border-bottom-style: dashed;
+}
+.bottom-style3 {
+    border-bottom-style: solid;
+}
+.bottom-style4 {
+    border-bottom-style: double;
+}
+.bottom-style5 {
+    border-bottom-style: groove;
+}
+.bottom-style6 {
+    border-bottom-style: ridge;
+}
+.bottom-style7 {
+    border-bottom-style: inset;
+}
+.bottom-style8 {
+    border-bottom-style: outset;
+}
+
+.bottom-width {
+    border-bottom-width: 20px;
+}
+
+td {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 3px solid gold;
+}
+
+.collapse, .separate {
+    margin: 10px;
+    border: 5px double red;
+}
+
+.separate {border-collapse: separate;}
+.collapse {border-collapse: collapse;}
+
+.color1 {
+    border-color: red;
+}
+.color2 {
+    border-color: red blue;
+}
+.color3 {
+    border-color: red blue green;
+}
+.color4 {
+    border-color: red blue green rgb(255, 166, 0);
 }
