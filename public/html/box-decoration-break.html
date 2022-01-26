@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>box-decoration-break</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/box-decoration-break.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">box-decoration-break</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Указывает, как оформлять фрагмент текста при его переносе на другую строку. Работает только для следующих свойств: background, border, border-image, box-shadow, clip-path, margin и padding.</p>
+        <dl>
+            <dt>slice</dt> <dd>Каждый фрагмент разрезается в месте переноса и никакие эффекты оформления на месте «разреза» не отображаются. В частности, граница не показывается, тень не выводится, радиус скругления работает толькодля всего блока целиком.</dd>
+            <dt>clone</dt> <dd>Каждый фрагмент оформляется независимо. Ко всем фрагментам отдельно применяется рамка, тень, фон и др.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            box-decoration-break: slice | clone
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .primer1 {
+                    margin: 10px;
+                    width: 250px;
+                    padding: 5px;
+                    line-height: 2;
+                    border: 2px double red;
+                    background-color: sandybrown;
+                }
+                
+                #break {
+                    text-decoration: none;
+                    border: 3px solid blue;
+                    box-decoration-break: clone;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer1">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum laborum amet neque eveniet quae ratione ipsa rerum voluptatem, error beatae vitae odit perspiciatis aperiam assumenda <a id="break" href="https://webref.ru/css/box-decoration-break">esse similique quibusdam excepturi obcaecati?</a>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
