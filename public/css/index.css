@@ -34,6 +34,15 @@ body {
 
 .container_links {
     display: flex;
+}
+
+.container_links a {
+    padding: 5px;
+}
+
+.block_container_links1, .block_container_links2, .block_container_links3 {
+    width: 20%;
+    display: flex;
     flex-direction: column;
 }
 
