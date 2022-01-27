@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>content</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/content.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">content</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Свойство content позволяет вставлять генерируемое содержание в текст веб-страницы, которое первоначально в тексте отсутствует. Применяется совместно с псевдоэлементами ::after и ::before, они соответственно указывают отображать новое содержимое после или до содержимого элемента, к которому добавляются.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            content: <строка> | attr(<атрибут>) | open-quote | close-quote | no-open-quote | no-close-quote | url | counter | normal | none
+        </p>
+        <dl>
+            <dt><строка></dt> <dd>Текст, который добавляется на веб-страницу, строка при этом должна браться в двойные или одинарные кавычки. Допускается использовать юникод для вставки спецсимволов. Спецсимволы HTML которые начинаются с амперсанда (&sect; например), будут отображаться как есть, т. е. простым текстом (&sect;, а не §).</dd>
+            <dt>attr(<атрибут>)</dt> <dd>Возвращает строку, которая является значением атрибута тега указанного в скобках. Например, a::after {content:attr(href)} добавит после ссылки её адрес, т. е. значение атрибута href. Если указанного атрибута нет, то вернётся пустая строка.</dd>
+            <dt>open-quote</dt> <dd>Вставляет открывающую кавычку, тип которой устанавливается с помощью стилевого свойства quotes.</dd>
+            <dt>close-quote</dt> <dd>Вставляет закрывающую кавычку.</dd>
+            <dt>no-open-quote</dt> <dd>Отменяет добавление открывающей кавычки.</dd>
+            <dt>no-close-quote</dt> <dd>Отменяет добавление закрывающей кавычки.</dd>
+            <dt>url</dt> <dd>Абсолютный или относительный адрес вставляемого объекта. Если указанный файл браузер не может отобразить, то значение игнорируется.</dd>
+            <dt>counter</dt> <dd>Выводит значение счётчика, заданного свойством counter-reset.</dd>
+            <dt>none</dt> <dd>Не добавляет никакого содержимого.</dd>
+            <dt>normal</dt> <dd>Задаётся как none для псевдоэлементов ::before и ::after.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>  
+                .content {
+                    color: navy;
+                    font-family: cursive;
+                    quotes: "<<" ">>";
+                }
+
+                .content::before {
+                    content: open-quote;
+                }
+
+                .content::after {
+                    content: close-quote;
+                }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="primer1">
+               <p class="indent">
+                   Клавиша <span class="content">Enter</span> нужна для перехода на новую строку.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>

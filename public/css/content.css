@@ -1,0 +1,17 @@
+.primer1 {
+    margin: 20px;  
+}
+
+.content {
+    color: navy;
+    font-family: cursive;
+    quotes: "<<" ">>";
+}
+
+.content::before {
+    content: open-quote;
+}
+
+.content::after {
+    content: close-quote;
+}

@@ -7,7 +7,7 @@ body {
 }
 
 .main_text {
-    background: linear-gradient(to top right, white, rgb(84, 135, 231) );
+    background: linear-gradient(to top right, white, rgb(7, 91, 247) );
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -49,3 +49,33 @@ body {
 dt {
     color: green;
 }
+
+pre {
+    white-space: pre-line;
+}
+
+.valuetext {
+    color: green;
+}
+
+.primer_block {
+    display: flex;
+}
+
+.primer_block_border {
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.padding {
+    padding-left: 10px;
+}
+
+.indent {
+    text-indent: 20px;
+}
+
+.value  {width: 10%;}
+.first {width: 15%;}
+.primer_one {width: 85%;}
+.primer {width: 25%;}
+.second {width: 50%;}
