@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>clear</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/clear.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">clear</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Отменяет действие float с указанной стороны для вышестоящих элементов.</p>
+        <dl>
+            <dt>none</dt> <dd>Отменяет действие clear, при этом обтекание элемента происходит, как задано с помощью свойства float или других настроек.</dd>
+            <dt>both</dt> <dd>Отменяет действие float одновременно с правого и левого краёв. Это значение рекомендуется устанавливать, когда требуется отменить обтекание элемента, но неизвестно точно с какой стороны.</dd>
+            <dt>left</dt> <dd>Отменяет действие float со значением left.</dd>
+            <dt>right</dt> <dd>Отменяет действие float со значением right.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            clear: none | left | right | both
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .primer1 {
+                    margin: 20px;
+                    padding: 10px;
+                    float: left;
+                }
+                
+                .clear {
+                    clear: both;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer1">
+               <img src="../../images/09.jpg" alt="picture" width="200px">
+            </div>
+            <p class="clear">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quisquam corrupti a commodi error placeat fugiat odio quaerat necessitatibus nostrum quod, sapiente porro quos, assumenda quo quas, dolorum consequuntur deserunt? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas eos atque nemo expedita perferendis nulla ducimus veniam harum adipisci, modi praesentium eveniet ea eaque beatae accusamus facilis vitae molestiae maxime?
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
