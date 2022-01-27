@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>columns</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/columns.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">columns</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Универсальное свойство, которое позволяет одновременно задать ширину и количество колонок многоколоночного текста.</p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            columns: column-width || column-count
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                columns
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .columns {
+                    padding: 5px;
+                    columns: 3 60px;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="columns">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio doloremque numquam ipsa laudantium magnam eligendi totam illo maxime, ipsam adipisci, quaerat non maiores commodi ratione nam! Eos asperiores consequatur ab!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Комбинация свойств column-width и column-count. Порядок значения не имеет.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                column-count
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .column-count {
+                    padding: 5px;
+                    column-count: 2;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="column-count">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sint alias, beatae aperiam hic quam officiis quod atque voluptatem laudantium ad, repellendus aliquam voluptatibus accusamus pariatur omnis numquam sed recusandae!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Определяет количество колонок в многоколоночном тексте.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                column-width
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .column-width {
+                    padding: 5px;
+                    column-width: 100px;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="column-width">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sint alias, beatae aperiam hic quam officiis quod atque voluptatem laudantium ad, repellendus aliquam voluptatibus accusamus pariatur omnis numquam sed recusandae!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Задаёт оптимальную ширину колонки в многоколоночном тексте. Реальная ширина колонки может быть больше введённого значения; сокращение указанной ширины приводит к отмене нескольких колонок, текст при этом выстраивается в одну колонку.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                column-fill
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .column-fill {
+                    padding: 5px;
+                    column-count: 2;
+                    column-fill: balance;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="column-fill">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sint alias, beatae aperiam hic quam officiis quod atque voluptatem laudantium ad, repellendus aliquam voluptatibus accusamus pariatur omnis numquam sed recusandae!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Определяет, как содержимое должно распределяться внутри колонок.
+            </p>
+            <dl>
+                <dt>auto</dt> <dd>Колонки заполняются последовательно.</dd>
+                <dt>balance</dt> <dd>Содержимое равномерно распределяется между колонок. При печати это правило относится только к последней странице.</dd>
+                <dt>balance-all</dt> <dd>Содержимое равномерно распределяется между колонок. При печати это правило относится ко всем страницам.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                column-gap
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .column-gap {
+                    padding: 5px;
+                    column-count: 2;
+                    column-gap: 70px;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="column-gap">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sint alias, beatae aperiam hic quam officiis quod atque voluptatem laudantium ad, repellendus aliquam voluptatibus accusamus pariatur omnis numquam sed recusandae!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Задаёт расстояние между колонками в многоколоночном тексте.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                column-rule
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .column-rule{
+                    padding: 5px;
+                    column-count: 3;
+                    column-rule: 2px dotted red;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="column-rule">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sint alias, beatae aperiam hic quam officiis quod atque voluptatem laudantium ad, repellendus aliquam voluptatibus accusamus pariatur omnis numquam sed recusandae!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                В многоколоночном тексте отрисовывает линию между колонок и определяет её параметры.
+            </p>
+            <p>Синтаксис: column-rule: column-rule-width || column-rule-style || column-rule-color</p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                column-rule-color
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .column-rule-color {
+                    padding: 5px;
+                    column-count: 3;
+                    column-rule: 2px solid;
+                    column-rule-color: royalblue;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="column-rule-color">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sint alias, beatae aperiam hic quam officiis quod atque voluptatem laudantium ad, repellendus aliquam voluptatibus accusamus pariatur omnis numquam sed recusandae!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                В многоколоночном тексте задаёт цвет линий между колонок. Если такой цвет явно не указан, то цвет текста в колонках и цвет линий между ними совпадает.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                column-rule-style
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .column-rule-style {
+                    padding: 5px;
+                    column-count: 3;
+                    column-rule: 2px red;
+                    column-rule-style: groove;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="column-rule-style">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sint alias, beatae aperiam hic quam officiis quod atque voluptatem laudantium ad, repellendus aliquam voluptatibus accusamus pariatur omnis numquam sed recusandae!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Определяет стиль линий между колонок в многоколоночном тексте.
+            </p>
+            <dl>
+                <dt>none</dt> <dd>Линия не отображается и значение её толщины обнуляется.</dd>
+                <dt>hidden</dt> <dd>Аналогично none.</dd>
+                <dt>dotted</dt> <dd>Линия состоящая из набора точек.</dd>
+                <dt>dashed</dt> <dd>Пунктирная линия, состоящая из серии коротких отрезков.</dd>
+                <dt>solid</dt> <dd>Сплошная линия.</dd>
+                <dt>double</dt> <dd>Двойная линия.</dd>
+                <dt>groove</dt> <dd>Создает эффект вдавленной линии.</dd>
+                <dt>ridge</dt> <dd>Создает эффект рельефной линии.</dd>
+                <dt>inset</dt> <dd>Псевдотрехмерная линия.</dd>
+                <dt>outset</dt> <dd>Псевдотрехмерная линия.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                column-rule-width
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .column-rule-width {
+                    padding: 5px;
+                    column-count: 3;
+                    column-rule: dotted red;
+                    column-rule-width: 5px;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="column-rule-width">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sint alias, beatae aperiam hic quam officiis quod atque voluptatem laudantium ad, repellendus aliquam voluptatibus accusamus pariatur omnis numquam sed recusandae!</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                В многоколоночном тексте задаёт толщину линий между колонок.
+            </p>
+            <p>Синтаксис: column-rule-width: <размер> | thin | medium | thick</p>
+        </div>
+    </div>
+    <div class="primer_block">
+        <div class="value">
+            <p class="valuetext">
+                column-span
+            </p>
+        </div>
+        <div class="first">
+            <pre>
+                .column-span {
+                    padding: 5px;
+                    column-count: 2;
+                }
+                
+                .column-span h1{
+                    text-align: center;
+                    column-span: all;
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="column-span">
+                    <h1>Заголовок</h1>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sint alias, beatae aperiam hic quam officiis quod atque voluptatem laudantium ad, repellendus aliquam voluptatibus accusamus pariatur omnis numquam sed recusandae!
+            </div>
+        </div>
+        <div class="second">
+            <p>
+                Определяет, как должен отображаться элемент в многоколоночном тексте — занимать ширину всех колонок или только одну из них. Это свойство обычно применяют для заголовков текста или изображений, которые не должны разбиваться на колонки.
+            </p>
+            <dl>
+                <dt>none</dt> <dd>Элемент наряду с обычным содержимым занимает ширину одной колонки.</dd>
+                <dt>all</dt> <dd>Элемент занимает все колонки.</dd>
+            </dl>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>

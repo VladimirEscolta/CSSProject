@@ -1,0 +1,78 @@
+pre {
+    white-space: pre-line;
+}
+
+.primer_block {
+    display: flex;
+    padding-left: 15px;
+}
+
+.value  {
+    padding-left: 10px;
+    width: 10%;
+    color: green;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.first {
+    padding-left: 10px;
+    width: 15%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.primer {
+    width: 25%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.second {
+    padding-left: 10px;
+    text-indent: 20px;
+    width: 50%;
+    border: 2px solid rgb(127, 197, 255);
+}
+
+.columns, .column-count, column-width, .column-fill,
+.column-gap, column-rule, column-rule-color, .column-rule-style,
+.column-rule-width, .column-span {
+    padding: 5px;
+}
+
+.columns {
+    columns: 3 60px;
+}
+
+.column-count {
+    column-count: 2;
+}
+
+.column-width {
+    column-width: 100px;
+}
+
+.column-fill {
+    column-count: 2;
+    column-fill: balance;
+}
+
+.column-gap {
+    column-count: 2;
+    column-gap: 70px;
+}
+.column-rule, .column-rule-color, .column-rule-style, .column-rule-width {
+    column-count: 3;
+    column-rule: 2px dotted red;
+}
+
+.column-rule-color {column-rule-color: royalblue;}
+.column-rule-style {column-rule-style: groove;}
+.column-rule-width {column-rule-width: 5px;}
+
+.column-span {
+    column-count: 2;
+}
+
+.column-span h1{
+    text-align: center;
+    column-span: all;
+}
