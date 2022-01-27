@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>clip</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/clip.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">clip</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Свойство clip определяет область позиционированного элемента, в которой будет показано его содержимое. Всё, что не помещается в эту область, будет обрезано и становится невидимым. На данный момент единственная доступная форма области — прямоугольник. clip работает только для позиционированных элементов, у которых свойство position задано как absolute или fixed.</p>
+        <p><em>Данное свойство устарело, вместо него используйте clip-path.</em></p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            clip: rect(Y1, X2, Y2, X1) | auto
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first">
+            <pre>
+                .clip {
+                    animation: clip 3s infinite;
+                    position: absolute;
+                    width: 200px;
+                    color: white;
+                    background: rgb(255, 145, 0);
+                    padding: 10px;
+                }
+                
+                @keyframes clip {
+                    from { clip: rect(auto, auto, 0, auto); }   
+                    to { clip: rect(auto, auto, 200px, auto); }  
+                }
+            </pre>
+        </div>
+        <div class="primer">
+            <div class="primer1">
+               <div class="clip">
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quos eaque molestias accusamus eos repellat optio ipsam neque dolor modi natus nemo dolorem cupiditate autem laudantium dolores, dolorum ducimus ad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
