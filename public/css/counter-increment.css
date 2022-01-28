@@ -1,0 +1,25 @@
+li { list-style-type: none; }
+
+li::before {
+    content: counter(list) ". ";
+}
+
+.primer1 ol { counter-reset: list -1; }
+.primer1 li::before {
+  counter-increment: list;
+}
+
+.primer2 ol { counter-reset: list; }
+.primer2 li::before {
+  counter-increment: list 2;
+}
+
+.primer3 ol { counter-reset: list -1; }
+.primer3 li::before {
+  counter-increment: list list;
+}
+
+.primer4 ol { counter-reset: list 9; }
+.primer4 li::before {
+  counter-increment: list;
+}

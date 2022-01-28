@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>counter-increment</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/counter-increment.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">counter-increment</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Стилевое свойство counter-increment предназначено для увеличения значения счётчика приращений, который задается свойством counter-reset. Такой счётчик подсчитывает количество отображений элементов на странице и может выводиться с помощью свойства content и псевдоэлементов ::after и ::before. Это позволяет создавать списки (в том числе многоуровневые), в которых нумерация и вид задаются через стили.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            counter-increment: [<переменная> | <число>?]+ none
+        </p>
+        <dl>
+            <dt>none</dt>
+                <dd>Запрещает увеличение счётчика для текущего селектора.</dd>
+            <dt><переменная></dt>
+                <dd>Задаёт одну или несколько переменных, для которых требуется изменить значение счётчика. Переменные разделяются между собой пробелом.</dd>
+            <dt><число></dt>
+                <dd>Определяет значение приращения счётчика. По умолчанию оно равно 1. Допускается использовать только положительные целые числа, отрицательные целые числа и ноль.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>  
+                li { list-style-type: none; }
+
+                li::before {
+                    content: counter(list) ". ";
+                }
+
+                .primer1 ol { counter-reset: list -1; }
+                .primer1 li::before {
+                  counter-increment: list;
+                }
+
+                .primer2 ol { counter-reset: list; }
+                .primer2 li::before {
+                  counter-increment: list 2;
+                }
+
+                .primer3 ol { counter-reset: list -1; }
+                .primer3 li::before {
+                  counter-increment: list list;
+                }
+
+                .primer4 ol { counter-reset: list 9; }
+                .primer4 li::before {
+                  counter-increment: list;
+                }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="primer1">
+                <p>
+                    Список начинается с нуля
+                </p>
+               <ol>
+                   <li>Компьютер</li>
+                   <li>Ноутбук</li>
+                   <li>Приставка</li>
+               </ol>
+            </div>
+            <div class="primer2">
+                <p>
+                    Выводятся все чётные числа.
+                </p>
+               <ol>
+                   <li>Компьютер</li>
+                   <li>Ноутбук</li>
+                   <li>Приставка</li>
+               </ol>
+            </div>
+            <div class="primer3">
+                <p>
+                    Выводятся все нечётные числа.
+                </p>
+               <ol>
+                   <li>Компьютер</li>
+                   <li>Ноутбук</li>
+                   <li>Приставка</li>
+               </ol>
+            </div>
+            <div class="primer4">
+                <p>
+                    Список начинается с 10.
+                </p>
+               <ol>
+                   <li>Компьютер</li>
+                   <li>Ноутбук</li>
+                   <li>Приставка</li>
+               </ol>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../Index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
