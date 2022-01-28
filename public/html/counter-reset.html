@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>counter-reset</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/counter-reset.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">counter-reset</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Устанавливает переменную, в которой будет храниться счётчик отображений определенного элемента, а также начальное значение счётчика. Такой счётчик может выводиться с помощью свойства content и псевдоэлементов ::after и ::before.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            counter-reset: [<переменная> | <число>?]+ | none
+        </p>
+        <dl>
+            <dt>none</dt>
+                <dd>Запрещает инициацию счётчика для текущего селектора.</dd>
+            <dt>inherit</dt>
+                <dd>Наследует значение родителя.</dd>
+            <dt><переменная></dt>
+                <dd>Задаёт одну или несколько переменных, в которых будет храниться значение счётчика. Значения разделяются между собой пробелом.</dd>
+            <dt><число></dt>
+                <dd>Начальное значение каждого идентификатора. По умолчанию равно 0.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>  
+                li {list-style-type: none;}
+
+                ol {counter-reset: list;}
+                
+                ol li::before {
+                    content: counter(list) ". ";
+                    counter-increment: list;
+                }
+                
+                ol ol {counter-reset: list2;}
+                
+                ol ol li::before {
+                    content: counter(list) "." counter(list2) ". ";
+                    counter-increment: list2;
+                }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="primer1">
+                <ol>
+                    <li>Пункт
+                        <ol>
+                            <li>Подпункт</li>
+                            <li>Подпункт</li>
+                            <li>Подпункт</li>
+                        </ol>
+                    </li>
+                    <li>Пункт
+                        <ol>
+                            <li>Подпункт</li>
+                            <li>Подпункт</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../Index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>

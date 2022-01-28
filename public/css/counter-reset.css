@@ -1,0 +1,15 @@
+li {list-style-type: none;}
+
+ol {counter-reset: list;}
+
+ol li::before {
+    content: counter(list) ". ";
+    counter-increment: list;
+}
+
+ol ol {counter-reset: list2;}
+
+ol ol li::before {
+    content: counter(list) "." counter(list2) ". ";
+    counter-increment: list2;
+}
