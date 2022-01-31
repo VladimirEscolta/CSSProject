@@ -1,0 +1,12 @@
+table {
+    width: 70%;
+    border: 3px double blue;
+    margin: 10px;
+}
+
+td {
+    background: #fc0;
+    border: 1px solid #333;
+    empty-cells: hide;
+    padding: 5px;
+}

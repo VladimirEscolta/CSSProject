@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>empty-cells</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/empty-cells.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">empty-cells</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Задаёт отображение границ и фона в ячейке, если она пустая. При одновременном добавлении к таблице свойства border-collapse со значением collapse, свойство empty-cells игнорируется.
+        </p>
+        <p>
+            Ячейка считается пустой в следующих случаях:
+        <ul>
+            <li>нет вообще никаких символов;</li>
+            <li>в ячейке содержится только перевод строки, символ табуляции или пробел;</li>
+            <li>значение visibility установлено как hidden.</li>
+        </ul>
+        </p>
+        <p>
+            Добавление неразрывного пробела воспринимается как видимое содержание, т.;nbsp;е. ячейка уже будет непустой.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            empty-cells: show | hide
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>  
+                table {
+                    width: 70%;
+                    border: 3px double blue;
+                    margin: 10px;
+                }
+                
+                td {
+                    background: #fc0;
+                    border: 1px solid #333;
+                    empty-cells: hide;
+                    padding: 5px;
+                }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="primer1">
+                <table>
+                    <tr>
+                        <td>Протеин</td><td>5</td><td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Аминокислоты</td><td> </td><td>11</td>
+                    </tr>
+                    <tr>
+                        <td>Витамины</td><td>24</td><td></td>
+                    </tr>
+                    <tr>
+                        <td>Минералы</td><td>&nbsp;</td><td>13</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../Index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
