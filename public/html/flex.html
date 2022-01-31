@@ -11,9 +11,7 @@
     <h1 class="header_text">flex</h1>
     <h3 class="main_text">Описание</h3>
     <div class="description">
-        <p>
-            Сокращённое свойство, которое позволяет указать параметры элемента, чтобы он эффективно заполнял доступное пространство. Элементы могут быть растянуты пропорционально с учётом заданного соотношения или сжаты, чтобы целиком вместить все элементы без переносов в одну строку.
-        </p>
+        <p>Сокращённое свойство, которое позволяет указать параметры элемента, чтобы он эффективно заполнял доступное пространство. Элементы могут быть растянуты пропорционально с учётом заданного соотношения или сжаты, чтобы целиком вместить все элементы без переносов в одну строку.</p>
     </div>
     <h3 class="main_text">Синтаксис</h3>
     <div class="description">
@@ -21,14 +19,19 @@
             flex: none | [ flex-grow flex-shrink? || flex-basis ]
         </p>
     </div>
-    <h3 class="main_text">Пример</h3>    
-    <div class="primer_block">
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                flex
+            </p>
+        </div>
         <div class="first primer_block_border padding">
-            <pre>  
-                .primer1 {
+            <pre>
+                .flex {
                     display: flex;
                     flex-direction: column;
-                    height: 300px;
+                    height: 200px;
                 }
                 
                 main {
@@ -41,22 +44,266 @@
                 }
             </pre>
         </div>
-        <div class="primer_one primer_block_border padding">
-            <div class="primer1">
+        <div class="primer primer_block_border padding">
+            <div class="flex_main">
                 <main>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis sapiente tenetur, animi vel recusandae repudiandae voluptate debitis non aut nulla adipisci, consectetur nisi, architecto blanditiis neque dolore reprehenderit eveniet ad.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, eveniet, esse commodi distinctio natus aut in non quos quidem quas tenetur, libero officia voluptatem placeat beatae quae perferendis fugit mollitia!
                 </main>
                 <footer>
                     Подвал веб-страницы
                 </footer>
             </div>
         </div>
+        <div class="second primer_block_border padding">
+            <p>
+                none - соответствует значению 0 0 auto. Смотрите отдельные свойства для их значений.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                flex-basis
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>
+                .basis {
+                    display: flex;
+                    height: 300px;
+                    color: #fff;
+                    font-size: 30px;
+                    flex-flow: column wrap;
+                }
+                
+                .basis_item {
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                }
+                
+                .one {
+                 background: #508694; 
+                 margin-right: 10px;
+                 flex-basis: 100%;
+                 order: 1;
+                }
+                
+                .two {
+                 background: #BB844C;
+                 margin-bottom: 10px;
+                 flex: 1 1 0;
+                 order: 2;
+                }
+                
+                .three {
+                 background: #929D79;
+                 flex: 1 1 0;
+                 order: 3;
+                }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="basis flex">
+               <div class="basis_item flex one">Первый</div>
+               <div class="basis_item flex two">Второй</div>
+               <div class="basis_item flex three">Третий</div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Свойство flex-basis определяет основу флекса, которая является начальным размером элемента. Похоже на свойства width и height, к которым добавляется содержимое элемента.
+            </p>
+            <dl>
+                <dt>auto</dt> <dd>Указывает автоматический размер, основанный на содержимом элемента.</dd>
+                <dt><размер></dt> <dd>Задаёт размер элемента в px, mm, pt или в процентах вдоль главной оси. При этом размер вычисляется относительно родителя. Отрицательное значение недопустимо.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                flex-direction
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>
+                .block {
+                    border: 2px solid yellowgreen;
+                    margin: 10px;
+                }
+                
+                .direction1, .direction2, .direction3, .direction4 {
+                    display: flex;
+                }
+                
+                .direction1 {flex-direction: row;}
+                .direction2 {flex-direction: row-reverse;}
+                .direction3 {flex-direction: column;}
+                .direction4 {flex-direction: column-reverse;}
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="direction1 flex">
+               <div class="block">Block1</div>
+               <div class="block">Block2</div>
+               <div class="block">Block3</div>
+            </div>
+            <div class="direction2 flex">
+               <div class="block">Block1</div>
+               <div class="block">Block2</div>
+               <div class="block">Block3</div>
+            </div>
+            <div class="direction3 flex">
+               <div class="block">Block1</div>
+               <div class="block">Block2</div>
+               <div class="block">Block3</div>
+            </div>
+            <div class="direction4 flex">
+               <div class="block">Block1</div>
+               <div class="block">Block2</div>
+               <div class="block">Block3</div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Свойство flex-direction задаёт направление основных осей в контейнере и тем самым определяет положение флексов в контейнере. На само направление также влияет значение атрибута dir у контейнера.
+            </p>
+            <dl>
+                <dt>row</dt>
+                    <dd>Главная ось направлена так же, как и ориентация текста, по умолчанию слева направо. Если значение dir задано как rtl, то направление оси идёт справа налево.</dd>
+                <dt>row-reverse</dt>
+                    <dd>Похоже на значение row, но меняются местами начальная и конечная точки и главная ось направлена справа налево. Если значение dir задано как rtl, то направление оси идёт слева направо.</dd>
+                <dt>column</dt>
+                    <dd>Главная ось располагается вертикально и направлена сверху вниз.</dd>
+                <dt>column-reverse</dt>
+                    <dd>Главная ось располагается вертикально, но меняется положение начальной и конечной точек и ось направлена снизу вверх.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                flex-flow
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>
+                .flow {
+                    display: flex;
+                    flex-flow: row-reverse wrap;
+                }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="flow flex">
+               <div class="block">Block1</div>
+               <div class="block">Block2</div>
+               <div class="block">Block3</div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Является сокращённым свойством для отдельных свойств flex-direction и flex-wrap.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                flex-grow
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>
+                .grow {
+                    display: flex;
+                }
+                
+                .grow1 {flex-grow: 0.5;}
+                .grow2, .grow3 {flex-grow: 0.25;}
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="grow flex">
+               <div class="block grow1">Block1</div>
+               <div class="block grow2">Block2</div>
+               <div class="block grow3">Block3</div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Определяет, сколько пространства может занимать флекс внутри контейнера. В качестве значения принимаются числа, они задают пропорции каждого флекса. К примеру, если для всех элементов установлено значение 1, то они получатся равного размера. Если какой-то элемент получил значение 2, то его размер будет в два раза больше остальных.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                flex-shrink
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>
+                .flex {
+                    display: flex;
+                }
+
+                .shrink1 {flex-shrink: 2;}
+                .shrink2 {flex-shrink: 3;}
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="flex">
+                <div class="shrink1">
+                   <img src="../../images/08.jpg" width="100%"></img>
+                </div>
+                <div class="shrink2">
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi eum ipsum corporis quasi esse debitis iusto fugiat, exercitationem saepe, alias quaerat sit magnam consequuntur, assumenda libero veritatis iure laudantium excepturi.
+                </div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Устанавливает коэффициент сжатия флексов в контейнере и задаёт, насколько элемент будет уменьшаться по отношению к другим флексам, чтобы разместить все элементы в одну строку.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                flex-wrap
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>
+                .flex {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="flex wrap">
+                <div class="block">Block1</div>
+                <div class="block">Block2</div>
+                <div class="block">Block3</div>
+                <div class="block">Block4</div>
+                <div class="block">Block5</div>
+                <div class="block">Block6</div>
+                <div class="block">Block7</div>
+                <div class="block">Block8</div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Указывает, следует ли флексам располагаться в одну строку или можно занять несколько строк. Если перенос строк допускается, то свойство также позволяет контролировать направление, в котором выкладываются строки.
+            </p>
+        </div>
     </div>
 
     <button class="back_to_main">
-        <p class="margin_0">
-            <a href="../../Index.html">Вернуться к справочнику CSS</a>
-        </p>
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
     </button>
     
 </body>

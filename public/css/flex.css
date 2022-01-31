@@ -1,7 +1,10 @@
-.primer1 {
-    display: flex;
+.flex_main {
     flex-direction: column;
-    height: 300px;
+    height: 200px;
+}
+
+.flex {
+    display: flex;
 }
 
 main {
@@ -12,3 +15,55 @@ footer {
     background: yellowgreen;
     padding: 10px;
 }
+
+.basis {
+    height: 300px;
+    color: #fff;
+    font-size: 30px;
+    flex-flow: column wrap;
+}
+
+.basis_item {
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    background: #508694; 
+    margin-right: 10px;
+    flex-basis: 100%;
+    order: 1;
+}
+
+.two {
+    background: #BB844C;
+    margin-bottom: 10px;
+    flex: 1 1 0;
+    order: 2;
+}
+
+.three {
+    background: #929D79;
+    flex: 1 1 0;
+    order: 3;
+}
+
+.block {
+    border: 2px solid rgb(109, 49, 219);
+    margin: 10px;
+}
+
+.direction1 {flex-direction: row;}
+.direction2 {flex-direction: row-reverse;}
+.direction3 {flex-direction: column;}
+.direction4 {flex-direction: column-reverse;}
+
+.flow {flex-flow: row-reverse wrap;}
+
+.grow1 {flex-grow: 0.5;}
+.grow2, .grow3 {flex-grow: 0.25;}
+
+.shrink1 {flex-shrink: 2;}
+.shrink2 {flex-shrink: 3;}
+
+.wrap {flex-wrap: wrap;}
