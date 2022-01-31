@@ -1,0 +1,9 @@
+.primer1 {
+    display: flex;
+}
+
+.display1, .display2, .display3, .display4 {
+    background: aqua;
+    border: 2px dotted red;
+    margin: 10px;
+}
