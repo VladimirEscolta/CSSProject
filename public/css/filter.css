@@ -1,0 +1,10 @@
+.primer1 {
+    width: 500px;
+    filter: opacity(0.2);
+    transition: 2s;
+}
+
+.primer1:hover {
+    width: 700px;
+    filter: none;
+}
