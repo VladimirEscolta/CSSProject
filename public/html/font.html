@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>font</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">font</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Универсальное свойство, которое позволяет одновременно задать несколько характеристик шрифта и текста.</p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            font: [font-style||font-variant||font-weight||font-stretch] font-size [/line-height] font-family
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                font
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>
+                .font {
+                    font: italic 20px sans-serif;
+                }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <p class="font">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolor asperiores accusantium odit cumque officiis rerum qui vitae itaque eveniet quis, nihil obcaecati libero earum, exercitationem ipsa ad accusamus aperiam!
+                </p>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                В качестве обязательных значений свойства font указывается размер шрифта и его семейство. Остальные значения являются опциональными и задаются при желании. Для подробного ознакомления смотрите информацию о каждом свойстве отдельно. Допускается в качестве значения использовать ключевые слова, определяющие шрифт различных элементов операционной системы пользователя.
+            </p>
+            <dl>
+                <dt>caption</dt>
+                    <dd>Шрифт для текста элементов форм вроде кнопок.</dd>
+                <dt>icon</dt>
+                    <dd>Шрифт для текста под иконками.</dd>
+                <dt>menu</dt>
+                    <dd>Шрифт применяемый в меню.</dd>
+                <dt>message-box</dt>
+                    <dd>Шрифт для диалоговых окон.</dd>
+                <dt>small-caption</dt>
+                    <dd>Шрифт для подписей к небольшим элементам управления.</dd>
+                <dt>status-bar</dt>
+                    <dd>Шрифт для строки состояния окон.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                font-family
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>
+                .family {
+                    font-family: Courier;
+                }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <p class="family">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia dolor asperiores accusantium odit cumque officiis rerum qui vitae itaque eveniet quis, nihil obcaecati libero earum, exercitationem ipsa ad accusamus aperiam!
+                </p>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Устанавливает семейство шрифта, которое будет использоваться для оформления текста содержимого. Список шрифтов может включать одно или несколько названий, разделённых запятой. Если в имени шрифта содержатся пробелы, например, Trebuchet MS, оно должно заключаться в одинарные или двойные кавычки.
+            </p>
+            <p>
+                Когда браузер встречает первый шрифт в списке, он проверяет его наличие на компьютере пользователя. Если такого шрифта нет, берётся следующее имя из списка и также анализируется на присутствие. Поэтому несколько шрифтов увеличивает вероятность, что хотя бы один из них будет обнаружен на клиентском компьютере. Заканчивают список обычно ключевым словом, которое описывает тип шрифта — serif, sans-serif, cursive, fantasy или monospace. Таким образом, последовательность шрифтов лучше начинать с экзотических типов и заканчивать обобщённым именем, которое задаёт вид начертания.
+            </p>
+            <dl>
+                <dt>serif</dt> <dd>шрифты с засечками (антиквенные), типа Times;</dd>
+                <dt>sans-serif</dt> <dd>рубленные шрифты (шрифты без засечек или гротески), типичный представитель Arial;</dd>
+                <dt>cursive</dt> <dd>курсивные шрифты;</dd>
+                <dt>fantasy</dt> <dd>декоративные шрифты;</dd>
+                <dt>monospace</dt> <dd>моноширинные шрифты, ширина каждого символа в таком семействе одинакова (шрифт Courier).</dd>
+            </dl>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
