@@ -5,3 +5,11 @@
 .family {
     font-family: Courier;
 }
+
+.kerning {
+    font-kerning: normal;
+}
+
+.size {
+    font-size: 25px;
+}
