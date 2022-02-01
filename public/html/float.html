@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/float.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">float</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Определяет, по какой стороне будет выравниваться элемент, при этом остальные элементы будут обтекать его с других сторон. Когда значение свойства float равно none, элемент выводится на странице как обычно, при этом допускается, что одна строка обтекающего текста может быть на той же линии, что и сам элемент.
+        </p>
+        <dt>left</dt>
+            <dd>Выравнивает элемент по левому краю, а все остальные элементы, вроде текста, обтекают его по правой стороне.</dd>
+        <dt>right</dt>
+            <dd>Выравнивает элемент по правому краю, а все остальные элементы обтекают его по левой стороне.</dd>
+        <dt>none</dt>
+            <dd>Обтекание элемента не задаётся.</dd>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            float: left | right | none
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>  
+                .float {
+                    width: 350px;
+                    float: right;
+                }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <img class="float" src="../../images/09.jpg" alt="picture">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugit, quidem veritatis facilis magnam eius quam in? Ut quidem voluptate error nihil molestiae quae amet temporibus, dicta ex, unde a.</p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../Index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
