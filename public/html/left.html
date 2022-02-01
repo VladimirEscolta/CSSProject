@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>left</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/left.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">left</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Для позиционированного элемента определяет расстояние от левого края родительского элемента, не включая отступ, поле и ширину рамки, до левого края дочернего элемента. Отсчёт координат зависит от значения свойства position. Если оно равно absolute, в качестве родителя выступает окно браузера и положение элемента определяется от его левого края.
+        </p>
+        <p>
+            В случае значения relative, left отсчитывается от левого края исходного положения элемента.
+        </p>
+        <p>
+            Если для родительского элемента задано position: relative, то абсолютное позиционирование дочерних элементов определяет их положение от левого края родителя.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            left: <размер> | <проценты> | auto
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>   .left {
+                        position: relative;
+                        left: 45px;
+                    }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <p class="left">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nam natus consequuntur doloribus vero et facilis voluptate nesciunt expedita eius, dolor quod ab quis nobis, quam laboriosam velit? Ducimus, sapiente.
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../Index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
