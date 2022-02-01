@@ -33,6 +33,7 @@ body {
 
 .container_links {
     display: flex;
+    margin-bottom: 20px;
 }
 
 .block_container_links {

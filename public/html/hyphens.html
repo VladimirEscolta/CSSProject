@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>hyphens</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/hyphens.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">hyphens</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Свойство hyphens сообщает браузеру, как расставлять переносы слов в блоке текста. Словарь переносов хранится в браузере и подключается при наличии атрибута lang с кодом языка. Так, для русского языка следует добавить lang="ru" к элементу <html> или непосредственно к абзацу текста. Правила переносов определяются браузером и могут различаться.
+        </p>
+        <dl>
+            <dt>none</dt>    
+                <dd>Слова не переносятся, даже при наличии в тексте мягких переносов &shy;.</dd>
+            <dt>manual</dt>  
+                <dd>Переносы слов в тексте происходят в тех местах, где добавлен &shy; или <wbr>, если их нет, то переносы не делаются.</dd> 
+            <dt>auto</dt>    
+                <dd>Браузер автоматически добавляет переносы слов на основе встроенного словаря переносов.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            hyphens: none | manual | auto
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>  
+                .hyphens {
+                    width: 300px;
+                    hyphens:auto
+                }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <p class="hyphens">
+                Никотинамидадениндинуклеотидфосфат — широко распространённый в природе кофермент некоторых дегидрогеназ — ферментов, катализирующих окислительно-восстановительные реакции в живых клетках. 
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../Index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
