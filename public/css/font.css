@@ -25,3 +25,7 @@
 .variant {
     font-variant: small-caps;
 }
+
+.weight {
+    font-weight: bold;
+}
