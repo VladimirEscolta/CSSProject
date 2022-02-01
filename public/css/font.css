@@ -13,3 +13,7 @@
 .size {
     font-size: 25px;
 }
+
+.stretch {
+    font-stretch: ultra-condensed;
+}
