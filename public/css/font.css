@@ -21,3 +21,7 @@
 .style {
     font-style: italic;
 }
+
+.variant {
+    font-variant: small-caps;
+}
