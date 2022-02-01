@@ -17,3 +17,7 @@
 .stretch {
     font-stretch: ultra-condensed;
 }
+
+.style {
+    font-style: italic;
+}
