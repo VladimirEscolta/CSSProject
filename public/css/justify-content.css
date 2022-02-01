@@ -1,0 +1,23 @@
+.block {
+    width: 100px;
+    height: 20px;
+    margin: 10px;
+    border: 2px solid orchid;
+    text-align: center;
+}
+
+.justify {
+    width: 400px;
+    height: 150px;
+    margin: 5px;
+    border: 2px double red;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.start {justify-content: flex-start;}
+.end {justify-content: flex-end;}
+.center {justify-content: center;}
+.between {justify-content: space-between;}
+.around {justify-content: space-around;}
+.evently {justify-content: space-evenly;}
