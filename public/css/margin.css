@@ -1,0 +1,19 @@
+.margin {
+    margin: 15px 25px 30px 20px;
+}
+
+.bottom {
+    margin-bottom: 15%;
+}
+
+.left {
+    margin-left: 15%;
+}
+
+.right {
+    margin-right: 15%;
+}
+
+.top {
+    margin-top: 15%;
+}
