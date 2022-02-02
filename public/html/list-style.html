@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>list-style</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/list-style.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">list-style</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Универсальное свойство, позволяющее одновременно задать стиль маркера, его положение, а также изображение, которое будет использоваться в качестве маркера списка.</p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            list-style: list-style-type | list-style-position | list-style-image
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                list-style
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.list-style {
+                list-style: lower-alpha outside;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <ul class="list-style">
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                </ul>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Любые комбинации трёх значений определяющих стиль маркеров, они разделяются между собой пробелом. Комбинации значений должны следовать в указанном порядке: вначале идёт тип маркера, затем положение и картинка. Ни одно значение не является обязательным, поэтому неиспользуемые можно опустить.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                list-style-image
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.style-image {
+                list-style-image: url(../../images/balloon.png);
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <ul class="style-image">
+                    <li>First</li>
+                    <li>Second</li>
+                    <li>Third</li>
+                    <li>Fourth</li>
+                </ul>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Устанавливает адрес изображения, которое служит в качестве маркера списка. Это свойство наследуется, поэтому для отдельных элементов списка для восстановления маркера используется значение none.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                list-style-position
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.style-position1 {
+                list-style-position: inside;
+            }
+            
+            .style-position2 {
+                list-style-position: outside;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <ul class="style-position1">
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis repellendus, corrupti qui numquam sequi maxime similique amet obcaecati. Inventore tempora reprehenderit tenetur quos amet mollitia sequi corporis porro qui asperiores?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis ratione iusto similique. Temporibus consequuntur quibusdam, pariatur aspernatur fuga illo tempora dolores. Ipsa rerum omnis deserunt labore asperiores dolorum exercitationem!</li>
+                </ul>
+                <ul class="style-position2">
+                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis repellendus, corrupti qui numquam sequi maxime similique amet obcaecati. Inventore tempora reprehenderit tenetur quos amet mollitia sequi corporis porro qui asperiores?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veritatis ratione iusto similique. Temporibus consequuntur quibusdam, pariatur aspernatur fuga illo tempora dolores. Ipsa rerum omnis deserunt labore asperiores dolorum exercitationem!</li>
+                </ul>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Определяет, как будет размещаться маркер относительно текста — маркер обтекается текстом или вынесен за границу элемента списка.
+            </p>
+            <dl>
+                <dt>inside</dt>
+                    <dd>Маркер является частью текстового блока и отображается в элементе списка.</dd>
+                <dt>outside</dt>
+                    <dd>Текст выравнивается по левому краю, а маркеры размещаются за пределами текстового блока.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                list-style-type
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.style-type1 {
+                list-style-type: disc;
+            }
+            
+            .style-type2 {
+                list-style-type: circle;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <ul class="style-type1">
+                    <li>Первый пункт</li>
+                    <li>Второй пункт</li>
+                    <li>третий пункт</li>
+                </ul>
+                <ul class="style-type2">
+                    <li>Первый пункт</li>
+                    <li>Второй пункт</li>
+                    <li>третий пункт</li>
+                </ul>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Изменяет вид маркера для каждого элемента списка. Это свойство используется только в случае, когда значение list-style-image установлено как none. Маркеры различаются для маркированного списка и нумерованного.
+            </p>
+            <p><em>Маркированный список</em></p>
+            <dl>
+                <dt>circle</dt>
+                    <dd>Маркер в виде кружка.</dd>
+                <dt>disc</dt>
+                    <dd>Маркер в виде точки.</dd>
+                <dt>square</dt>
+                    <dd>Маркер в виде квадрата.</dd>
+            </dl>
+            <p><em>Нумерованный список</em></p>
+            <dl>
+                <dt>armenian</dt>
+                    <dd>Традиционная армянская нумерация.</dd>
+                <dt>decimal</dt>
+                    <dd>Арабские числа (1, 2, 3, 4,...).</dd>
+                <dt>decimal-leading-zero</dt>
+                    <dd>Арабские числа с нулем впереди для цифр меньше десяти (01, 02, 03,...).</dd>
+                <dt>georgian</dt>
+                    <dd>Традиционная грузинская нумерация.</dd>
+                <dt>lower-alpha</dt>
+                    <dd>Строчные латинские буквы (a, b, c, d,...).</dd>
+                <dt>lower-greek</dt>
+                    <dd>Строчные греческие буквы (α, β, γ, δ,...).</dd>
+                <dt>lower-latin</dt>
+                    <dd>Это значение аналогично lower-alpha.</dd>
+                <dt>lower-roman</dt>
+                    <dd>Римские числа в нижнем регистре (i, ii, iii, iv, v,...).</dd>
+                <dt>upper-alpha</dt>
+                    <dd>Заглавные латинские буквы (A, B, C, D,...).</dd>
+                <dt>upper-latin</dt>
+                    <dd>Это значение аналогично upper-alpha.</dd>
+                <dt>upper-roman</dt>
+                    <dd>Римские числа в верхнем регистре (I, II, III, IV, V,...).</dd>
+                <dt>none</dt>
+                    <dd>Отменяет маркеры для списка.</dd>
+            </dl>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>

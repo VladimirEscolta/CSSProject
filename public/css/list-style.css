@@ -1,0 +1,23 @@
+.list-style {
+    list-style: lower-alpha outside;
+}
+
+.style-image {
+    list-style-image: url(../../images/balloon.png);
+}
+
+.style-position1 {
+    list-style-position: inside;
+}
+
+.style-position2 {
+    list-style-position: outside;
+}
+
+.style-type1 {
+    list-style-type: disc;
+}
+
+.style-type2 {
+    list-style-type: circle;
+}
