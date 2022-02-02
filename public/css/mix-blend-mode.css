@@ -1,0 +1,10 @@
+.mix-blend-mode {
+    background: url(../../images/07.jpg);
+    text-align: center;
+}
+
+.mix-blend-mode h1 {
+    font: bold 150px Verdana, Helvetica, sans-serif;
+    background: #fff;
+    mix-blend-mode: lighten;
+   }
