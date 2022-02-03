@@ -1,0 +1,22 @@
+.outline {
+    margin: 30px;
+    padding: 5px;
+    outline: 3px solid red;
+}
+
+.color {
+    outline-color: blue;
+}
+
+.offset {
+    border: 2px dotted green;
+    outline-offset: 15px;
+}
+
+.style {
+    outline-style: dotted;
+}
+
+.width {
+    outline-width: 8px;
+}

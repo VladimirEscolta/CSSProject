@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>outline</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/outline.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">outline</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>Универсальное свойство, одновременно устанавливающее цвет, стиль и толщину внешней границы на всех четырёх сторонах элемента. В отличие от линии, задаваемой через border, у свойства outline есть следующие особенности:</p>
+        <ul>
+            <li>outline не влияет на размеры и положение самого элемента;</li>
+            <li>outline не занимает место, не влияет на окружающие элементы и отображается поверх них;</li>
+            <li>нельзя задать параметры линии на отдельных сторонах элемента, outline применяется сразу ко всем четырём сторонам;</li>
+            <li>свойство border-radius не действует.</li>
+        </ul>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            outline: outline-color | outline-style | outline-width
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                outline
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.outline {
+                margin: 30px;
+                padding: 5px;
+                outline: 3px solid red;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="outline">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <dl>
+                <dt>outline-color</dt>
+                    <dd>Задаёт цвет линии в любом допустимом для CSS формате.</dd>
+                <dt>outline-style</dt>
+                    <dd>Стиль линии.</dd>
+                <dt>outline-width</dt>
+                    <dd>Толщина границы.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                outline-color
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.outline {
+                margin: 30px;
+                padding: 5px;
+                outline: 3px solid;
+                outline-color: blue;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="outline color">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Указывает цвет внешней границы элемента. В отличие от линии, задаваемой через border, линия через свойство outline отображается вокруг элемента, не влияя на ширину блока или его положение.
+            </p>
+            <dl>
+                <dt>invert</dt>
+                    <dd>Автоматически задаёт цвет линии, исходя из фона под ней для достижения максимального контраста. Браузеру разрешается игнорировать значение invert и вместо него использовать цвет линии, заданный свойством color.</dd>
+                <dt><цвет></dt>
+                    <dd>Задаёт цвет линии в любом допустимом для CSS формате.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                outline-offset
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.outline {
+                margin: 30px;
+                padding: 5px;
+                outline: 3px solid red;
+                border: 2px dotted green;
+                outline-offset: 15px;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="outline offset">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Устанавливает расстояние между рамкой, созданной с помощью свойства outline, и краем или границей элемента добавленной через border.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                outline-style
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.outline {
+                margin: 30px;
+                padding: 5px;
+                outline: 3px red;
+                outline-style: dotted;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="outline style">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Устанавливает стиль внешней границы элемента. В отличие от линии, задаваемой через border, линия через outline отображается вокруг элемента, не влияя на ширину блока или его положение.
+            </p>
+            <dl>
+                <dt>none</dt>
+                    <dd>Граница не отображается. Это значение перекрывает свойство outline-width, если оно присутствует.</dd>
+                <dt>dotted</dt>
+                    <dd>Линия состоящая из набора точек.</dd>
+                <dt>dashed</dt>
+                    <dd>Пунктирная линия, состоящая из серии коротких отрезков.</dd>
+                <dt>solid</dt>
+                    <dd>Сплошная линия.</dd>
+                <dt>double</dt>
+                    <dd>Двойная линия.</dd>
+                <dt>groove</dt>
+                    <dd>Создаёт эффект вдавленной рамки.</dd>
+                <dt>ridge</dt>
+                    <dd>Создаёт эффект рельефной границы.</dd>
+                <dt>inset</dt>
+                    <dd>Псевдотрёхмерная рамка, при которой правая и нижняя граница осветляется, а левая и верхняя линии затемняются.</dd>
+                <dt>outset</dt>
+                    <dd>Псевдотрёхмерная рамка, при которой левая и верхняя граница имеют более светлый оттенок, чем заданный цвет, а правая и нижняя линии затемняются.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                outline-width
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.outline {
+                margin: 30px;
+                padding: 5px;
+                outline: solid red;
+                outline-width: 8px;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="outline width">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Определяет толщину внешней границы элемента. В отличие от свойства border-width, для outline-width нельзя задать границу для каждой стороны элемента индивидуально. Чтобы outline-width работал, необходимо установить у свойства outline-style любое значение кроме none.
+            </p>
+            <dl>
+                <dt>thin</dt>
+                    <dd>Тонкая линия. Значение в пикселях может изменяться в зависимости от браузера, но обычно составляет 1 пиксель.</dd>
+                <dt>medium</dt>
+                    <dd>Линия средней толщины (3 пикселя).</dd>
+                <dt>thick</dt>
+                    <dd>Линия большой толщины (6 пикселей).</dd>
+                <dt><размер></dt>
+                    <dd>Для точной установки толщины можно использовать любые единицы размера принятые в CSS.</dd>
+            </dl>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
