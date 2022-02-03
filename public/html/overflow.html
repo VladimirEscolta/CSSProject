@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>overflow</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/overflow.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">overflow</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Свойство overflow управляет отображением содержания блочного элемента, если оно целиком не помещается и выходит за область заданных размеров.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            overflow: auto | hidden | scroll | visible
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                overflow
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.overflow {
+                border: 2px solid orange;
+                margin: 10px;
+                padding: 5px;
+                width: 400px;
+                height: 150px;
+                overflow: scroll;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="overflow full">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore sint qui eos? Repellendus error, eius autem, repudiandae placeat laboriosam ratione distinctio ducimus, eaque blanditiis quia id minima voluptate commodi.
+                    </p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <dl>
+                <dt>visible</dt>
+                    <dd>Отображается всё содержимое элемента, даже за пределами установленной высоты и ширины.</dd>
+                <dt>hidden</dt>
+                    <dd>Отображается только область внутри элемента, остальное будет скрыто.</dd>
+                <dt>scroll</dt>
+                    <dd>Всегда добавляются полосы прокрутки.</dd>
+                <dt>auto</dt>
+                    <dd>Полосы прокрутки добавляются только при необходимости.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                overflow-x
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.overflow {
+                border: 2px solid orange;
+                margin: 10px;
+                padding: 5px;
+                width: 400px;
+                height: 150px;
+                white-space: nowrap;
+                overflow-x: scroll;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="overflow x">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore sint qui eos? Repellendus error, eius autem, repudiandae placeat laboriosam ratione distinctio ducimus, eaque blanditiis quia id minima voluptate commodi.
+                    </p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Свойство overflow-x управляет отображением содержания блочного элемента по горизонтали, если контент целиком не помещается и выходит за область справа или слева от блока.
+            </p>
+            <dl>
+                <dt>visible</dt>
+                    <dd>Отображается всё содержимое элемента, даже за пределами установленной высоты и ширины.</dd>
+                <dt>hidden</dt>
+                    <dd>Отображается только область внутри элемента, остальное будет скрыто.</dd>
+                <dt>scroll</dt>
+                    <dd>Всегда добавляются полосы прокрутки.</dd>
+                <dt>auto</dt>
+                    <dd>Полосы прокрутки добавляются только при необходимости.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                overflow-y
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.overflow {
+                border: 2px solid orange;
+                margin: 10px;
+                padding: 5px;
+                width: 400px;
+                height: 150px;
+                overflow-y: scroll;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="overflow y">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore sint qui eos? Repellendus error, eius autem, repudiandae placeat laboriosam ratione distinctio ducimus, eaque blanditiis quia id minima voluptate commodi.
+                    </p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Свойство overflow-y управляет отображением содержания блочного элемента по вертикали, если контент целиком не помещается и выходит за область сверху или снизу от блока.
+            </p>
+            <dl>
+                <dt>visible</dt>
+                    <dd>Отображается всё содержимое элемента, даже за пределами установленной высоты и ширины.</dd>
+                <dt>hidden</dt>
+                    <dd>Отображается только область внутри элемента, остальное будет скрыто.</dd>
+                <dt>scroll</dt>
+                    <dd>Всегда добавляются полосы прокрутки.</dd>
+                <dt>auto</dt>
+                    <dd>Полосы прокрутки добавляются только при необходимости.</dd>
+            </dl>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
