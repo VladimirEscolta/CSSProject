@@ -1,0 +1,19 @@
+.flex {
+    list-style: none; 
+    display: flex; 
+    flex-flow: row wrap;
+}
+
+.order {
+    background: #489d75;
+    color: white;
+    padding: 20px;
+    margin: 5px; 
+    font-size: 2em;
+}
+
+.pr1 {order: 5;}
+.pr2 {order: 3;}
+.pr3 {order: 4;}
+.pr4 {order: 1;}
+.pr5 {order: 2;}

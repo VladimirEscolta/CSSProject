@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>order</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">order</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Определяет порядок вывода флексов внутри флекс-контейнера. Элементы располагаются согласно значениям свойства order от меньшего к большему. При равных значениях order элементы выводятся в том порядке, в каком они появляются в исходном коде. В качестве значения принимается любое целое число, включая отрицательные числа и ноль.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            order: <число>
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.flex {
+                list-style: none; 
+                display: flex; 
+                flex-flow: row wrap;
+            }
+            
+            .order {
+                background: #489d75;
+                color: white;
+                padding: 20px;
+                margin: 5px; 
+                font-size: 2em;
+            }
+            
+            .pr1 {order: 5;}
+            .pr2 {order: 3;}
+            .pr3 {order: 4;}
+            .pr4 {order: 1;}
+            .pr5 {order: 2;}
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+                <ul class="flex">
+                    <li class="order pr1">1</li>
+                    <li class="order pr2">2</li>
+                    <li class="order pr3">3</li>
+                    <li class="order pr4">4</li>
+                    <li class="order pr5">5</li>
+                </ul>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../Index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
