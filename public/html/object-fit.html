@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>object-fit</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/object-fit.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">object-fit</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Управляет соотношением сторон заменяемых элементов, таких как &lt;img&gt; и &lt;video&gt;, когда у них задана ширина или высота, а также способом масштабирования. Свойство object-fit может сохранять исходные пропорции элемента или наоборот, искажать пропорции, в угоду соблюдения размеров.
+        </p>
+        <dl>
+            <dt>fill</dt>
+                <dd>Элемент масштабируется, чтобы соответствовать заданным размерам, при этом пропорции игнорируются.</dd>
+            <dt>contain</dt>
+                <dd>Элемент масштабируется, чтобы целиком уместиться в заданные размеры с соблюдением пропорций.</dd>
+            <dt>cover</dt>
+                <dd>Элемент увеличивается или уменьшается, чтобы целиком заполнить заданную область с сохранением пропорций.</dd>
+            <dt>none</dt>
+                <dd>Сохраняются исходные пропорции элемента, установленные значения ширины или высоты не влияют на содержимое.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            object-fit: fill | contain | cover | none
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>figure {
+                display: block;
+                float: left;
+                max-width: 300px;
+                max-height: 200px;
+                border: 5px solid blue;
+            }
+            
+            .object {
+                width: 300px;
+                height: 200px;
+            }
+            
+            figcaption {
+                margin: 5px auto;
+                text-align: center;
+            }
+            
+            .fit1 {
+                object-fit: fill;
+            }
+            .fit2 {
+                object-fit: contain;
+            }
+            .fit3 {
+                object-fit: cover;
+            }
+            .fit4 {
+                object-fit: none;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="primer1">
+                <figure>
+                    <img class="object fit1" src="../../images/01.jpg" alt="picture1">
+                    <figcaption>fill</figcaption>
+                </figure>
+                <figure>
+                    <img class="object fit2" src="../../images/01.jpg" alt="picture1">
+                    <figcaption>contain</figcaption>
+                </figure>
+                <figure>
+                    <img class="object fit3" src="../../images/01.jpg" alt="picture1">
+                    <figcaption>cover</figcaption>
+                </figure>
+                <figure>
+                    <img class="object fit4" src="../../images/01.jpg" alt="picture1">
+                    <figcaption>none</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../Index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
