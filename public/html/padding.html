@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>padding</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/padding.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">padding</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Устанавливает значение полей вокруг содержимого элемента. Полем называется расстояние от внутреннего края рамки элемента до воображаемого прямоугольника, ограничивающего его содержимое. Свойство padding позволяет задать величину поля сразу для всех сторон элемента или определить поля только для указанных сторон.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            padding: [<размер> | <проценты>] {1, 4}
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                padding
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.padding {
+                padding: 15px 20px;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="padding border">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Разрешается использовать одно, два, три или четыре значения, разделяя их между собой пробелом. Эффект зависит от количества значений.
+            </p>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                padding-block
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.block {
+                background: #fc3;
+                border-block-start: 3px solid #000;
+                border-block-end: 3px solid #000; 
+                padding-block: 10%;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="block">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Универсальное свойство, которое одновременно задаёт начальный и конечный внутренние отступы элемента по блочной оси. Направление оси зависит от значения свойства writing-mode. Для горизонтального письма (writing-mode: horizontal-tb) блочная ось будет вертикальной и padding-block устанавливает отступы сверху и снизу. Для вертикального направления письма (writing-mode: vertical-lr и writing-mode: vertical-rl) блочная ось будет горизонтальной и padding-block устанавливает отступы слева и справа.
+            </p>
+            <p>
+                Допустимо использовать одно или два значения, разделяя их пробелом. Одно значение устанавливает одинаковый внутренний отступ с двух сторон элемента; если указано два значения, то первое устанавливает padding-block-start, а второе padding-block-end.
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
