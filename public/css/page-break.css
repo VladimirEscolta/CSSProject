@@ -14,4 +14,10 @@
     .before {
         page-break-before: always;
     } 
-} 
+}
+
+@media print {
+    .inside {
+        page-break-inside: avoid;
+    } 
+}
