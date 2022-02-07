@@ -1,0 +1,14 @@
+.place {
+    margin: 7px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: flex-end right;
+}
+
+.pr1 {
+    padding: 5px;
+    border: 3px double red;
+    width: 400px;
+    height: 150px;
+}
