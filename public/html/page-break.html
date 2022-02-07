@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>page-break</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/page-break.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">page-break</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Добавляет разрыв страницы при печати документа.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            page-break-after: always | auto | avoid | left | right
+        </p>
+        <p>
+            page-break-before: always | auto | avoid | left | right
+        </p>
+        <p>
+            page-break-inside: auto | avoid
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                page-break-after
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>@media print {
+                .after {
+                    page-break-after: always;
+                } 
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="border">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <p class="after">
+                        Читать дальше
+                    </p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Добавляет разрыв страницы при печати документа после заданного элемента.
+            </p>
+            <dl>
+                <dt>always</dt>
+                    <dd>Всегда добавляет разрыв страницы после элемента.</dd>
+                <dt>auto</dt>
+                    <dd>Вставляет разрыв страницы при необходимости.</dd>
+                <dt>avoid</dt>
+                    <dd>Запрещает разрыв страницы после элемента.</dd>
+                <dt>left</dt>
+                    <dd>Пропускает одну или две страницы после элемента, чтобы следующая страница при печати была чётной.</dd>
+                <dt>right</dt>
+                    <dd>Пропускает одну или две страницы после элемента, чтобы следующая страница при печати была нечётной.</dd>
+            </dl>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../Index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>

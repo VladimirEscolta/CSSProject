@@ -1,0 +1,11 @@
+.border {
+    margin: 10px;
+    padding: 6px;
+    border: 3px double blue;
+}
+
+@media print {
+    .after {
+        page-break-after: always;
+    } 
+} 
