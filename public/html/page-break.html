@@ -70,6 +70,48 @@
             </dl>
         </div>
     </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                page-break-before
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>@media print {
+                .before {
+                    page-break-before: always;
+                } 
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="border">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                    <p class="before">
+                        Читать дальше
+                    </p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Добавляет разрыв страницы при печати документа перед заданным элементом.
+            </p>
+            <dl>
+                <dt>always</dt>
+                    <dd>Всегда добавляет разрыв страницы перед элементом.</dd>
+                <dt>auto</dt>
+                    <dd>Вставляет разрыв страницы при необходимости.</dd>
+                <dt>avoid</dt>
+                    <dd>Запрещает разрыв страницы перед элементом.</dd>
+                <dt>left</dt>
+                    <dd>Пропускает одну или две страницы перед элементом, чтобы следующая страница при печати была чётной.</dd>
+                <dt>right</dt>
+                    <dd>Пропускает одну или две страницы перед элементом, чтобы следующая страница при печати была нечётной.</dd>
+            </dl>
+        </div>
+    </div>
 
     <button class="back_to_main">
         <a href="../../Index.html">Вернуться к справочнику CSS</a>

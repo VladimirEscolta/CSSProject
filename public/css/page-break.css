@@ -8,4 +8,10 @@
     .after {
         page-break-after: always;
     } 
+}
+
+@media print {
+    .before {
+        page-break-before: always;
+    } 
 } 
