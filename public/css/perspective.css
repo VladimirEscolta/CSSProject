@@ -6,10 +6,15 @@
 }
 
 .perspective {
-    perspective: 200px;
+    perspective: 500px;
+}
+
+.origin {
+    perspective: 500px;
+    perspective-origin: right bottom;
 }
 
 .pr1 {
-    padding-left: 45px;
-    transform: rotateY(15deg);
+    width: auto;
+    transform: rotateY(25deg);
 }

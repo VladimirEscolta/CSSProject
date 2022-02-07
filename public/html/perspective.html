@@ -33,12 +33,12 @@
         </div>
         <div class="first primer_block_border padding">
             <pre>.perspective {
-                perspective: 200px;
+                perspective: 500px;
             }
             
             .pr1 {
-                padding-left: 45px;
-                transform: rotateY(15deg);
+                width: auto;
+                transform: rotateY(25deg);
             }
             </pre>
         </div>
@@ -65,16 +65,20 @@
             </p>
         </div>
         <div class="first primer_block_border padding">
-            <pre>@media print {
-                .after {
-                    page-break-after: always;
-                } 
+            <pre>.origin {
+                perspective: 500px;
+                perspective-origin: right bottom;
+            }
+            
+            .pr1 {
+                width: auto;
+                transform: rotateY(25deg);
             }
             </pre>
         </div>
         <div class="primer primer_block_border padding">
                 <div class="border origin">
-                    <p>
+                    <p class="pr1">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     </p>
                 </div>
