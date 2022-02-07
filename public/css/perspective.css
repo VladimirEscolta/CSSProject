@@ -1,0 +1,15 @@
+.border {
+    margin: 10px;
+    padding: 5px;
+    border: 3px dotted red;
+    background: burlywood;
+}
+
+.perspective {
+    perspective: 200px;
+}
+
+.pr1 {
+    padding-left: 45px;
+    transform: rotateY(15deg);
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>perspective</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/perspective.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">perspective</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Определяет расстояние от плоскости экрана до точки сходимости линий и тем самым задаёт, насколько выражен эффект перспективы. Точка сходимости по умолчанию располагается в центре элемента и может быть изменена с помощью свойства perspective-origin.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            perspective: none | <размер>
+        </p>
+        <p>
+            perspective-origin: <позиция>
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                perspective
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.perspective {
+                perspective: 200px;
+            }
+            
+            .pr1 {
+                padding-left: 45px;
+                transform: rotateY(15deg);
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="border perspective">
+                    <p class="pr1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <dl>
+                <dt>none</dt>
+                    <dd>Указывает, что не применять перспективу к элементу.</dd>
+                <dt><размер></dt>
+                    <dd>Расстояние от плоскости монитора до точки сходимости линий. Нулевое или отрицательное значение отменяет действие перспективы. Чем меньше значение, тем более выраженной выглядит перспектива и наоборот.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                perspective-origin
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>@media print {
+                .after {
+                    page-break-after: always;
+                } 
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <div class="border origin">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis. Enim, rerum impedit cumque temporibus iusto omnis. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Если указано только одно значение, то оно считается координатой X, два значения определяют вначале координату X, затем Y, при этом ключевые слова могут идти в произвольном порядке. Проценты задаются относительно ширины элемента, отсчёт координат начинается с его левого верхнего угла. Проценты, пиксели и другие единицы CSS могут быть отрицательными. Ниже приведено, как связаны между собой процентная запись и ключевые слова.
+                <ul>
+                    <li>left = left center = 0 50% — центр левого края.</li>
+                    <li>center = center center = 50% 50% — центральная точка.</li>
+                    <li>right = right center = 100% 50% — центр правого края.</li>
+                    <li>top = center top = 50% 0 — центр верхнего края.</li>
+                    <li>bottom = center bottom 50% 100% — центр нижнего края</li>
+                    <li>left top = 0 0 — левый верхний угол.</li>
+                    <li>left bottom = 0 100% — левый нижний угол.</li>
+                    <li>right top = 100% 0 — правый верхний угол.</li>
+                    <li>right bottom = 100% 100% — правый нижний угол.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
