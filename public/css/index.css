@@ -75,7 +75,7 @@ p {
     text-indent: 20px;
 }
 
-.back_to_main, .block_container_links p {
+.back_to_main {
     text-indent: 0;
 }
 
