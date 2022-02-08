@@ -1,0 +1,22 @@
+.position {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    margin: 7px;
+    border: 3 solid black;
+    border-radius: 15px;
+    background: orange;
+}
+
+.position2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 20%;
+    height: 30%;
+    padding: 4px;
+    border: 3 solid black;
+    border-radius: 15px;
+    background: rgb(106, 228, 101);
+    overflow: hidden;
+}

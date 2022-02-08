@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/position.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">position</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Устанавливает способ позиционирования элемента относительно окна браузера или других объектов на веб-странице.
+        </p>
+        <dl>
+            <dt>absolute</dt>
+                <dd>Абсолютное позиционирование. Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. Положение элемента задаётся свойствами left, top, right и bottom, также на положение влияет значение свойства position родительского элемента. Так, если у родителя значение position установлено как static или родителя нет, то отсчёт координат ведётся от края окна браузера. Если у родителя значение position задано как relative, то отсчёт координат ведётся от края родительского элемента.</dd>
+            <dt>fixed</dt>
+                <dd>Фиксированное позиционирование. По своему действию это значение близко к absolute, но в отличие от него привязывается к указанной свойствами left, top, right и bottom точке на экране и не меняет своего положения при прокрутке веб-страницы.</dd>
+            <dt>relative</dt>
+                <dd>Относительное позиционирование. Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения.</dd>
+            <dt>static</dt>
+                <dd>Статичное позиционирование. Элементы отображаются как обычно. Использование свойств left, top, right и bottom не приводит к каким-либо результатам.</dd>
+            <dt>sticky</dt>
+                <dd>Это сочетание относительного и фиксированного позиционирования. Элемент рассматривается как позиционированный относительно, пока он не пересекает определённый порог, после чего рассматривается как фиксированный. Обычно применяется для фиксации заголовка на одном месте, пока содержимое, к которому относится заголовок, прокручивается на странице.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            position: absolute | fixed | relative | static | sticky
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.position {
+                position: relative;
+                width: 90%;
+                height: 300px;
+                margin: 7px;
+                border: 3 solid black;
+                border-radius: 15px;
+                background: orange;
+            }
+            
+            .position2 {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                width: 20%;
+                height: 30%;
+                padding: 4px;
+                border: 3 solid black;
+                border-radius: 15px;
+                background: rgb(106, 228, 101);
+                overflow: hidden;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="position">
+                <p class="position2">
+                    В соответствии с законом больших чисел, дифференциальное 
+                    исчисление непосредственно отображает положительный полином. 
+                    Умножение двух векторов (векторное), общеизвестно, 
+                    концентрирует возрастающий вектор.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
