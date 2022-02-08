@@ -1,0 +1,12 @@
+table, td, th {
+    padding: 2px 4px;
+    border: 2px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.quotes {quotes: '<<' '>>';}
+.quotes::before {content: open-quote;}
+.quotes::after {content: close-quote;}

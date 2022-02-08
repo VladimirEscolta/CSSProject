@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>quotes</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/quotes.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">quotes</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Устанавливает тип кавычек, который применяется в тексте документа. В каждом языке существуют свои традиции для обозначения кавычек, свойство quotes позволяет задать вид их отображения по всему тексту и установить, таким образом, его единообразное оформление. Добавление кавычек происходит автоматически для содержимого контейнера <q>, а также для текста, к которому применяется стилевое свойство content со значением open-quote (открывающая кавычка) или close-quote (закрывающая кавычка).
+        </p>
+        <table>
+            <tr>
+                <th>Вид</th> 
+                <th>Спецкод HTML</th> 
+                <th>Юникод</th> 
+                <th>Описание</th>
+            </tr> 
+            <tr>
+                <td class="sel">"</td> 
+                <td>&amp;#34; </td> 
+                <td>\0022</td> 
+                <td>Двойная кавычка, применяется обычно в моноширинных шрифтах, для обозначения символа дюйма, а также угловых секунд.</td>
+            </tr> 
+            <tr>
+                <td class="sel">'</td> 
+                <td>&amp;#39; </td> 
+                <td>\0027</td> 
+                <td>Апостроф. Символ угловых минут, в латинице применяется для обозначения мягкого знака (popalas' lisa).</td>
+            </tr> 
+            <tr>
+                <td class="sel">«</td> 
+                <td>&amp;#171; или &amp;laquo;</td> 
+                <td>\00ab</td> 
+                <td>Открывающая двойная угловая кавычка.</td>
+            </tr> 
+            <tr>
+                <td class="sel">»</td> 
+                <td>&amp;#187; или &amp;raquo;</td> 
+                <td>\00bb</td> <td>Закрывающая двойная угловая кавычка.</td>
+            </tr> 
+            <tr>
+                <td class="sel">‘</td> 
+                <td>&amp;#8216;</td> 
+                <td>\2018</td> 
+                <td>Открывающая одинарная кавычка.</td>
+            </tr> 
+            <tr>
+                <td class="sel">’</td> 
+                <td>&amp;#8217;</td> 
+                <td>\2019</td> 
+                <td>Закрывающая одинарная кавычка.</td>
+            </tr> 
+            <tr>
+                <td class="sel">“</td> 
+                <td>&amp;#8220;</td> 
+                <td>\201c</td> 
+                <td>Открывающая двойная кавычка в англоязычных текстах или закрывающая для русского языка.</td>
+            </tr> 
+            <tr>
+                <td class="sel">”</td> 
+                <td>&amp;#8221;</td> 
+                <td>\201d</td> 
+                <td>Закрывающая двойная кавычка в англоязычных текстах.</td>
+            </tr> 
+            <tr>
+                <td class="sel">„</td> 
+                <td>&amp;#8222;</td> 
+                <td>\201e</td> 
+                <td>Открывающая двойная кавычка. Применяется в русском языке.</td>
+            </tr>
+        </table>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            quotes: [<Строка> <Строка>]+ | none
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.quotes {
+                quotes: '<<' '>>';
+            }
+
+            .quotes::before {
+                content: open-quote;
+            }
+            .quotes::after {
+                content: close-quote;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="quotes">
+                В соответствии с законом больших чисел, дифференциальное исчисление непосредственно отображает положительный полином. Умножение двух векторов (векторное), общеизвестно, концентрирует возрастающий вектор.
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
