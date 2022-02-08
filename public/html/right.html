@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>right</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/right.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">right</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Для позиционированного элемента определяет расстояние от правого края родительского элемента, не включая отступ, поле и ширину рамки, до правого края дочернего элемента. Отсчёт координат зависит от значения свойства position. Если оно равно absolute, в качестве родителя выступает окно браузера и положение элемента определяется от его правого края. В случае значения relative, right отсчитывается от правого края исходного положения элемента. Если для родительского элемента задано position: relative, то абсолютное позиционирование дочерних элементов определяет их положение от правого края родителя.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            right: <размер> | <проценты> | auto
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.pr1 {
+                position: relative;
+                margin: 2px;
+                border: 2px solid violet;
+                border-radius: 10px;
+                width: 95%;
+                height: 250px;
+            }
+            
+            .right {
+                position: absolute;
+                padding: 3px;
+                border: 1px dotted blue;
+                border-radius: 10px;
+                right: 15px;
+                width: 200px;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <p class="right">В соответствии с законом больших чисел, дифференциальное исчисление непосредственно отображает положительный полином. Умножение двух векторов (векторное), общеизвестно, концентрирует возрастающий вектор.</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
