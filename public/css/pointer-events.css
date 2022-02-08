@@ -1,0 +1,23 @@
+.panel {
+    margin: 5px;
+    background: #50a2de;
+    color: #fff;
+    padding: 1em;
+    width: 16em;
+    height: 7em;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.panel::before {
+    content: '';
+    position: absolute;
+    left: 10px; 
+    right: 10px;
+    bottom: 0; 
+    height: 4em; 
+    background: linear-gradient(to bottom, transparent, #50a2de 90%);
+    pointer-events: none; 
+}

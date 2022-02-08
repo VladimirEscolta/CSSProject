@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>pointer-events</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/pointer-events.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">pointer-events</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Свойство pointer-events позволяет управлять тем, как элементы будут реагировать на события мыши или прикосновения к сенсорному экрану. Часто применяется для того, чтобы в сложной компоновке можно было взаимодействовать с нижележащими элементами, игнорируя вышележащие.
+        </p>
+        <dl>
+            <dt>auto</dt>
+                <dd>Восстанавливает функциональность элемента по умолчанию.</dd>
+            <dt>none</dt>
+                <dd>Предотвращает события мыши и щелчки по элементу.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            pointer-events: auto | none
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.panel {
+                margin: 5px;
+                background: #50a2de;
+                color: #fff;
+                padding: 1em;
+                width: 16em;
+                height: 7em;
+                border-radius: 10px;
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+            }
+            
+            .panel::before {
+                content: '';
+                position: absolute;
+                left: 10px; 
+                right: 10px;
+                bottom: 0; 
+                height: 4em; 
+                background: linear-gradient(to bottom, transparent, #50a2de 90%);
+                pointer-events: none; 
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="panel">
+                В соответствии с законом больших чисел, дифференциальное 
+                исчисление непосредственно отображает положительный полином. 
+                Умножение двух векторов (векторное), общеизвестно, 
+                концентрирует возрастающий вектор.
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
