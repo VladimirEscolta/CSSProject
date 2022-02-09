@@ -12,3 +12,6 @@
     text-align-last: right;
 }
 
+.decoration {
+    text-decoration: underline solid red;
+}
