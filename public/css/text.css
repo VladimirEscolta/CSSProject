@@ -23,3 +23,7 @@
     text-emphasis: '?' red;
     -webkit-text-emphasis: '?' red;
 }
+
+.emphasis-color {
+    text-emphasis-color: green;
+}
