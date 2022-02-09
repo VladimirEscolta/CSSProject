@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>table-layout</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/table-layout.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">table-layout</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Определяет, как браузер должен вычислять ширину ячеек таблицы, основываясь на её содержимом.
+        </p>
+        <dl>
+            <dt>auto</dt>
+                <dd>Браузер загружает всю таблицу, анализирует её для определения размеров ячеек и только после этого отображает.</dd>
+            <dt>fixed</dt>
+                <dd>Ширина колонок в этом случае определяется либо с помощью элемента <col>, либо вычисляется на основе первой строки. Если данные о форматировании первой строки таблицы по каким-либо причинам получить невозможно, в этом случае таблица делится на колонки равной ширины. При использовании этого значения, содержимое, которое не помещается в ячейку указанной ширины, будет «обрезано» либо наложено поверх ячейки. Это зависит от используемого браузера, но в любом случае ширина ячейки меняться не будет. Для корректной работы этого значения обязательно должна быть задана ширина таблицы.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            table-layout: auto | fixed
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.pr1 {
+                margin: 10px;
+                padding: 5px;
+                table-layout: fixed;
+            }
+            
+            .col1 {
+                width: 100px;
+            }
+            
+            .coln {
+                width: 50px;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <table class="pr1" border="2">
+                <col class="col1">
+                <col span="4" class="coln">
+                <tr> 
+                    <td>&nbsp;</td><td>2012</td><td>2013</td><td>2014</td><td>2015</td>
+                </tr>
+                <tr> 
+                    <td>Нефть</td><td>5</td><td>7</td><td>2</td><td>8</td>
+                </tr>
+                <tr>
+                    <td>Золото</td><td>3</td><td>6</td><td>4</td><td>6</td>
+                </tr>
+                <tr>
+                    <td>Дерево</td><td>5</td><td>8</td><td>3</td><td>4</td>
+                </tr>
+            </table> 
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
