@@ -6,3 +6,9 @@
 .align2 {text-align: left;}
 .align3 {text-align: right;}
 .align4 {text-align: center;}
+
+.align-last {
+    text-align: justify;
+    text-align-last: right;
+}
+
