@@ -18,3 +18,8 @@
 .style {text-decoration-style: wavy;}
 .skip {text-decoration-skip-ink: none;}
 
+.emphasis {
+    font-size: 1.5em;
+    text-emphasis: '?' red;
+    -webkit-text-emphasis: '?' red;
+}
