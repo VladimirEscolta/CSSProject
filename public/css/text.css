@@ -12,18 +12,9 @@
     text-align-last: right;
 }
 
-.decoration {
-    text-decoration: underline solid red;
-}
+.decoration {text-decoration: underline solid red;}
+.color {text-decoration-color: blue;}
+.line {text-decoration-line: overline;}
+.style {text-decoration-style: wavy;}
+.skip {text-decoration-skip-ink: none;}
 
-.color {
-    text-decoration-color: blue;
-}
-
-.line {
-    text-decoration-line: overline;
-}
-
-.style {
-    text-decoration-style: wavy;
-}
