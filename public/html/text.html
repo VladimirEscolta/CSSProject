@@ -334,6 +334,99 @@
             </p>
         </div>
     </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                text-emphasis-position
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.emphasis {
+                font-size: 2em;
+                text-emphasis: '?' red;
+                -webkit-text-emphasis: '?' red;
+            }
+
+            .emphasis-position {
+                text-emphasis-position: under;
+                -webkit-text-emphasis-position: under;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <p>
+                    Вставьте пропущенные буквы: приш<span class="emphasis emphasis-position">_</span>л, уш<span class="emphasis emphasis-position">_</span>л, зач<span class="emphasis emphasis-position">_</span>т
+                </p>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Устанавливает положение маркеров, отображаемых с помощью свойства text-emphasis-style.
+            </p>
+            <dl>
+                <dt>over</dt>
+                    <dd>Маркеры выводятся над текстом при его горизонтальном написании.</dd>
+                <dt>under</dt>
+                    <dd>Маркеры выводятся под текстом при его горизонтальном написании.</dd>
+                <dt>right</dt>
+                    <dd>Маркеры выводятся справа от текста при его вертикальном написании.</dd>
+                <dt>left</dt>
+                    <dd>Маркеры выводятся слева от текста при его вертикальном написании.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                text-emphasis-style
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.emphasis {
+                font-size: 2em;
+                text-emphasis: '?' red;
+                -webkit-text-emphasis: '?' red;
+            }
+
+            .emphasis-style {
+                text-emphasis-style: triangle;
+                -webkit-text-emphasis-style: triangle;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <p>
+                    Вставьте пропущенные буквы: приш<span class="emphasis emphasis-style">_</span>л, уш<span class="emphasis emphasis-style">_</span>л, зач<span class="emphasis emphasis-style">_</span>т
+                </p>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Устанавливает вид маркеров над каждым символом текста. Такие маркеры обычно используются в азиатских языках чтобы показать, как произносится слово. Для русского языка аналогом является знак ударения, который ставится над гласной буквой.
+            </p>
+            <dl>
+                <dt>none</dt>
+                    <dd>Маркеры не выводятся.</dd>
+                <dt>filled</dt>
+                    <dd>Маркеры будут залиты однотонным цветом.</dd>
+                <dt>open</dt>
+                    <dd>Маркеры будут пустыми внутри.</dd>
+                <dt>dot</dt>
+                    <dd>Точка.</dd>
+                <dt>circle</dt>
+                    <dd>Кружок.</dd>
+                <dt>double-circle</dt>
+                    <dd>Двойной кружок.</dd>
+                <dt>triangle</dt>
+                    <dd>Треугольник.</dd>
+                <dt>sesame</dt>
+                    <dd>Апостроф.</dd>
+                <dt><строка></dt>
+                    <dd>Произвольный символ, пишется в одинарных или двойных кавычках.</dd>
+            </dl>
+            <p>
+                Значения filled и open можно комбинировать с другими значениями, к примеру, triangle. В этом случае мы получим сплошной или контурный треугольник.
+            </p>
+        </div>
+    </div>
 
     <button class="back_to_main">
         <a href="../../index.html">Вернуться к справочнику CSS</a>

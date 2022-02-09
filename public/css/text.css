@@ -28,3 +28,13 @@
     text-emphasis-color: green;
     -webkit-text-emphasis-color: green;
 }
+
+.emphasis-position {
+    text-emphasis-position: under;
+    -webkit-text-emphasis-position: under;
+}
+
+.emphasis-style {
+    text-emphasis-style: triangle;
+    -webkit-text-emphasis-style: triangle;
+}
