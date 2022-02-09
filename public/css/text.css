@@ -38,3 +38,7 @@
     text-emphasis-style: triangle;
     -webkit-text-emphasis-style: triangle;
 }
+
+.indent {
+    text-indent: 30%;
+}
