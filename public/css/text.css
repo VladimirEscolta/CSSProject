@@ -16,11 +16,14 @@
     text-decoration: underline solid red;
 }
 
-.decoration-color {
-    text-decoration: line-through;
+.color {
     text-decoration-color: blue;
 }
 
-.decoration-line {
+.line {
     text-decoration-line: overline;
+}
+
+.style {
+    text-decoration-style: wavy;
 }
