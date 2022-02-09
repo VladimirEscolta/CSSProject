@@ -19,11 +19,12 @@
 .skip {text-decoration-skip-ink: none;}
 
 .emphasis {
-    font-size: 1.5em;
+    font-size: 2em;
     text-emphasis: '?' red;
     -webkit-text-emphasis: '?' red;
 }
 
 .emphasis-color {
     text-emphasis-color: green;
+    -webkit-text-emphasis-color: green;
 }
