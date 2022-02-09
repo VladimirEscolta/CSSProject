@@ -20,3 +20,7 @@
     text-decoration: line-through;
     text-decoration-color: blue;
 }
+
+.decoration-line {
+    text-decoration-line: overline;
+}
