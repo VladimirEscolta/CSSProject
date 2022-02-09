@@ -15,3 +15,8 @@
 .decoration {
     text-decoration: underline solid red;
 }
+
+.decoration-color {
+    text-decoration: line-through;
+    text-decoration-color: blue;
+}
