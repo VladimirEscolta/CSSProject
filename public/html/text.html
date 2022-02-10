@@ -517,6 +517,45 @@
             </dl>
         </div>
     </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                text-shadow
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.shadow {
+                font-size: 2em;
+                text-shadow: 2px 1px 1px red, 0px 0px 30px blue;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+                <p class="shadow">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum fuga deserunt odit atque sit recusandae id fugiat voluptate. Sit ea, odio exercitationem sunt nobis voluptatem eligendi. Ducimus beatae necessitatibus harum?
+                </p>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Добавляет тень к тексту, а также устанавливает её параметры: цвет тени, смещение относительно надписи и радиус размытия. Свойство text-shadow может работать совместно с псевдоэлементами :first-letter и :first-line.
+            </p>
+            <dl>
+                <dt>none</dt>
+                    <dd>Отменяет добавление тени.</dd>
+                <dt><цвет></dt>
+                    <dd>Цвет тени в любом доступном CSS формате. По умолчанию цвет тени совпадает с цветом текста.</dd>
+                <dt><сдвиг по x></dt>
+                    <dd>Смещение тени по горизонтали относительно текста. Положительное значение этого параметра задает сдвиг тени вправо, отрицательное — влево.</dd>
+                <dt><сдвиг по y></dt>
+                    <dd>Смещение тени по вертикали относительно текста. Также допустимо использовать отрицательное значение, которое поднимает тень выше текста.</dd> 
+                <dt><радиус></dt>
+                    <dd>Задаёт радиус размытия тени. Чем больше это значение, тем сильнее тень сглаживается, становится шире и светлее. Если этот параметр не задан, по умолчанию устанавливается равным 0. Учтите, что алгоритм сглаживания в браузерах обычно разный, поэтому вид тени может несколько различаться в зависимости от заданных параметров сглаживания.</dd>
+            </dl>
+            <p>
+                Допускается указывать несколько параметров тени, разделяя их между собой запятой. В CSS3 учитывается следующий порядок: первая тень в списке размещается на самом верху, последняя в списке — в самом низу. В CSS2 порядок наоборот: первая тень размещается в самом низу, а последняя на самом верху.
+            </p>
+        </div>
+    </div>
 
     <button class="back_to_main">
         <a href="../../index.html">Вернуться к справочнику CSS</a>

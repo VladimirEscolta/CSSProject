@@ -57,3 +57,8 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.shadow {
+    font-size: 2em;
+    text-shadow: 2px 1px 1px red, 0px 0px 30px blue;
+}
