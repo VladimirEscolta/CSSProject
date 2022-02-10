@@ -49,3 +49,11 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
+
+.overflow {
+    background: greenyellow;
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
