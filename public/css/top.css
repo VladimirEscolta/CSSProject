@@ -1,0 +1,17 @@
+.pr1 {
+    position: relative;
+    top: 15px;
+    border: 2px solid violet;
+    border-radius: 10px;
+    width: 80%;
+    height: 250px;
+}
+
+.top {
+    position: absolute;
+    padding: 3px;
+    border: 1px dotted blue;
+    border-radius: 10px;
+    top: 25px;
+    width: 200px;
+}
