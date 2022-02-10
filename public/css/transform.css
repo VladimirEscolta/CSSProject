@@ -1,3 +1,41 @@
-.transform:hover {
-    transform: scale(200%);
+.transform {
+    background: orange;
+    margin: 5px;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 2s;
+}
+
+.origin {
+    transform-origin: 0 0;
+}
+
+.pr1:hover {
+    transform: rotate(90deg);
+}
+
+
+.style {
+    margin: 25px;
+    perspective: 800px;
+}
+
+.style div { 
+    margin: 0;
+    display: inline-block;
+    transform-style: preserve-3d;
+}
+
+.one {
+    transform: rotateY(30deg);
+}
+
+.style img {
+    width: 75%;
+    transition: 2s;
+}
+
+.style img:hover {
+    transform: rotateX(360deg);
 }

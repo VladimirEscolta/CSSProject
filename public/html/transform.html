@@ -29,15 +29,19 @@
             </p>
         </div>
         <div class="first primer_block_border padding">
-            <pre>.transform:hover {
-                transform: scale(200%);
+            <pre>.transform {
+                transition: 2s;
+            }
+
+            .transform:hover {
+                transform: rotate(90deg);
             }
             </pre>
         </div>
         <div class="primer primer_block_border padding">
-                <div class="transform">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis.
-                </div>
+            <div class="transform pr1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis.
+            </div>
         </div>
         <div class="second primer_block_border padding">
             <dl>
@@ -45,6 +49,88 @@
                     <dd>Функция трансформации.</dd>
                 <dt>none</dt>
                     <dd>Отменяет действие трансформации.</dd>
+            </dl>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                transform-origin
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.transform {
+                transition: 2s;
+                transform-origin: 0 0;
+            }
+
+            .transform:hover {
+                transform: rotate(90deg);
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="transform origin pr1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis.
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Устанавливает координаты точки, относительно которой будет происходить трансформация элемента.
+            </p>
+            <p>
+                transform-origin: &lt;x&gt; &lt;y&gt; &lt;z&gt;
+            </p>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                transform-style
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.style {
+                margin: 25px;
+                perspective: 800px;
+            }
+            
+            .style div { 
+                margin: 0;
+                display: inline-block;
+                transform-style: preserve-3d;
+            }
+            
+            .one {
+                transform: rotateY(30deg);
+            }
+            
+            .style img {
+                width: 75%;
+                transition: 2s;
+            }
+            
+            .style img:hover {
+                transform: rotateX(360deg);
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="style">
+                <div class="one">
+                    <img src="../../images/07.jpg" alt="picture">
+                </div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Определяет, как дочерние элементы будут отображаться в 3D-пространстве. Это свойство должно использоваться совместно с transform.
+            </p>
+            <dl>
+                <dt>flat</dt>
+                    <dd>Дочерние элементы лежат в плоскости экрана.</dd>
+                <dt>preserve-3d</dt>
+                    <dd>Дочерние элементы будут отображаться в 3D-пространстве.</dd>
             </dl>
         </div>
     </div>
