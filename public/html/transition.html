@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>transition</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/transition.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">transition</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Универсальное свойство, которое позволяет одновременно задать значения transition-property, transition-duration, transition-timing-function и transition-delay. Устанавливает эффект перехода между двумя состояниями элемента, они могут быть определены с помощью псевдокласса :hover или :active, а также динамически через JavaScript.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            transition: <переход> [, <переход> ]*
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                transition
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.transition {
+                padding: 5px 2px 0px;
+                position: absolute;
+                top:-60px;
+                left: 500px;
+                width: 350px;
+                background: orange;
+                text-align: center;
+                transition: top 3s ease-out;
+                border-radius: 10px;
+            }
+            
+            .transition:hover { 
+                top: 300px;
+            }
+            
+            #arrow {
+                font-size: 2em;
+                font-weight: bold;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="transition">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis.
+                </div>
+                <div>
+                    <span id="arrow">&dArr;</span>
+                </div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                <переход> = [ none | &lt;transition-property&gt; ] || &lt;transition-duration&gt; ||   
+                    &lt;transition-timing-function&gt; || &lt;transition-delay&gt;
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <a href="../../index.html">Вернуться к справочнику CSS</a>
+    </button>
+    
+</body>
+</html>
