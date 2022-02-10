@@ -33,26 +33,29 @@
                 padding: 5px 2px 0px;
                 position: absolute;
                 top:-60px;
-                left: 500px;
+                left: 5px;
                 width: 350px;
                 background: orange;
                 text-align: center;
-                transition: top 3s ease-out;
+                font-size: 1em;
+                transition: top 2s ease-out, left 3s 1.5s, font-size 1s 3.5s;
                 border-radius: 10px;
             }
             
-            .transition:hover { 
-                top: 300px;
+            .transitionClick {
+                font-size: 180%; 
+                top: 330px;
+                left: 550px;
             }
             
             #arrow {
-                font-size: 2em;
+                font-size: 1.8em;
                 font-weight: bold;
             }
             </pre>
         </div>
         <div class="primer primer_block_border padding">
-            <div class="transition">
+            <div class="transition" onclick="this.classList.toggle('transitionClick')">
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis.
                 </div>
@@ -60,6 +63,9 @@
                     <span id="arrow">&dArr;</span>
                 </div>
             </div>
+            <p>
+                Нажми на стрелку вверху слева!!!
+            </p>
         </div>
         <div class="second primer_block_border padding">
             <p>
