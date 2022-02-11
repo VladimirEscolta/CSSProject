@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>white-space</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/white-space.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">white-space</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Свойство white-space устанавливает, как отображать пробелы между словами. В обычных условиях любое количество пробелов в коде HTML показывается на веб-странице как один. Исключением является элемент &lt;pre&gt;, помещённый в этот контейнер текст выводится со всеми пробелами, как он был отформатирован пользователем. Таким образом, white-space имитирует работу &lt;pre&gt;, но в отличие от него не меняет шрифт на моноширинный.
+        </p>
+        <dl>
+            <dt>normal</dt>
+                <dd>Текст в окне браузера выводится как обычно, переносы строк устанавливаются автоматически.</dd>
+            <dt>nowrap</dt>
+                <dd>Пробелы не учитываются, переносы строк в коде HTML игнорируются, весь текст отображается одной строкой; вместе с тем, добавление <br> переносит текст на новую строку.</dd>
+            <dt>pre</dt>
+                <dd>Текст показывается с учётом всех пробелов и переносов, как они были добавлены разработчиком в коде HTML. Если строка получается слишком длинной и не помещается в окне браузера, то будет добавлена горизонтальная полоса прокрутки.</dd>
+            <dt>pre-line</dt>
+                <dd>В тексте пробелы не учитываются, текст автоматически переносится на следующую строку, если он не помещается в заданную область.</dd>
+            <dt>pre-wrap</dt>
+                <dd>В тексте сохраняются все пробелы и переносы, однако если строка по ширине не помещается в заданную область, то текст автоматически будет перенесён на следующую строку.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            white-space: normal | nowrap | pre | pre-line | pre-wrap
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.white-space {
+                margin: 5px;
+                padding: 5px;
+                width: 370px;
+                border: 1px solid blue;
+            }
+            
+            .pr1 {white-space: pre-wrap;}
+            .pr2 {white-space: nowrap;}
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="white-space pr1">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nam magnam expedita illum impedit repudiandae fugit id in exercitationem corrupti illo, placeat libero praesentium molestias repellendus neque totam. Itaque, sit?
+            </div>
+            <div class="white-space pr2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nam magnam expedita illum impedit repudiandae fugit id in exercitationem corrupti illo, placeat libero praesentium molestias repellendus neque totam. Itaque, sit?
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+.white-space {
+    margin: 5px;
+    padding: 5px;
+    width: 370px;
+    border: 1px solid blue;
+}
+
+.pr1 {white-space: pre-wrap;}
+.pr2 {white-space: nowrap;}
