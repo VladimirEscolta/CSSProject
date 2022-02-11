@@ -1,0 +1,9 @@
+.writing-mode {
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 150px;
+    background: rgb(194, 101, 212);
+    writing-mode: vertical-rl;
+}
