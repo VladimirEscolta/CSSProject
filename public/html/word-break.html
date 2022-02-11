@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>word-break</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/word-break.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">word-break</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Свойство word-break указывает, как делать перенос строк внутри слов, которые не помещаются по ширине в заданную область.
+        </p>
+        <dl>
+            <dt>normal</dt>
+                <dd>Используются правила переноса строк по умолчанию. Как правило, в этом случае строки не переносятся или переносятся в тех местах, где явно задан перенос (например, с помощью &lt;br&gt;).</dd>
+            <dt>break-all</dt>
+                <dd>Перенос строк добавляется автоматически, чтобы слово поместилось в заданную ширину блока. Значение не работает для текста на китайском, корейском или японском языке.</dd>
+            <dt>keep-all</dt>
+                <dd>Не разрешает перенос строк в словах на китайском, корейском или японском языке. Для остальных языков действует как normal.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            word-break: normal | break-all | keep-all
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.word-break {
+                margin: 5px;
+                padding: 5px;
+                background: greenyellow;
+                width: 250px;
+                word-break:break-all;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="word-break">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nam magnam expedita illum impedit repudiandae fugit id in exercitationem corrupti illo, placeat libero praesentium molestias repellendus neque totam. Itaque, sit?
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
