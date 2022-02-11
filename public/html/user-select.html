@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>user-select</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/user-select.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">user-select</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Управляет поведением выделения текста и других элементов на странице, в частности, позволяет запретить выделение текста. Обычно применяется для интерактивных элементов, на которые можно щёлкать, например, вкладки, и для которых выделение текста нежелательно.
+        </p>
+        <dl>
+            <dt>auto</dt>
+                <dd>Для редактируемых элементов значение принимается contain. Если у родителя значение user-select установлено как all, то для элемента оно тоже будет all. Если у родителя значение user-select установлено как none, то для элемента оно тоже будет none. Во всех остальных случаях принимается значение text.</dd>
+            <dt>none</dt>
+                <dd>Пользователю запрещено выделять элемент.</dd>
+            <dt>text</dt>
+                <dd>Пользователь может выделить текст в элементе.</dd>
+            <dt>all</dt>
+                <dd>Позволяет выделить текст внутри элемента, включая дочерние элементы.</dd>
+            <dt>contain</dt>
+                <dd>Позволяет выделять текст, но только внутри границ элемента.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            user-select: auto | none | text | all | contain
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.select {
+                font-size: 2em;
+                user-select: none;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="select">
+                Этот текст выделить нельзя!!
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
