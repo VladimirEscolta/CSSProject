@@ -53,3 +53,12 @@
     font-size: 2em;
     text-shadow: 1px 2px 10px rgb(236, 6, 56);
 }
+
+.pr5 {
+    transition: font-size 5s;
+    transition-timing-function: steps(5, end);
+}
+
+.transitionTimingFunction {
+    font-size: 3em;
+}

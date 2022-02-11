@@ -192,6 +192,71 @@
             </dl>
         </div>
     </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                transition-timing-function
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.transition {
+                padding: 5px 2px 0px;
+                width: 350px;
+                background: orange;
+                text-align: center;
+                font-size: 1em;
+                border-radius: 10px;
+                transition: font-size 5s;
+                transition-timing-function: steps(5, end);
+            }
+            
+            .transitionTimingFunction {
+                font-size: 3em;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="transition pr5" onclick="this.classList.toggle('transitionTimingFunction')">
+                <div>
+                    Нажми на меня. Изменится шрифт в пять шагов за 5 секунд.
+                </div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Устанавливает, насколько быстро должно изменяться значение стилевого свойство для которого применяется эффект перехода.
+            </p>
+            <p>
+                transition-timing-function представляет собой математическую функцию, показывающую, как быстро по времени меняется указанное через transition-property значение свойства. Начальная точка имеет координаты 0.0, 0.0, конечная — 1.0, 1.0, при этом функция по оси ординат может превышать эти значения в большую или меньшую сторону.
+            </p>
+            <dl>
+                <dt>ease</dt>
+                    <dd>Анимация начинается медленно, затем ускоряется и к концу движения опять замедляется. Аналогично cubic-bezier(0.25,0.1,0.25,1).</dd>
+                <dt>ease-in</dt>
+                    <dd>Анимация медленно начинается, к концу ускоряется. Аналогично cubic-bezier(0.42,0,1,1).</dd>
+                <dt>ease-out</dt>
+                    <dd>Анимация начинается быстро, к концу замедляется. Аналогично cubic-bezier(0,0,0.58,1).</dd>
+                <dt>ease-in-out</dt>
+                    <dd>Анимация начинается и заканчивается медленно. Аналогично cubic-bezier(0.42,0,0.58,1).</dd>
+                <dt>linear</dt>
+                    <dd>Одинаковая скорость от начала и до конца.</dd>
+                <dt>step-start</dt>
+                    <dd>Как таковой анимации нет. Стилевые свойства сразу же принимают конечное значение.</dd>
+                <dt>step-end</dt>
+                    <dd>Как таковой анимации нет. Стилевые свойства находятся в начальном значении заданное время, затем сразу же принимают конечное значение.</dd>
+                <dt>steps</dt>
+                    <dd>
+                        Ступенчатая функция, имеющая заданное число шагов. <br>
+                        transition-timing-function: steps(<число>, start | end) <br>
+                        Здесь: <число> — целое число больше нуля; <br>
+                        start — задаёт полунепрерывную снизу функцию; <br>
+                        end — задаёт полунепрерывную сверху функцию.
+                    </dd>
+                <dt>cubic-bezier</dt>
+                    <dd>Задаёт функцию движения в виде кривой Безье.</dd>
+            </dl>
+        </div>
+    </div>
 
     <button class="back_to_main">
         <a href="../../index.html">Вернуться к справочнику CSS</a>
