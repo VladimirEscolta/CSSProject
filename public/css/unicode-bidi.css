@@ -1,0 +1,4 @@
+.unicode {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}

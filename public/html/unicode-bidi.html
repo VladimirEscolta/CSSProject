@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>unicode-bidi</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/unicode-bidi.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">unicode-bidi</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            В европейских языках чтение текста происходит слева направо, в то время как есть языки, где текст читается справа налево. При смешении в одном документе разных по написанию символов (русского с ивритом, к примеру) в системе юникод, их направление определяется браузером из характеристик и содержимого текста. Свойства unicode-bidi и direction задают, как должен располагаться текст используемого языка.
+        </p>
+        <dl>
+            <dt>normal</dt>
+                <dd>Браузер самостоятельно определяет, как ему следует отображать текст на основе символов юникода.</dd>
+            <dt>embed</dt>
+                <dd>Переопределяет параметры текста, располагая его, как указано в свойстве direction.</dd>
+            <dt>bidi-override</dt>
+                <dd>Аналогичен embed, но при этом также меняется порядок символов в тексте, подчиняясь значению direction.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            unicode-bidi: normal | embed | bidi-override
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.unicode {
+                direction: rtl;
+                unicode-bidi: bidi-override;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="unicode">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eaque suscipit quos repellendus architecto voluptas, praesentium, aliquid aut quia illo porro iste ea nobis nam laudantium culpa accusamus hic in!
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
