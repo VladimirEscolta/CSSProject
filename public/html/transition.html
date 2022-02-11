@@ -146,6 +146,52 @@
             </p>
         </div>
     </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                transition-property
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.transition {
+                padding: 5px 2px 0px;
+                width: 350px;
+                background: orange;
+                text-align: center;
+                font-size: 1em;
+                border-radius: 10px;
+                transition: 3s;
+                transition-property: background, font-size, text-shadow;
+            }
+            
+            .transitionProperty {
+                background: whitesmoke;
+                font-size: 2em;
+                text-shadow: 1px 2px 10px rgb(236, 6, 56);
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="transition pr4" onclick="this.classList.toggle('transitionProperty')">
+                <div>
+                    Нажми на меня. Изменится фон и появится тень.
+                </div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Устанавливает имя стилевого свойства, значение которого будет отслеживаться для создания эффекта перехода.
+            </p>
+            <dl>
+                <dt>none</dt>
+                    <dd>Никакое свойство не задано.</dd>
+                <dt>all</dt>
+                    <dd>Все свойства будут отслеживаться.</dd>
+                <dt><свойство></dt>
+                    <dd>Название стилевого свойства, регистр при его написании не учитывается. При указании нескольких свойств они перечисляются друг за другом через запятую.</dd>
+            </dl>
+        </div>
+    </div>
 
     <button class="back_to_main">
         <a href="../../index.html">Вернуться к справочнику CSS</a>
