@@ -35,17 +35,21 @@
             <pre>.visibility {
                 margin: 10px;
                 padding: 5px;
+                width: 400px;
                 background: yellowgreen;
                 border: 2px solid black;
             }
             
-            .pr1 {visibility: visible;}
             .pr2 {visibility: hidden;}
+            
+            .pr1:hover + .pr2 {
+                visibility: visible;
+            }
             </pre>
         </div>
         <div class="primer_one primer_block_border padding">
             <div class="visibility pr1">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nam magnam expedita illum impedit repudiandae fugit id in exercitationem corrupti illo, placeat libero praesentium molestias repellendus neque totam. Itaque, sit?
+                Наведи на меня курсор. Появится скрытый текст.
             </div>
             <div class="visibility pr2">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nam magnam expedita illum impedit repudiandae fugit id in exercitationem corrupti illo, placeat libero praesentium molestias repellendus neque totam. Itaque, sit?

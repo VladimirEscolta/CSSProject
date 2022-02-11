@@ -1,9 +1,13 @@
 .visibility {
     margin: 10px;
     padding: 5px;
+    width: 400px;
     background: yellowgreen;
     border: 2px solid black;
 }
 
-.pr1 {visibility: visible;}
 .pr2 {visibility: hidden;}
+
+.pr1:hover + .pr2 {
+    visibility: visible;
+}
