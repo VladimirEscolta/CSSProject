@@ -55,7 +55,7 @@
             </pre>
         </div>
         <div class="primer primer_block_border padding">
-            <div class="transition" onclick="this.classList.toggle('transitionClick')">
+            <div class="transition pr1" onclick="this.classList.toggle('transitionClick')">
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi ab nulla a maiores unde optio, harum animi alias maxime omnis error corporis.
                 </div>
@@ -71,6 +71,42 @@
             <p>
                 <переход> = [ none | &lt;transition-property&gt; ] || &lt;transition-duration&gt; ||   
                     &lt;transition-timing-function&gt; || &lt;transition-delay&gt;
+            </p>
+        </div>
+    </div>
+    <div class="primer_block ">
+        <div class="value primer_block_border">
+            <p class="valuetext">
+                transition-delay
+            </p>
+        </div>
+        <div class="first primer_block_border padding">
+            <pre>.transition {
+                padding: 5px 2px 0px;
+                width: 350px;
+                background: orange;
+                text-align: center;
+                font-size: 1em;
+                border-radius: 10px;
+                transition: font-size 2s;
+                transition-delay: 2s;
+            }
+
+            .transitionDelay {
+                font-size: 2em;
+            }
+            </pre>
+        </div>
+        <div class="primer primer_block_border padding">
+            <div class="transition pr2" onclick="this.classList.toggle('transitionDelay')">
+                <div>
+                    Нажми на меня. Эффект начнется с задержкой в 2 секунды!!
+                </div>
+            </div>
+        </div>
+        <div class="second primer_block_border padding">
+            <p>
+                Свойство transition-delay устанавливает время ожидания перед запуском эффекта перехода. Значение 0s запускает анимацию сразу же. Отрицательное значение также включает анимацию без задержек, но может привести к изменению вида начала анимации. Допустимо указывать несколько значений, перечисляя их через запятую. Каждое значение будет применяться к свойству, заданному в параметрах transition-property.
             </p>
         </div>
     </div>

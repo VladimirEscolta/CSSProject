@@ -1,14 +1,22 @@
 .transition {
     padding: 5px 2px 0px;
-    position: absolute;
-    top:-60px;
-    left: 5px;
     width: 350px;
     background: orange;
     text-align: center;
     font-size: 1em;
-    transition: top 2s ease-out, left 3s 1.5s, font-size 1s 3.5s;
     border-radius: 10px;
+}
+
+.pr1 {
+    position: absolute;
+    top:-60px;
+    left: 5px;
+    transition: top 2s ease-out, left 3s 1.5s, font-size 1s 3.5s;
+}
+
+#arrow {
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .transitionClick {
@@ -17,7 +25,11 @@
     left: 550px;
 }
 
-#arrow {
-    font-size: 1.8em;
-    font-weight: bold;
+.pr2 {
+    transition: font-size 2s;
+    transition-delay: 2s;
+}
+
+.transitionDelay {
+    font-size: 2em;
 }
