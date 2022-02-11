@@ -33,3 +33,12 @@
 .transitionDelay {
     font-size: 2em;
 }
+
+.pr3 {
+    transition: background;
+    transition-duration: 3s;
+}
+
+.transitionDuration {
+    background: green;
+}
