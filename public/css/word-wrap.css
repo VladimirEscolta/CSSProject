@@ -1,0 +1,8 @@
+.word-wrap {
+    font-size: 2em;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    background: rgb(194, 101, 212);
+    word-wrap: break-word;
+}

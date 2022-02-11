@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>word-wrap</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/word-wrap.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">word-wrap</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Свойство word-wrap указывает, переносить или нет длинные слова, которые не помещаются по ширине в заданную область.
+        </p>
+        <dl>
+            <dt>normal</dt>
+                <dd>Строки не переносятся или переносятся в тех местах, где явно задан перенос (например, с помощью &lt;br&gt;).</dd>
+            <dt>break-word</dt>
+                <dd>Перенос строк добавляется автоматически, чтобы слово поместилось в заданную ширину блока.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            word-wrap: normal | break-word
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.word-wrap {
+                font-size: 2em;
+                margin: 5px;
+                padding: 5px;
+                width: 200px;
+                background: rgb(194, 101, 212);
+                word-wrap: break-word;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="word-wrap">
+                Гетероскедастичность. Фенилкетонурия.
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
