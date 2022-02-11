@@ -1,0 +1,9 @@
+.visibility {
+    margin: 10px;
+    padding: 5px;
+    background: yellowgreen;
+    border: 2px solid black;
+}
+
+.pr1 {visibility: visible;}
+.pr2 {visibility: hidden;}

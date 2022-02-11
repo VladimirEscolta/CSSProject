@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>visibility</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/visibility.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">visibility</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Предназначен для отображения или скрытия элемента, включая рамку вокруг него и фон. При скрытии элемента, хотя он и становится не виден, место, которое элемент занимает, остаётся за ним. Если предполагается вывод разных элементов в одно и то же место экрана, для обхода этой особенности следует использовать абсолютное позиционирование или воспользоваться свойством display.
+        </p>
+        <dl>
+            <dt>visible</dt>
+                <dd>Отображает элемент как видимый.</dd>
+            <dt>hidden</dt>
+                <dd>Элемент становится невидимым или правильней сказать, полностью прозрачным, поскольку он продолжает участвовать в форматировании страницы.</dd>
+            <dt>collapse</dt>
+                <dd>Если это значение применяется не к строкам или колонкам таблицы, то результат его использования будет таким же, как hidden. В случае использования collapse для содержимого ячеек таблиц, то они реагируют, словно к ним было добавлено display: none. Иными словами, заданные строки и колонки убираются, а таблица перестраивается по новой.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            visibility: visible | hidden | collapse
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.visibility {
+                margin: 10px;
+                padding: 5px;
+                background: yellowgreen;
+                border: 2px solid black;
+            }
+            
+            .pr1 {visibility: visible;}
+            .pr2 {visibility: hidden;}
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="visibility pr1">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nam magnam expedita illum impedit repudiandae fugit id in exercitationem corrupti illo, placeat libero praesentium molestias repellendus neque totam. Itaque, sit?
+            </div>
+            <div class="visibility pr2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque nam magnam expedita illum impedit repudiandae fugit id in exercitationem corrupti illo, placeat libero praesentium molestias repellendus neque totam. Itaque, sit?
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
