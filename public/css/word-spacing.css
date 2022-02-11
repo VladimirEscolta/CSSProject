@@ -1,0 +1,6 @@
+.word-spacing {
+    margin: 5px;
+    padding: 5px;
+    background: greenyellow;
+    word-spacing: 10px;
+}
