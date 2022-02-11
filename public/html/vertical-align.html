@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>vertical-align</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/vertical-align.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">vertical-align</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Выравнивает элемент по вертикали относительно своего родителя, окружающего текста или ячейки таблицы.
+        </p>
+        <dl>
+            <dt>baseline</dt>
+                <dd>Выравнивает базовую линию блока по базовой линии родителя. Если у блока нет базовой линии, то за неё принимается нижняя граница.</dd>
+            <dt>bottom</dt>
+                <dd>Выравнивает низ блока по нижней части строки.</dd>
+            <dt>middle</dt>
+                <dd>Выравнивает вертикальную среднюю точку блока по базовой линии родительского блока плюс половина высоты буквы «x».</dd>
+            <dt>sub</dt>
+                <dd>Опускает базовую линию блока вниз для создания нижнего индекса. Не оказывает влияние на размер текста.</dd>
+            <dt>super</dt>
+                <dd>Поднимает базовую линию блока вверх для создания верхнего индекса. Не оказывает влияние на размер текста.</dd>
+            <dt>text-bottom</dt>
+                <dd>Нижняя граница элемента выравнивается по нижнему краю содержимого родителя.</dd>
+            <dt>text-top</dt>
+                <dd>Верхняя граница элемента выравнивается по верхнему краю содержимого родителя.</dd>
+            <dt>top</dt>
+                <dd>Выравнивает верх блока по верхней части строки.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            vertical-align: baseline | bottom | middle | sub | super | text-bottom | text-top | top | <размер> | <проценты>
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.pr1 {vertical-align: sub;}
+                .pr2 {vertical-align: super;}
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div>
+                Пр<span class="pr1">о</span>изв<span class="pr1">о</span>льный т<span class="pr2">е</span>к<span class="pr2">с</span>т.
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
