@@ -1,0 +1,10 @@
+.zoom {
+    margin: 15px;
+    padding: 5px;
+    width: 300px;
+    border: 2px solid sandybrown;
+}
+
+.zoom:hover {
+    zoom: 200%;
+}
