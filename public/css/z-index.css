@@ -1,0 +1,30 @@
+.z_index {
+    width: 300px;
+    position: relative;
+    border: 2px solid rebeccapurple;
+}
+
+.pr1 {
+    background: orange;
+    top: 5px;
+    left: 10px;
+    z-index: 3;
+}
+
+.pr2 {
+    background: yellow;
+    top: -75px;
+    left: 40px;
+    z-index: 2;
+}
+
+.pr3 {
+    background: green;
+    top: -145px;
+    left: 70px;
+    z-index: 1;
+}
+
+.z_index:hover {
+    z-index: 5;
+}

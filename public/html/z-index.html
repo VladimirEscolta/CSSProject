@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/z-index.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">z-index</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Любые позиционированные элементы на веб-странице могут накладываться друг на друга в определенном порядке, имитируя тем самым третье измерение, перпендикулярное экрану. Каждый элемент может находиться как ниже, так и выше других объектов веб-страницы, их размещением по z-оси и управляет z-index. Это свойство работает только для элементов, у которых значение position задано как absolute, fixed или relative.
+        </p>
+        <p>
+            В качестве значения используются целые числа (положительные, отрицательные и ноль). Чем больше значение, тем выше находится элемент по сравнению с теми элементами, у которых оно меньше. При равном значении z-index, на переднем плане находится тот элемент, который в коде HTML описан ниже. Допустимо использовать отрицательное значение. Кроме числовых значений применяется auto — порядок элементов в этом случае строится автоматически, исходя из их положения в коде HTML и принадлежности к родителю, поскольку дочерние элементы имеют тот же номер, что их родительский элемент.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            z-index: <число> | auto
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.z_index {
+                width: 300px;
+                position: relative;
+                border: 2px solid rebeccapurple;
+            }
+            
+            .pr1 {
+                background: orange;
+                top: 5px;
+                left: 10px;
+                z-index: 3;
+            }
+            
+            .pr2 {
+                background: yellow;
+                top: -75px;
+                left: 40px;
+                z-index: 2;
+            }
+            
+            .pr3 {
+                background: green;
+                top: -145px;
+                left: 70px;
+                z-index: 1;
+            }
+            
+            .z_index:hover {
+                z-index: 5;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+                <div class="z_index pr1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis debitis et accusamus exercitationem sapiente eligendi quaerat. Vero, magnam doloremque neque facere, voluptates dolor at, odit illum temporibus accusamus modi. Necessitatibus!
+                </div>
+                <div class="z_index pr2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis debitis et accusamus exercitationem sapiente eligendi quaerat. Vero, magnam doloremque neque facere, voluptates dolor at, odit illum temporibus accusamus modi. Necessitatibus!
+                </div>
+                <div class="z_index pr3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis debitis et accusamus exercitationem sapiente eligendi quaerat. Vero, magnam doloremque neque facere, voluptates dolor at, odit illum temporibus accusamus modi. Necessitatibus!
+                </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
