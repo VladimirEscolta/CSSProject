@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>@supports</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/@supports.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">@supports</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Правило @supports позволяет проверить, поддерживает браузер ту или иную возможность, и на основе этого создать набор стилевых правил. Допустимо создавать комплексные условия с помощью логических операторов not, and, or.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            @supports <условие> {<стилевые правила>}
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>@supports not (display: flex) {
+                .pr1 { display: none; }
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <p class="pr1">Ваш браузер поддерживает display: flex.</p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>

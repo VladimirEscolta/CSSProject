@@ -1,0 +1,3 @@
+@supports not (display: flex) {
+    .pr1 { display: none; }
+}
