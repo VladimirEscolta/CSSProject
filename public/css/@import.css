@@ -1,0 +1,13 @@
+.pr1 {
+    margin: 5px;
+    border-collapse: collapse;
+}
+
+caption {font-style: italic;}
+
+td, th {
+    border: 1px solid black;
+}
+
+.col1 {width: 100px;}
+.col2 {width: 500px;}

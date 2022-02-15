@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>@import</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/@import.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">@import</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Правило @import позволяет импортировать содержимое CSS-файла в текущую стилевую таблицу. @import не разрешается вставлять после любых объявлений кроме @charset или другого @import.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            @import url("имя файла") [типы носителей];
+        </p>
+        <p>
+            @import "имя файла" [типы носителей];
+        </p>
+        <p>
+            В качестве типа носителя выступают различные устройства, например, принтер, КПК, монитор и др. 
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.pr1 {
+                margin: 5px;
+                border-collapse: collapse;
+            }
+            
+            caption {font-style: italic;}
+            
+            td, th {
+                border: 1px solid black;
+            }
+            
+            .col1 {width: 100px;}
+            .col2 {width: 500px;}
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div>
+                <p>
+                    В качестве значения используется путь к стилевому файлу, который указывается внутри необязательной конструкции url(). Путь к файлу при этом можно писать как в кавычках (двойных или одинарных), так и без них.
+                </p>
+                <table class="pr1">
+                <caption>Типы носителей и их описание</caption>
+                    <tr>
+                        <th class="col1">Тип</th>
+                        <th class="col2">Описание</th>
+                    </tr>
+                    <tr>
+                        <td>all</td>
+                        <td>Все типы. Это значение используется по умолчанию.</td>
+                    </tr>
+                    <tr>
+                        <td>print</td>
+                        <td>Печатающие устройства вроде принтера.</td>
+                    </tr>
+                    <tr>
+                        <td>screen</td>
+                        <td>Экран монитора.</td>
+                    </tr>
+                </table>
+                <p>
+                    Использование типов носителей совместно с импортом файла дает возможность указывать стиль только для определенных устройств.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
