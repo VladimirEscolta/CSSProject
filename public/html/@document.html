@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>@document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/@document.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">@document</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            @document устанавливает стилевые правила на основе адреса документа. К примеру, если адреса мобильной и основной версии сайта различаются, то мы можем задать собственный стиль элементов для каждой версии.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            @document [url(<адрес>) [, url-prefix(<адрес>)][, domain(<адрес>)][, regexp(<адрес>)] ] {
+                Стилевые правила
+              }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>@-moz-document regexp("https:.*") {
+                .ssl {
+                 display: block;
+                 background: #5bd4b6;
+                 color: #fff;
+                 padding: 20px;
+                }
+               }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div>
+                <dl>
+                    <dt>url()</dt>
+                        <dd>Указывает точный адрес страницы, для которой применяются стилевые правила. Адрес пишется внутри скобок url().</dd>
+                    <dt>url-prefix()</dt>
+                        <dd>Значение, с которого начинается адрес документа.</dd>
+                    <dt>domain()</dt>
+                        <dd>Домен или поддомен сайта.</dd>
+                    <dt>regexp()</dt>
+                        <dd>Регулярное выражение которому соответствует адрес.</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
