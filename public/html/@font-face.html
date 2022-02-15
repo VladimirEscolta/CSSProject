@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>@font-face</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/@font-face.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">@font-face</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Правило @font-face позволяет определить настройки шрифтов, а также загрузить специфичный шрифт на компьютер пользователя.
+        </p>
+        <p>
+            Внутри конструкции @font-face может находиться набор свойств для изменения параметров шрифта (font-family, font-size, font-style и др.), а также ссылка на шрифтовой файл. Ссылка записывается в виде src: url(<адрес>), где <адрес> — относительный или абсолютный путь к файлу.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            @font-face { свойства шрифта }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>@font-face {
+                font-family: corsiva;
+                src: url(../../fonts/monotypecorsiva.ttf);
+            }
+            
+            .face {
+                font: 30px corsiva;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="face">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est rerum temporibus libero, dolores inventore quis aliquid voluptatibus delectus mollitia laudantium voluptas nam incidunt saepe facilis quibusdam ipsa earum quos.
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>

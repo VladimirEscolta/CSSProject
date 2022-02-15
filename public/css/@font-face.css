@@ -1,0 +1,8 @@
+@font-face {
+    font-family: corsiva;
+    src: url(../../fonts/monotypecorsiva.ttf);
+}
+
+.face {
+    font: 30px corsiva;
+}
