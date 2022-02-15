@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>@media</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/@media.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">@media</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Правило @media позволяет указать тип носителя, для которого будет применяться указанный стиль. В качестве типов выступают различные устройства, например, принтер, монитор и др.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            @media <тип носителя> {<стилевые правила>}
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>@media screen { 
+                body {
+                 font-family: Arial, Verdana, sans-serif; 
+                 font-size: 0.9em; 
+                 color: #000080; 
+                }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div>
+                <table class="pr1">
+                    <caption>Типы носителей и их описание</caption>
+                    <tr>
+                        <th class="col1">Тип</th>
+                        <th class="col2">Описание</th>
+                    </tr>
+                    <tr>
+                        <td>all</td>
+                        <td>Все типы. Это значение используется по умолчанию.</td>
+                    </tr>
+                    <tr>
+                        <td>print</td>
+                        <td>Принтеры и другие печатающие устройства.</td>
+                    </tr>
+                    <tr>
+                        <td>screen</td>
+                        <td>Экран монитора.</td>
+                    </tr>
+                    <tr>
+                        <td>speech</td>
+                        <td>Речевые синтезаторы, а также программы для воспроизведения текста вслух. Сюда, например, можно отнести речевые браузеры.</td>
+                    </tr>
+                </table>
+                <p>
+                    После ключевого слова @media идёт один или несколько типов носителя; если их больше одного, то они разделяются между собой запятой. После чего следуют обязательные фигурные скобки, внутри которых пишутся стилевые правила.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
