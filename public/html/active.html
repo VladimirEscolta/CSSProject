@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:active</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/active.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">:active</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдокласс :active определяет стиль активного элемента. Это такое состояние элемента, которое происходит между щелчком и отпусканием клавиши мыши. В основном применяется к ссылкам и кнопкам, но ими не ограничен.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор:active { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.pr1 {
+                margin: 20px;
+                padding: 5px;
+                width: 300px;
+                height: 100px;
+                text-align: center;
+                background: orange;
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+            
+            .pr1:active {
+                box-shadow: 0 0 30px 20px violet;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                Нажми на меня и удерживай кнопку нажатой!!! 
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
