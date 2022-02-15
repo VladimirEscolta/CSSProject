@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>@page</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/@page.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">@page</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Правило @page позволяет задать значение полей при печати документа или для страниц, у которых тип носителя задан как print.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            @page [ { :left | :right | :first } ] { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>@page :first {
+                margin: 1cm;
+              }
+
+              @page :left {
+                margin: 1cm 3cm 1cm 1.5cm;
+              }
+              
+              @page :right {
+                margin: 1cm 3cm 1cm 1.5cm;
+              }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <p>
+                Для установки полей на странице используется универсальное свойство margin или его производные — margin-top, margin-right, margin-bottom и margin-left, задающие соответственно отступ сверху, справа, снизу и слева. Отрицательное значение допускается, но часть страницы может оказаться «отрезанной». Свойства border и padding не применимы.
+            </p>
+            <p>
+                Ключевое слово :left позволяет задать поля для всех левых страниц, :right — для всех правых, а :first — для первой страницы.
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
