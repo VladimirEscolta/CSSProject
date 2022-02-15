@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>@charset</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/@charset.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">@charset</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Команда @charset применяется для задания кодировки внешнего CSS-файла. Это имеет значение в том случае, если в CSS-файле используются символы национального алфавита.
+        </p>
+        <p>
+            Для внешней таблицы стилей браузер последовательно просматривает следующие пункты для определения кодировки таблицы стилей:
+        </p>
+        <ol>
+            <li>кодировка, которую отдает сервер;</li>
+            <li>правило @charset;</li>
+            <li>атрибут charset элемента &lt;link&gt; (данный атрибут устарел, не используйте его).</li>
+        </ol>
+        <p>
+            Приведённый список имеет чётко выраженную иерархию — чем выше находится пункт, тем выше его приоритет. Если ни один из пунктов не найден, будет установлена кодировка UTF-8.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            @charset "<кодировка>";
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>@charset "windows-1251";
+                body {
+                 font: 11pt Arial, Helvetica, sans-serif;
+                 margin: 0;
+                 color: #000;
+                }
+                p.new:after {
+                 content: " Новье!";
+                }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <p>
+                Для русского языка обычно указывается кодировка windows-1251 или utf-8. Значение кодировки обязательно должно быть взято в кавычки.
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
