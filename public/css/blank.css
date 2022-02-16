@@ -1,0 +1,10 @@
+.pr1 {
+    margin: 10px;
+    padding: 5px;
+}
+
+.pr2:empty {
+    background: red;
+    padding: 3px;
+    margin: 7px;
+}
