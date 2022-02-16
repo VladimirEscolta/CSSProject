@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:checked</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/checked.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">:checked</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдокласс :checked применяется к элементам интерфейса, таким как переключатели (checkbox), флажки (radio) и пункты списка (option), когда они находятся в положение «включено». Переключение элементов в такое состояние происходит с помощью атрибута checked элемента &lt;input&gt; или пользователем.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор:checked { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>input:checked + span {
+                font-size: 25px;
+                text-shadow: 0px 0px 10px red;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <p><strong>Какой фирмы у тебя лыжи?</strong></p>
+                <p style="text-indent: 0;"> 
+                    <input type="checkbox" name="a1"><span>Fischer</span><br>
+                    <input type="checkbox" name="a2"><span>Salomon</span><br>
+                    <input type="checkbox" name="a3"><span>Atomic</span><br>
+                    <input type="checkbox" name="a4"><span>Rossignol</span><br> 
+                    <input type="checkbox" name="a5"><span>Madshus</span><br> 
+                    <input type="checkbox" name="a6"><span>Tisa</span>
+                </p>
+                <p>
+                    <input type="submit" value="Отправить">
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
