@@ -1,0 +1,7 @@
+.pr1 {
+    margin: 5px;
+}
+
+:default {
+    background-color: orange;
+}
