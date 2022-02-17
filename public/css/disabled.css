@@ -1,0 +1,10 @@
+textarea {
+    margin: 5px;
+    padding: 5px;
+}
+
+textarea:disabled {
+    border: 2px double red;
+    border-radius: 10px;
+    background: orange;
+}
