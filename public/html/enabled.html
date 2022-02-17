@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:enabled</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/enabled.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<script>
+    function agreeForm(f) {
+        if (f.agree.checked) f.submit.disabled = 0;
+        else f.submit.disabled = 1;
+    }
+    function mathfunc(f) {
+        if (f.math.checked) f.wow.hidden = 0;
+        else f.wow.hidden = 1;
+    }
+</script>
+<body>
+    <h1 class="header_text">:enabled</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдокласс :enabled используется для применения стиля к доступным (не заблокированным) элементам форм. По умолчанию, все элементы форм являются доступными, если в коде HTML к ним не добавляется атрибут disabled.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор:enabled { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>input:enabled {
+                background: orange;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <form action="handler.php">
+                    <p>Типовой договор</p>
+                    <p>
+                        <input type="checkbox" name="agree" onclick="agreeForm(this.form)"> 
+                        Я согласен со всеми условиями
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" value="Отправить" disabled>
+                    </p>
+                </form>
+                <form action="handler.php">
+                    <p>Сколько будет 2*2 ?</p>
+                    <input type="checkbox" name="math" onclick="mathfunc(this.form)">4
+                    <input class="wowtext" name="wow" value="Молодец" hidden>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
