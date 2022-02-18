@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:focus</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/focus.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">:focus</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдокласс :focus определяет стиль для элемента, получающего фокус. Например, им может быть текстовое поле формы, в которое устанавливается курсор.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор:focus { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.pr1, .forms, .one {
+                margin: 5px;
+            }
+            
+            .labels {
+                width: 100px;
+                float: left;
+                text-align: right;
+                padding-right: 10px;
+            }
+            
+            .getfocus:focus {
+                background: orange;
+                box-shadow: 0 0 20px 2px red;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <form class="forms" action="handler.php">
+                    <div class="one">
+                        <span class="labels">Первое поле:</span>
+                        <input type="text" class="getfocus" value="">
+                    </div>
+                    <div class="one">
+                        <span class="labels">Второе поле:</span>
+                        <input type="text" class="getfocus" value="">
+                    </div>
+                    <div class="one">
+                        <span class="labels">Третье поле:</span>
+                        <input type="text" class="getfocus" value="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
