@@ -1,0 +1,16 @@
+.pr1 {
+    margin: 5px;
+    width: 200px;
+    text-align: center;
+    background: orange;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.travolta {
+    display: none;
+}
+
+.pr1:hover + .travolta {
+    display: block;
+}
