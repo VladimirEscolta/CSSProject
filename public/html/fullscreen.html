@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:fullscreen</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/fullscreen.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<script>
+    function fullScreen() {
+        var el = document.getElementById('msg'); 
+            if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+            else if (el.mozRequestFullScreen) el.mozRequestFullScreen();
+            else if (el.msRequestFullscreen) el.msRequestFullscreen(); 
+            else if (el.requestFullscreen) el.requestFullscreen(); 
+    }
+</script>
+<body>
+    <h1 class="header_text">:fullscreen</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдокласс :fullscreen применяется к элементам, когда браузер находится в полноэкранном режиме. При этом скрывается заголовок окна, адресная строка, вкладки, меню и другие стандартные элементы и браузер отображается на весь экран. Для перехода из стандартного режима в полноэкранный и обратно обычно применяется клавиша F11.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор:fullscreen { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>#msg {
+                padding: 10px;
+                background: orange;
+                color: #fff;
+            }
+            
+            #msg:-ms-fullscreen { background: orange; }
+            #msg:-webkit-full-screen { background: orange; }
+            #msg:-moz-full-screen { background: orange; }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div id="msg">
+                Страница отображается в полноэкранном режиме.
+            </div>
+            <p>
+                <button onclick="fullScreen()">Посмотреть на полном экране!</button>
+            </p>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+#msg {
+    padding: 10px;
+    background: orange;
+    color: #fff;
+}
+
+#msg:-ms-fullscreen { background: orange; }
+#msg:-webkit-full-screen { background: orange; }
+#msg:-moz-full-screen { background: orange; }
