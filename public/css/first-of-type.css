@@ -1,0 +1,6 @@
+.pr1 p:first-of-type {
+    font-size: 25px;
+    font-style: bold;
+    color: blue;
+    text-shadow: 0 0 20px red;
+}
