@@ -1,0 +1,5 @@
+.pr1 p:first-child {
+    font-size: 25px;
+    font-style: italic;
+    color: red;
+}
