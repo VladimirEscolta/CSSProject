@@ -1,0 +1,15 @@
+.pr1, .forms, .one {
+    margin: 5px;
+}
+
+.labels {
+    width: 100px;
+    float: left;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.one:focus-within {
+    background: orange;
+    box-shadow: 0 0 20px 2px red;
+}
