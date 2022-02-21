@@ -1,0 +1,7 @@
+.pr1 {
+    margin: 5px;
+}
+
+input:indeterminate + span {
+    background: lime;
+}

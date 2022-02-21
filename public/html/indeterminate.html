@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:indeterminate</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/indeterminate.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">:indeterminate</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдокласс :indeterminate задаёт стиль для переключателей, когда они находятся в неопределённом состоянии. К примеру, если ни один переключатель не помечен, то они находятся в указанном состоянии. В реальности, стиль применяется только к элементам, у которых DOM-атрибут :indeterminate через JavaScript установлен в значение true. Также этот псевдокласс используется некоторыми браузерами для элемента &lt;progress&gt;.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор:indeterminate { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>input:indeterminate + span {
+                background: lime;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <p>Your favorite ski:</p>
+                <input type="radio" class="sport" name="ski"><span>Rossignol</span> <br>
+                <input type="radio" class="sport" name="ski"><span>Fischer</span> <br>
+                <input type="radio" class="sport" name="ski"><span>Salomon</span> <br>
+                <input type="radio" class="sport" name="ski"><span>Atomic</span> <br>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
