@@ -1,0 +1,5 @@
+.pr1 p:last-child {
+    font-size: 25px;
+    font-style: italic;
+    color: red;
+}
