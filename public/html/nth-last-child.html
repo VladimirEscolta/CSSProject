@@ -2,17 +2,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>:nth-child</title>
+    <title>:nth-last-child</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/nth-child.css">
+    <link rel="stylesheet" href="../css/nth-last-child.css">
     <link rel="icon" href="../../images/css_index.png">
 </head>
 <body>
-    <h1 class="header_text">:nth-child</h1>
+    <h1 class="header_text">:nth-last-child</h1>
     <h3 class="main_text">Описание</h3>
     <div class="description">
         <p>
-            Псевдокласс :nth-child используется для добавления стиля к элементам на основе нумерации в дереве элементов.
+            Псевдокласс :nth-last-child используется для добавления стиля к элементам на основе нумерации в дереве элементов. В отличие от псевдокласса :nth-child отсчёт ведётся не от первого элемента, а от последнего.
         </p>
         <dl>
             <dt>odd</dt>
@@ -28,13 +28,13 @@
     <h3 class="main_text">Синтаксис</h3>
     <div class="description">
         <p>
-            Селектор:nth-child(odd | even | <число> | <выражение>) {...}
+            Селектор:nth-last-child(odd | even | <число> | <выражение>) {...}
         </p>
     </div>
     <h3 class="main_text">Пример</h3>    
     <div class="primer_block">
         <div class="first primer_block_border padding">
-            <pre>.pr1 li:nth-child(even) {
+            <pre>.pr1 li:nth-last-child(1) {
                 font-size: 25px;
                 font-style: italic;
                 color: rgb(255, 145, 0);
