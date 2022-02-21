@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:not</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/not.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">:not</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдокласс :not задаёт правила стилей для элементов, которые не содержат указанный селектор. В качестве селектора могут указываться единичные псевдоклассы, теги, идентификаторы, классы и селекторы атрибутов. Нельзя использовать псевдокласс :not (конструкция :not(:not(...)) запрещена) и псевдоэлементы.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор:not(<Селектор>) { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>span {
+                font-size: 1.5em;
+                color: red;
+            }
+            
+            span:not([class="red"]) {
+                color: blue;
+                text-shadow: 0 0 20px blue;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <p>
+                    Lorem ipsum <span class="red">dolor</span> sit amet consectetur adipisicing elit. Minus, eaque nam pariatur magnam quo sapiente suscipit illum facilis <span class="red">ipsam</span> praesentium doloribus iure ex doloremque natus maxime, <span>quos</span> autem quis sequi!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>

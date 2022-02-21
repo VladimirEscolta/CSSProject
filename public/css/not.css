@@ -1,0 +1,9 @@
+span {
+    font-size: 1.5em;
+    color: red;
+}
+
+span:not([class="red"]) {
+    color: blue;
+    text-shadow: 0 0 20px blue;
+}

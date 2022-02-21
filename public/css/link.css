@@ -13,3 +13,7 @@
 .link:active {
     color: red;
 }
+
+.link:visited {
+    color: gray;
+}
