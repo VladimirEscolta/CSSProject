@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:nth-of-type</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/nth-of-type.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">:nth-of-type</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдокласс :nth-of-type используется для добавления стиля к элементам указанного типа на основе нумерации в дереве элементов.
+        </p>
+        <dl>
+            <dt>odd</dt>
+                <dd>Все нечётные номера элементов.</dd>
+            <dt>even</dt>
+                <dd>Все чётные номера элементов.</dd>
+            <dt><число></dt>
+                <dd>Порядковый номер дочернего элемента относительно своего родителя. Нумерация начинается с 1, это будет первый элемент в списке.</dd>
+            <dt><выражение></dt>
+                <dd>Задаётся в виде an±b, где a и b — целые числа, а n — счётчик, который автоматически принимает значение 0, 1, 2... Если a равно нулю, то оно не пишется и запись сокращается до b. Если b равно нулю, то оно также не указывается и выражение записывается в форме an. a и b могут быть отрицательными числами, в этом случае знак плюс меняется на минус, например: 5n-1. За счёт использования отрицательных значений a и b некоторые результаты могут также получиться отрицательными или равными нулю. Однако на элементы оказывают влияние только положительные значения из-за того, что нумерация элементов начинается с 1.</dd>
+        </dl>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор:nth-of-type(odd | even | <число> | <выражение>) {...}
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.pr1 li:nth-of-type(1) {
+                font-size: 25px;
+                font-style: italic;
+                color: rgb(255, 145, 0);
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+              <ol>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit adipisci a quidem ipsa dolorum inventore perspiciatis ad ducimus consequuntur?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit adipisci a quidem ipsa dolorum inventore perspiciatis ad ducimus consequuntur?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit adipisci a quidem ipsa dolorum inventore perspiciatis ad ducimus consequuntur?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit adipisci a quidem ipsa dolorum inventore perspiciatis ad ducimus consequuntur?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit adipisci a quidem ipsa dolorum inventore perspiciatis ad ducimus consequuntur?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit adipisci a quidem ipsa dolorum inventore perspiciatis ad ducimus consequuntur?
+                    </li>
+                    <li>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit adipisci a quidem ipsa dolorum inventore perspiciatis ad ducimus consequuntur?
+                    </li>
+              </ol>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
