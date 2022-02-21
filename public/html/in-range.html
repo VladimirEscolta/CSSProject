@@ -2,23 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>:hover</title>
+    <title>:in-range</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/hover.css">
+    <link rel="stylesheet" href="../css/in-range.css">
     <link rel="icon" href="../../images/css_index.png">
 </head>
 <body>
-    <h1 class="header_text">:hover</h1>
+    <h1 class="header_text">:in-range</h1>
     <h3 class="main_text">Описание</h3>
     <div class="description">
         <p>
-            Определяет стиль элемента при наведении на него курсора мыши, но при этом элемент еще не активирован, иными словами кнопка мыши не нажата.
+            Применяется к элементам форм, у которых введённое пользователем значение находится в заранее заданном диапазоне. Сам диапазон устанавливается с помощью атрибутов min и max, они, соответственно, задают минимальное и максимальное значение.
         </p>
     </div>
     <h3 class="main_text">Синтаксис</h3>
     <div class="description">
         <p>
-            Селектор:hover { ... }
+            Селектор:in-range { ... }
         </p>
     </div>
     <h3 class="main_text">Пример</h3>    
@@ -26,29 +26,21 @@
         <div class="first primer_block_border padding">
             <pre>.pr1 {
                 margin: 5px;
-                width: 200px;
-                text-align: center;
-                background: orange;
-                border: 2px solid black;
-                border-radius: 5px;
             }
             
-            .travolta {
-                display: none;
+            .range:in-range {
+                background: greenyellow;
             }
             
-            .pr1:hover + .travolta {
-                display: block;
+            .range:out-of-range {
+                background: red;
             }
             </pre>
         </div>
         <div class="primer_one primer_block_border padding">
             <div class="pr1">
-                Наведи курсор мыши на меня!!!
+                <p>Введите число: <input class="range" type="number" min="15" max="25" value="18"></p>
             </div>
-            <figure class="travolta">
-                <img src="../../images/travolta.gif" alt="picture travolta">
-            </figure>
         </div>
     </div>
 
