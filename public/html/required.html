@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:required</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/required.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">:required</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Применяет стилевые правила к элементу &lt;input&gt;, у которого установлен атрибут required, он позволяет выделять поля обязательные к заполнению перед отправкой формы.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            input:required { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.pr1 span {
+                width: 150px;
+                float: left;
+            }
+            
+            .pr1 input:required {
+                text-align: center;
+                background-color: greenyellow;
+                border: 2px solid red;
+                border-radius: 5px;
+            }
+            
+            #area {
+                min-width: 10%;
+                max-width: 70%;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <p>Заполните форму:</p>
+                <p><span>Введите имя:</span> <input type="text" size="40"></p>
+                <p><span>Возраст:</span> <input type="text" size="40" required></p>
+                <p><span>Преимущества:</span> <textarea name="text" id="area" cols="40" rows="10"></textarea></p>
+                <p><input type="submit"></p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
