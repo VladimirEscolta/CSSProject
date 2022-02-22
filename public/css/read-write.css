@@ -1,0 +1,10 @@
+.pr1 {
+    margin: 5px;
+}
+
+.pr1 input:read-write {
+    text-align: center;
+    background-color: greenyellow;
+    border: 2px solid red;
+    border-radius: 5px;
+}
