@@ -1,0 +1,5 @@
+#primer::after {
+    content: 'Новая строка!!';
+    background: orange;
+    font-style: italic;
+}
