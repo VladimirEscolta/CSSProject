@@ -1,0 +1,4 @@
+.pr1 input:placeholder-shown {
+    font-style: italic;
+    border-color: aqua;
+}
