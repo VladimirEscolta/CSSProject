@@ -1,0 +1,19 @@
+.pr1 {
+    margin: 5px;
+}
+
+.link {
+    font-size: 1.5em;
+}
+
+.link:link {
+    color: blue;
+}
+
+.link:active {
+    color: red;
+}
+
+.link:visited {
+    color: gray;
+}
