@@ -7,7 +7,13 @@
     <link rel="icon" href="images/css_index.png">
 </head>
 <body>
-    <h1 class="header_text">Справочник CSS</h1>
+    <nav id="mainnav">
+        <a href="#spravochnik">Справочник CSS</a>
+        <a href="#pravila">@-правила</a>
+        <a href="#psevdoclass">Псевдоклассы</a>
+        <a href="#psevdoelement">Псевдоэлементы</a>
+    </nav>
+    <h1 class="header_text" id="spravochnik">Справочник CSS</h1>
     <div class="container_links">
         <div class="block_container_links">
             <a class="links padding" href="public/html/!important.html" title="Повышает приоритет стиля">
@@ -290,7 +296,7 @@
             </a>
         </div>
     </div>
-    <h1 class="header_text">@-правила</h1>
+    <h1 class="header_text" id="pravila">@-правила</h1>
     <div class="container_links">
         <div class="block_container_links">
             <a class="links padding" href="public/html/@charset.html" title="Применяется для задания кодировки внешнего CSS-файла">
@@ -326,7 +332,7 @@
             </a>
         </div>
     </div>
-    <h1 class="header_text">Псевдоклассы</h1>
+    <h1 class="header_text" id="psevdoclass">Псевдоклассы</h1>
     <div class="container_links">
         <div class="block_container_links">
             <a class="links padding" href="public/html/active.html" title="Определяет стиль активного элемента">
@@ -448,7 +454,7 @@
             </a>
         </div>
     </div>
-    <h1 class="header_text">Псевдоэлементы</h1>
+    <h1 class="header_text" id="psevdoelement">Псевдоэлементы</h1>
     <div class="container_links">
         <div class="block_container_links">
             <a class="links padding" href="public/html/after.html" title="Используется для вывода желаемого контента после содержимого элемента, к которому он добавляется">
@@ -475,7 +481,9 @@
             
         </div>
     </div>
-    
+    <footer>
+        <button class="gohome"><a href="#mainnav"><img src="images/home.png" alt="Домой"></a></button>
+    </footer>
 
 </body>
 </html>

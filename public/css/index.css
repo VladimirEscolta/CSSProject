@@ -22,6 +22,22 @@ body {
     font-size: 20px;
 }
 
+#mainnav {
+    display: flex;
+    place-content: center center;
+    border-bottom: 2px solid red;
+}
+
+#mainnav a {
+    text-align: center;
+    width: 150px;
+    margin: 5px;
+}
+
+.header_text:target {
+    text-shadow: 0 0 30px red;
+}
+
 .links {
     text-decoration: none;
     font-size: 22px;
@@ -84,3 +100,9 @@ p {
 .primer_one {width: 85%;}
 .primer {width: 25%;}
 .second {width: 50%;}
+
+.gohome {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
