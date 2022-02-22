@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:only-child</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/only-child.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">:only-child</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдокласс :only-child применяется к дочернему элементу, только если он является единственным у родителя.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор:only-child { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.pr1 :only-child {
+                font-size: 25px;
+                font-style: italic;
+                color: rgb(255, 145, 0);
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam distinctio nemo vel quam! Pariatur dolor, quam eum tenetur nostrum esse nesciunt ratione molestiae iusto facere quia, odio rem ullam! Dolore.
+                </p>
+                <p>
+                    <time>22.02.2022</time>
+                </p>
+                <ol>
+                    <li>Первый пункт</li>
+                    <li>Второй пункт</li>
+                </ol>
+                <p>
+                    Lorem ipsum dolor sit <span>amet</span> consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
