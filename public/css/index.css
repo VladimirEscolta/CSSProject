@@ -26,12 +26,21 @@ body {
     display: flex;
     place-content: center center;
     border-bottom: 2px solid red;
+    background: beige;
 }
 
 #mainnav a {
+    font-size: 1.2em;
+    color: black;
     text-align: center;
+    text-decoration: none;
     width: 150px;
     margin: 5px;
+    border-right: 2px solid red;
+}
+
+#mainnav a:last-of-type {
+    border-right: none;
 }
 
 .header_text:target {
