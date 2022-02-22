@@ -1,0 +1,11 @@
+.pr1 {
+    margin: 5px;
+}
+
+.nnn:invalid {
+    background: orange;
+}
+
+.nnn:valid {
+    background: greenyellow;
+}
