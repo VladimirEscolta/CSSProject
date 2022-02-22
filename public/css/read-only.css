@@ -1,0 +1,10 @@
+.pr1 {
+    margin: 5px;
+}
+
+.pr1 input:read-only {
+    text-align: center;
+    opacity: 0.5;
+    border: 2px solid red;
+    border-radius: 5px;
+}
