@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:target</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/target.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">:target</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Для перехода к выбранному фрагменту документа, в адресе пишется символ # и указывается имя идентификатора. К примеру, в адресе http://www.w3.org/TR/css3-selectors/#target-pseudo происходит переход к элементу, атрибут id которого задан как target-pseudo. Такая запись адреса называется «целевой элемент». Псевдокласс :target применяется к целевому элементу, иными словами, к идентификатору, который указан в адресной строке браузера.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор:target { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>nav {
+                display: flex;
+                place-content: center center;
+                flex-wrap: wrap;
+                width: 80%;
+                margin: 10px;
+                padding: 10px;
+                border: 2px solid black;
+                border-radius: 10px;
+            }
+            
+            nav a {
+                margin: 10px;
+                padding: 10px;
+            }
+            
+            .wow:target {
+                background: orange;
+                font-weight: 900;
+                font-style: italic;
+                font-size: 1.5em;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <nav>
+                    <a href="#lorem1">Первый рассказ</a>
+                    <a href="#lorem2">Второй рассказ</a>
+                </nav>
+                <p class="wow" id="lorem1">Первый рассказ</p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis eligendi aut quibusdam, nemo magni hic enim harum, totam rem dicta ut quod, quidem molestias dolor illo magnam pariatur laudantium quisquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus nam dolorum, reiciendis laborum similique voluptatibus veritatis, at voluptatem quod commodi corrupti nulla amet assumenda enim quasi autem ab magni incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem excepturi, cumque iusto ea expedita minima veritatis maiores non? Vitae cum natus tempore ad quae praesentium vel sequi saepe rem ab!
+                </p>
+                <p class="wow" id="lorem2">Второй рассказ</p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis eligendi aut quibusdam, nemo magni hic enim harum, totam rem dicta ut quod, quidem molestias dolor illo magnam pariatur laudantium quisquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam quisquam fuga sunt voluptas quibusdam voluptates repudiandae quos blanditiis. Corporis, ad. Veritatis odio corrupti, at adipisci provident eveniet excepturi. Labore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto soluta nemo doloremque voluptatem aliquam labore sequi minus suscipit ipsam totam placeat animi beatae amet, mollitia autem quia quidem? Dignissimos, totam.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
