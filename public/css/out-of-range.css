@@ -1,0 +1,11 @@
+.pr1 {
+    margin: 5px;
+}
+
+.range:in-range {
+    background: greenyellow;
+}
+
+.range:out-of-range {
+    background: red;
+}
