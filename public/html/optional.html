@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>:optional</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/optional.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">:optional</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Применяет стилевые правила к элементу &lt;input&gt;, у которого не задан атрибут required, он позволяет выделять поля обязательные к заполнению перед отправкой формы. Таким образом :optional применяется к необязательным полям формы.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            input:optional { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>.pr1 input:optional {
+                background: orange;
+                border-radius: 10px;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <form action="handler.php">
+                    <p>Заполните форму:</p>
+                    <p>Имя: <input name="name" required></p>
+                    <p>Возраст: <input type="number" min="18" required name="old"></p>
+                    <p><input type="submit" value="Отправить"></p>
+                   </form>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
