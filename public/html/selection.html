@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>::selection</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/selection.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">::selection</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдоэлемент ::selection применяет стиль к выделенному пользователем тексту. В правилах стилей допускается использовать следующие свойства: color, background, background-color, cursor, outline и text-shadow.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор::selection { ... }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>#primer {
+                font-size: 1.5em;
+                font-style: italic;
+            }
+            
+            #primer::selection {
+                color: orange;
+                background: black;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <p id="primer">
+                    Попробуйте выделить данный текст!!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+#primer {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+#primer::selection {
+    color: orange;
+    background: black;
+}
