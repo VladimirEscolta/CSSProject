@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>::before</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/before.css">
+    <link rel="icon" href="../../images/css_index.png">
+</head>
+<body>
+    <h1 class="header_text">::before</h1>
+    <h3 class="main_text">Описание</h3>
+    <div class="description">
+        <p>
+            Псевдоэлемент ::before применяется для отображения контента до содержимого элемента, к которому он добавляется. Работает совместно со свойством content.
+        </p>
+        <p>
+            По умолчанию ::before создаёт строчный элемент.
+        </p>
+    </div>
+    <h3 class="main_text">Синтаксис</h3>
+    <div class="description">
+        <p>
+            Селектор::before { content: "текст" }
+        </p>
+    </div>
+    <h3 class="main_text">Пример</h3>    
+    <div class="primer_block">
+        <div class="first primer_block_border padding">
+            <pre>#primer::before {
+                content: 'Новая строка!!';
+                background: orange;
+                font-style: italic;
+            }
+            </pre>
+        </div>
+        <div class="primer_one primer_block_border padding">
+            <div class="pr1">
+                <p id="primer">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit maiores maxime id iusto in sapiente at eaque ipsam eum! Voluptas atque illum sed? Magni soluta modi veritatis dolor, veniam distinctio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tenetur nisi fuga maiores iure quisquam perferendis velit, sapiente vero consequuntur quidem sed atque dolore eveniet amet fugit ad facilis placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sed, culpa assumenda explicabo molestiae debitis natus nisi voluptates libero praesentium! Quis tempore, fugit dolorum pariatur consequatur libero cum rerum exercitationem!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <button class="back_to_main">
+        <p class="margin_0">
+            <a href="../../index.html">Вернуться к справочнику CSS</a>
+        </p>
+    </button>
+    
+</body>
+</html>
