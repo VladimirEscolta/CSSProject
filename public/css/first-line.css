@@ -1,0 +1,12 @@
+@font-face {
+    font-family: corsiva;
+    src: url(../../fonts/monotypecorsiva.ttf);
+}
+
+#primer::first-line {
+    font-family: corsiva;
+    font-size: 3em;
+    color: red;
+    font-weight: 1000;
+    text-shadow: 0 0 20px red;
+}
